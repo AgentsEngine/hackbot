@@ -52,8 +52,6 @@ await Bun.file(`${wrapperDir}/package.json`).write(
 )
 
 await Promise.all(
-  Object.entries(binaries).map(([name, version]) =>
-    publish(`./dist/${dirByPkgName[name]}`, name, version),
-  ),
+  Object.entries(binaries).map(([name, version]) => publish(`./dist/${dirByPkgName[name]}`, name, version)),
 )
 await publish(wrapperDir, pkg.name, version)

@@ -45,13 +45,7 @@ import { StickyAccordionHeader } from "@hackbot/ui/sticky-accordion-header"
 import { TextField } from "@hackbot/ui/text-field"
 import { TextReveal } from "@hackbot/ui/text-reveal"
 import { TextShimmer } from "@hackbot/ui/text-shimmer"
-import type {
-  AssistantMessage,
-  Message as MessageType,
-  Part as PartType,
-  ToolPart,
-  UserMessage,
-} from "@hackbot/sdk/v2"
+import type { AssistantMessage, Message as MessageType, Part as PartType, ToolPart, UserMessage } from "@hackbot/sdk/v2"
 import { showToast } from "@/utils/toast"
 import { getDirectory, getFilename } from "@hackbot/core/util/path"
 import { Popover as KobaltePopover } from "@kobalte/core/popover"

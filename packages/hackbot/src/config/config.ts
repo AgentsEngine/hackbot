@@ -137,9 +137,7 @@ export class Service extends Context.Service<Service, Interface>()("@hackbot/Con
 export const use = serviceUse(Service)
 
 function globalConfigFile() {
-  const candidates = ["hackbot.jsonc", "hackbot.json", "config.json"].map((file) =>
-    path.join(Global.Path.config, file),
-  )
+  const candidates = ["hackbot.jsonc", "hackbot.json", "config.json"].map((file) => path.join(Global.Path.config, file))
   for (const file of candidates) {
     if (existsSync(file)) return file
   }

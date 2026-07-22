@@ -78,13 +78,13 @@ hackbot attach http://10.20.30.40:4096
 
 #### Opciones
 
-| Opción                                   | Corta | Descripción                                                                               |
-| ---------------------------------------- | ----- | ----------------------------------------------------------------------------------------- |
-| <nobr><code>{"--dir"}</code></nobr>      |       | Directorio de trabajo para iniciar TUI en                                                 |
-| <nobr><code>{"--continue"}</code></nobr> | `-c`  | Continuar la última sesión                                                                |
-| <nobr><code>{"--session"}</code></nobr>  | `-s`  | ID de sesión para continuar                                                               |
-| <nobr><code>{"--fork"}</code></nobr>     |       | Bifurcar la sesión al continuar (usar con `--continue` o `--session`)                     |
-| <nobr><code>{"--password"}</code></nobr> | `-p`  | Contraseña de autenticación básica (predeterminada: `HACKBOT_SERVER_PASSWORD`)           |
+| Opción                                   | Corta | Descripción                                                                             |
+| ---------------------------------------- | ----- | --------------------------------------------------------------------------------------- |
+| <nobr><code>{"--dir"}</code></nobr>      |       | Directorio de trabajo para iniciar TUI en                                               |
+| <nobr><code>{"--continue"}</code></nobr> | `-c`  | Continuar la última sesión                                                              |
+| <nobr><code>{"--session"}</code></nobr>  | `-s`  | ID de sesión para continuar                                                             |
+| <nobr><code>{"--fork"}</code></nobr>     |       | Bifurcar la sesión al continuar (usar con `--continue` o `--session`)                   |
+| <nobr><code>{"--password"}</code></nobr> | `-p`  | Contraseña de autenticación básica (predeterminada: `HACKBOT_SERVER_PASSWORD`)          |
 | <nobr><code>{"--username"}</code></nobr> | `-u`  | Usuario de autenticación básica (predeterminado: `HACKBOT_SERVER_USERNAME` u `hackbot`) |
 
 ---
@@ -339,25 +339,25 @@ hackbot run --attach http://localhost:4096 "Explain async/await in JavaScript"
 
 #### Opciones
 
-| Opción                                   | Corta | Descripción                                                                               |
-| ---------------------------------------- | ----- | ----------------------------------------------------------------------------------------- |
-| <nobr><code>{"--command"}</code></nobr>  |       | El comando a ejecutar, use mensaje para args                                              |
-| <nobr><code>{"--continue"}</code></nobr> | `-c`  | Continuar la última sesión                                                                |
-| <nobr><code>{"--session"}</code></nobr>  | `-s`  | ID de sesión para continuar                                                               |
-| <nobr><code>{"--fork"}</code></nobr>     |       | Bifurcar la sesión al continuar (usar con `--continue` o `--session`)                     |
-| <nobr><code>{"--share"}</code></nobr>    |       | Comparte la sesión                                                                        |
-| <nobr><code>{"--model"}</code></nobr>    | `-m`  | Modelo a utilizar en forma de proveedor/modelo                                            |
-| <nobr><code>{"--agent"}</code></nobr>    |       | Agente a utilizar                                                                         |
-| <nobr><code>{"--file"}</code></nobr>     | `-f`  | Archivo(s) para adjuntar al mensaje                                                       |
-| <nobr><code>{"--format"}</code></nobr>   |       | Formato: predeterminado (formateado) o json (eventos JSON sin formato)                    |
-| <nobr><code>{"--title"}</code></nobr>    |       | Título de la sesión (utiliza un mensaje truncado si no se proporciona ningún valor)       |
-| <nobr><code>{"--attach"}</code></nobr>   |       | Adjuntar a un servidor hackbot en ejecución (por ejemplo, http://localhost:4096)         |
-| <nobr><code>{"--password"}</code></nobr> | `-p`  | Contraseña de autenticación básica (predeterminada: `HACKBOT_SERVER_PASSWORD`)           |
+| Opción                                   | Corta | Descripción                                                                             |
+| ---------------------------------------- | ----- | --------------------------------------------------------------------------------------- |
+| <nobr><code>{"--command"}</code></nobr>  |       | El comando a ejecutar, use mensaje para args                                            |
+| <nobr><code>{"--continue"}</code></nobr> | `-c`  | Continuar la última sesión                                                              |
+| <nobr><code>{"--session"}</code></nobr>  | `-s`  | ID de sesión para continuar                                                             |
+| <nobr><code>{"--fork"}</code></nobr>     |       | Bifurcar la sesión al continuar (usar con `--continue` o `--session`)                   |
+| <nobr><code>{"--share"}</code></nobr>    |       | Comparte la sesión                                                                      |
+| <nobr><code>{"--model"}</code></nobr>    | `-m`  | Modelo a utilizar en forma de proveedor/modelo                                          |
+| <nobr><code>{"--agent"}</code></nobr>    |       | Agente a utilizar                                                                       |
+| <nobr><code>{"--file"}</code></nobr>     | `-f`  | Archivo(s) para adjuntar al mensaje                                                     |
+| <nobr><code>{"--format"}</code></nobr>   |       | Formato: predeterminado (formateado) o json (eventos JSON sin formato)                  |
+| <nobr><code>{"--title"}</code></nobr>    |       | Título de la sesión (utiliza un mensaje truncado si no se proporciona ningún valor)     |
+| <nobr><code>{"--attach"}</code></nobr>   |       | Adjuntar a un servidor hackbot en ejecución (por ejemplo, http://localhost:4096)        |
+| <nobr><code>{"--password"}</code></nobr> | `-p`  | Contraseña de autenticación básica (predeterminada: `HACKBOT_SERVER_PASSWORD`)          |
 | <nobr><code>{"--username"}</code></nobr> | `-u`  | Usuario de autenticación básica (predeterminado: `HACKBOT_SERVER_USERNAME` u `hackbot`) |
-| <nobr><code>{"--dir"}</code></nobr>      |       | Directorio de ejecución, o ruta en el servidor remoto al adjuntar                         |
-| <nobr><code>{"--variant"}</code></nobr>  |       | Variante del modelo (esfuerzo de razonamiento específico del proveedor)                   |
-| <nobr><code>{"--thinking"}</code></nobr> |       | Mostrar bloques de pensamiento                                                            |
-| <nobr><code>{"--port"}</code></nobr>     |       | Puerto para el servidor local (el puerto predeterminado es aleatorio)                     |
+| <nobr><code>{"--dir"}</code></nobr>      |       | Directorio de ejecución, o ruta en el servidor remoto al adjuntar                       |
+| <nobr><code>{"--variant"}</code></nobr>  |       | Variante del modelo (esfuerzo de razonamiento específico del proveedor)                 |
+| <nobr><code>{"--thinking"}</code></nobr> |       | Mostrar bloques de pensamiento                                                          |
+| <nobr><code>{"--port"}</code></nobr>     |       | Puerto para el servidor local (el puerto predeterminado es aleatorio)                   |
 
 ---
 
@@ -562,31 +562,31 @@ La CLI de Hackbot toma las siguientes banderas globales.
 
 Hackbot se puede configurar mediante variables de entorno.
 
-| Variable                              | Type     | Description                                                                     |
-| ------------------------------------- | -------- | ------------------------------------------------------------------------------- |
-| `HACKBOT_AUTO_SHARE`                 | booleano | Compartir sesiones automáticamente                                              |
-| `HACKBOT_GIT_BASH_PATH`              | cadena   | Ruta al ejecutable de Git Bash en Windows                                       |
-| `HACKBOT_CONFIG`                     | cadena   | Ruta al archivo de configuración                                                |
-| `HACKBOT_CONFIG_DIR`                 | cadena   | Ruta al directorio de configuración                                             |
-| `HACKBOT_CONFIG_CONTENT`             | cadena   | Contenido de configuración json en línea                                        |
-| `HACKBOT_DISABLE_AUTOUPDATE`         | booleano | Deshabilitar las comprobaciones automáticas de actualizaciones                  |
-| `HACKBOT_DISABLE_PRUNE`              | booleano | Deshabilitar la poda de datos antiguos                                          |
-| `HACKBOT_DISABLE_TERMINAL_TITLE`     | booleano | Deshabilitar las actualizaciones automáticas de títulos de terminal             |
-| `HACKBOT_PERMISSION`                 | cadena   | Configuración de permisos json incorporados                                     |
-| `HACKBOT_DISABLE_DEFAULT_PLUGINS`    | booleano | Deshabilitar complementos predeterminados                                       |
-| `HACKBOT_DISABLE_LSP_DOWNLOAD`       | booleano | Deshabilitar las descargas automáticas del servidor LSP                         |
-| `HACKBOT_ENABLE_EXPERIMENTAL_MODELS` | booleano | Habilitar modelos experimentales                                                |
-| `HACKBOT_DISABLE_AUTOCOMPACT`        | booleano | Deshabilitar la compactación automática de contexto                             |
-| `HACKBOT_DISABLE_CLAUDE_CODE`        | booleano | Deshabilitar la lectura desde `.claude` (mensaje + habilidades)                 |
-| `HACKBOT_DISABLE_CLAUDE_CODE_PROMPT` | booleano | Desactivar lectura `~/.claude/CLAUDE.md`                                        |
-| `HACKBOT_DISABLE_CLAUDE_CODE_SKILLS` | booleano | Deshabilitar la carga `.claude/skills`                                          |
-| `HACKBOT_DISABLE_MODELS_FETCH`       | booleano | Deshabilitar la recuperación de modelos desde fuentes remotas                   |
-| `HACKBOT_FAKE_VCS`                   | cadena   | Proveedor de VCS falso para fines de prueba                                     |
-| `HACKBOT_CLIENT`                     | cadena   | Identificador de cliente (por defecto `cli`)                                    |
-| `HACKBOT_ENABLE_EXA`                 | booleano | Habilitar las herramientas de búsqueda web de Exa                               |
-| `HACKBOT_SERVER_PASSWORD`            | cadena   | Habilite la autenticación básica para `serve`/`web`                             |
+| Variable                             | Type     | Description                                                                    |
+| ------------------------------------ | -------- | ------------------------------------------------------------------------------ |
+| `HACKBOT_AUTO_SHARE`                 | booleano | Compartir sesiones automáticamente                                             |
+| `HACKBOT_GIT_BASH_PATH`              | cadena   | Ruta al ejecutable de Git Bash en Windows                                      |
+| `HACKBOT_CONFIG`                     | cadena   | Ruta al archivo de configuración                                               |
+| `HACKBOT_CONFIG_DIR`                 | cadena   | Ruta al directorio de configuración                                            |
+| `HACKBOT_CONFIG_CONTENT`             | cadena   | Contenido de configuración json en línea                                       |
+| `HACKBOT_DISABLE_AUTOUPDATE`         | booleano | Deshabilitar las comprobaciones automáticas de actualizaciones                 |
+| `HACKBOT_DISABLE_PRUNE`              | booleano | Deshabilitar la poda de datos antiguos                                         |
+| `HACKBOT_DISABLE_TERMINAL_TITLE`     | booleano | Deshabilitar las actualizaciones automáticas de títulos de terminal            |
+| `HACKBOT_PERMISSION`                 | cadena   | Configuración de permisos json incorporados                                    |
+| `HACKBOT_DISABLE_DEFAULT_PLUGINS`    | booleano | Deshabilitar complementos predeterminados                                      |
+| `HACKBOT_DISABLE_LSP_DOWNLOAD`       | booleano | Deshabilitar las descargas automáticas del servidor LSP                        |
+| `HACKBOT_ENABLE_EXPERIMENTAL_MODELS` | booleano | Habilitar modelos experimentales                                               |
+| `HACKBOT_DISABLE_AUTOCOMPACT`        | booleano | Deshabilitar la compactación automática de contexto                            |
+| `HACKBOT_DISABLE_CLAUDE_CODE`        | booleano | Deshabilitar la lectura desde `.claude` (mensaje + habilidades)                |
+| `HACKBOT_DISABLE_CLAUDE_CODE_PROMPT` | booleano | Desactivar lectura `~/.claude/CLAUDE.md`                                       |
+| `HACKBOT_DISABLE_CLAUDE_CODE_SKILLS` | booleano | Deshabilitar la carga `.claude/skills`                                         |
+| `HACKBOT_DISABLE_MODELS_FETCH`       | booleano | Deshabilitar la recuperación de modelos desde fuentes remotas                  |
+| `HACKBOT_FAKE_VCS`                   | cadena   | Proveedor de VCS falso para fines de prueba                                    |
+| `HACKBOT_CLIENT`                     | cadena   | Identificador de cliente (por defecto `cli`)                                   |
+| `HACKBOT_ENABLE_EXA`                 | booleano | Habilitar las herramientas de búsqueda web de Exa                              |
+| `HACKBOT_SERVER_PASSWORD`            | cadena   | Habilite la autenticación básica para `serve`/`web`                            |
 | `HACKBOT_SERVER_USERNAME`            | cadena   | Anular el nombre de usuario de autenticación básica (predeterminado `hackbot`) |
-| `HACKBOT_MODELS_URL`                 | cadena   | URL personalizada para buscar la configuración de modelos                       |
+| `HACKBOT_MODELS_URL`                 | cadena   | URL personalizada para buscar la configuración de modelos                      |
 
 ---
 
@@ -594,8 +594,8 @@ Hackbot se puede configurar mediante variables de entorno.
 
 Estas variables de entorno habilitan funciones experimentales que pueden cambiar o eliminarse.
 
-| Variable                                        | Type     | Description                                                |
-| ----------------------------------------------- | -------- | ---------------------------------------------------------- |
+| Variable                                       | Type     | Description                                                |
+| ---------------------------------------------- | -------- | ---------------------------------------------------------- |
 | `HACKBOT_EXPERIMENTAL`                         | booleano | Habilitar funciones experimentales de la bandera global    |
 | `HACKBOT_EXPERIMENTAL_ICON_DISCOVERY`          | booleano | Habilitar descubrimiento de íconos                         |
 | `HACKBOT_EXPERIMENTAL_DISABLE_COPY_ON_SELECT`  | booleano | Deshabilitar copia al seleccionar en TUI                   |

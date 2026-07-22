@@ -46,6 +46,7 @@ hackbot
 ```
 
 Switch agents with `Tab`:
+
 - **build** — default, full-access agent for development work
 - **plan** — read-only agent for analysis and code exploration
 

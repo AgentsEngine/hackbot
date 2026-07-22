@@ -78,13 +78,13 @@ hackbot attach http://10.20.30.40:4096
 
 #### Flag
 
-| Flag                                     | Kort | Beskrivelse                                                                       |
-| ---------------------------------------- | ---- | --------------------------------------------------------------------------------- |
-| <nobr><code>{"--dir"}</code></nobr>      |      | Arbejdsmappe til at starte TUI i                                                  |
-| <nobr><code>{"--continue"}</code></nobr> | `-c` | Fortsæt den seneste session                                                       |
-| <nobr><code>{"--session"}</code></nobr>  | `-s` | Sessions-id for at fortsætte                                                      |
-| <nobr><code>{"--fork"}</code></nobr>     |      | Forgren sessionen ved fortsættelse (brug med `--continue` eller `--session`)      |
-| <nobr><code>{"--password"}</code></nobr> | `-p` | Adgangskode til basic auth (standard: `HACKBOT_SERVER_PASSWORD`)                 |
+| Flag                                     | Kort | Beskrivelse                                                                     |
+| ---------------------------------------- | ---- | ------------------------------------------------------------------------------- |
+| <nobr><code>{"--dir"}</code></nobr>      |      | Arbejdsmappe til at starte TUI i                                                |
+| <nobr><code>{"--continue"}</code></nobr> | `-c` | Fortsæt den seneste session                                                     |
+| <nobr><code>{"--session"}</code></nobr>  | `-s` | Sessions-id for at fortsætte                                                    |
+| <nobr><code>{"--fork"}</code></nobr>     |      | Forgren sessionen ved fortsættelse (brug med `--continue` eller `--session`)    |
+| <nobr><code>{"--password"}</code></nobr> | `-p` | Adgangskode til basic auth (standard: `HACKBOT_SERVER_PASSWORD`)                |
 | <nobr><code>{"--username"}</code></nobr> | `-u` | Brugernavn til basic auth (standard: `HACKBOT_SERVER_USERNAME` eller `hackbot`) |
 
 ---
@@ -352,8 +352,8 @@ hackbot run --attach http://localhost:4096 "Explain async/await in JavaScript"
 | <nobr><code>{"--format"}</code></nobr>   |      | Format: standard (formateret) eller json (rå JSON hændelser)                        |
 | <nobr><code>{"--title"}</code></nobr>    |      | Titel for sessionen (bruger trunkeret prompt, hvis der ikke er angivet nogen værdi) |
 | <nobr><code>{"--attach"}</code></nobr>   |      | Tilslut til en kørende opencode-server (f.eks. http://localhost:4096)               |
-| <nobr><code>{"--password"}</code></nobr> | `-p` | Adgangskode til basic auth (standard: `HACKBOT_SERVER_PASSWORD`)                   |
-| <nobr><code>{"--username"}</code></nobr> | `-u` | Brugernavn til basic auth (standard: `HACKBOT_SERVER_USERNAME` eller `hackbot`)   |
+| <nobr><code>{"--password"}</code></nobr> | `-p` | Adgangskode til basic auth (standard: `HACKBOT_SERVER_PASSWORD`)                    |
+| <nobr><code>{"--username"}</code></nobr> | `-u` | Brugernavn til basic auth (standard: `HACKBOT_SERVER_USERNAME` eller `hackbot`)     |
 | <nobr><code>{"--dir"}</code></nobr>      |      | Mappe at køre i, eller sti på fjernserveren ved tilkobling                          |
 | <nobr><code>{"--variant"}</code></nobr>  |      | Modelvariant (udbyder-specifik ræsonneringsindsats)                                 |
 | <nobr><code>{"--thinking"}</code></nobr> |      | Vis tænkeblokke                                                                     |
@@ -562,32 +562,32 @@ hackbot CLI tager følgende globale flag.
 
 Hackbot kan konfigureres ved hjælp af miljøvariabler.
 
-| Variabel                              | Skriv   | Beskrivelse                                                           |
-| ------------------------------------- | ------- | --------------------------------------------------------------------- |
-| `HACKBOT_AUTO_SHARE`                 | boolean | Del automatisk session                                                |
-| `HACKBOT_GIT_BASH_PATH`              | string  | Sti til Git Bash eksekverbar på Windows                               |
-| `HACKBOT_CONFIG`                     | string  | Sti til konfigurationsfil                                             |
-| `HACKBOT_TUI_CONFIG`                 | string  | Sti til TUI-konfigurationsfil                                         |
-| `HACKBOT_CONFIG_DIR`                 | string  | Sti til konfigurationsmappe                                           |
-| `HACKBOT_CONFIG_CONTENT`             | string  | Indbygget json-konfigurationsindhold                                  |
-| `HACKBOT_DISABLE_AUTOUPDATE`         | boolean | Deaktiver automatisk opdateringskontrol                               |
-| `HACKBOT_DISABLE_PRUNE`              | boolean | Deaktiver beskæring af gamle data                                     |
-| `HACKBOT_DISABLE_TERMINAL_TITLE`     | boolean | Deaktiver automatisk opdatering af terminaltitel                      |
-| `HACKBOT_PERMISSION`                 | string  | Indbygget json-tilladelseskonfiguration                               |
-| `HACKBOT_DISABLE_DEFAULT_PLUGINS`    | boolean | Deaktiver standard plugins                                            |
-| `HACKBOT_DISABLE_LSP_DOWNLOAD`       | boolean | Deaktiver automatisk LSP-serverdownloads                              |
-| `HACKBOT_ENABLE_EXPERIMENTAL_MODELS` | boolean | Aktive eksperimentelle modeller                                       |
-| `HACKBOT_DISABLE_AUTOCOMPACT`        | boolean | Deaktiver automatisk kontekstkomprimering                             |
-| `HACKBOT_DISABLE_CLAUDE_CODE`        | boolean | Deaktiver læsning fra `.claude` (prompt + færdigheder)                |
-| `HACKBOT_DISABLE_CLAUDE_CODE_PROMPT` | boolean | Deaktiver læsning `~/.claude/CLAUDE.md`                               |
-| `HACKBOT_DISABLE_CLAUDE_CODE_SKILLS` | boolean | Deaktiver indlæsning af `.claude/skills`                              |
-| `HACKBOT_DISABLE_MODELS_FETCH`       | boolean | Deaktivering af modeller fra eksterne kilder                          |
-| `HACKBOT_FAKE_VCS`                   | string  | Falsk VCS-udbyder til testformål                                      |
-| `HACKBOT_CLIENT`                     | string  | Klient-id (standard til `cli`)                                        |
-| `HACKBOT_ENABLE_EXA`                 | boolean | Aktiver Exa-websøgeværktøjer                                          |
-| `HACKBOT_SERVER_PASSWORD`            | string  | Aktiver grundlæggende godkendelse for `serve`/`web`                   |
+| Variabel                             | Skriv   | Beskrivelse                                                          |
+| ------------------------------------ | ------- | -------------------------------------------------------------------- |
+| `HACKBOT_AUTO_SHARE`                 | boolean | Del automatisk session                                               |
+| `HACKBOT_GIT_BASH_PATH`              | string  | Sti til Git Bash eksekverbar på Windows                              |
+| `HACKBOT_CONFIG`                     | string  | Sti til konfigurationsfil                                            |
+| `HACKBOT_TUI_CONFIG`                 | string  | Sti til TUI-konfigurationsfil                                        |
+| `HACKBOT_CONFIG_DIR`                 | string  | Sti til konfigurationsmappe                                          |
+| `HACKBOT_CONFIG_CONTENT`             | string  | Indbygget json-konfigurationsindhold                                 |
+| `HACKBOT_DISABLE_AUTOUPDATE`         | boolean | Deaktiver automatisk opdateringskontrol                              |
+| `HACKBOT_DISABLE_PRUNE`              | boolean | Deaktiver beskæring af gamle data                                    |
+| `HACKBOT_DISABLE_TERMINAL_TITLE`     | boolean | Deaktiver automatisk opdatering af terminaltitel                     |
+| `HACKBOT_PERMISSION`                 | string  | Indbygget json-tilladelseskonfiguration                              |
+| `HACKBOT_DISABLE_DEFAULT_PLUGINS`    | boolean | Deaktiver standard plugins                                           |
+| `HACKBOT_DISABLE_LSP_DOWNLOAD`       | boolean | Deaktiver automatisk LSP-serverdownloads                             |
+| `HACKBOT_ENABLE_EXPERIMENTAL_MODELS` | boolean | Aktive eksperimentelle modeller                                      |
+| `HACKBOT_DISABLE_AUTOCOMPACT`        | boolean | Deaktiver automatisk kontekstkomprimering                            |
+| `HACKBOT_DISABLE_CLAUDE_CODE`        | boolean | Deaktiver læsning fra `.claude` (prompt + færdigheder)               |
+| `HACKBOT_DISABLE_CLAUDE_CODE_PROMPT` | boolean | Deaktiver læsning `~/.claude/CLAUDE.md`                              |
+| `HACKBOT_DISABLE_CLAUDE_CODE_SKILLS` | boolean | Deaktiver indlæsning af `.claude/skills`                             |
+| `HACKBOT_DISABLE_MODELS_FETCH`       | boolean | Deaktivering af modeller fra eksterne kilder                         |
+| `HACKBOT_FAKE_VCS`                   | string  | Falsk VCS-udbyder til testformål                                     |
+| `HACKBOT_CLIENT`                     | string  | Klient-id (standard til `cli`)                                       |
+| `HACKBOT_ENABLE_EXA`                 | boolean | Aktiver Exa-websøgeværktøjer                                         |
+| `HACKBOT_SERVER_PASSWORD`            | string  | Aktiver grundlæggende godkendelse for `serve`/`web`                  |
 | `HACKBOT_SERVER_USERNAME`            | string  | Tilsidesæt grundlæggende godkendelsesbrugernavn (standard `hackbot`) |
-| `HACKBOT_MODELS_URL`                 | string  | Brugerdefineret URL til hentning af modelkonfiguration                |
+| `HACKBOT_MODELS_URL`                 | string  | Brugerdefineret URL til hentning af modelkonfiguration               |
 
 ---
 
@@ -595,8 +595,8 @@ Hackbot kan konfigureres ved hjælp af miljøvariabler.
 
 Disse miljøvariabler muliggør eksperimentelle funktioner, der kan ændres eller fjernes.
 
-| Variabel                                        | Skriv   | Beskrivelse                                          |
-| ----------------------------------------------- | ------- | ---------------------------------------------------- |
+| Variabel                                       | Skriv   | Beskrivelse                                          |
+| ---------------------------------------------- | ------- | ---------------------------------------------------- |
 | `HACKBOT_EXPERIMENTAL`                         | boolean | Aktiver eksperimentelle funktioner under samleflaget |
 | `HACKBOT_EXPERIMENTAL_ICON_DISCOVERY`          | boolean | Aktiver ikonopdagelse                                |
 | `HACKBOT_EXPERIMENTAL_DISABLE_COPY_ON_SELECT`  | boolean | Deaktiver kopi ved valg i TUI                        |

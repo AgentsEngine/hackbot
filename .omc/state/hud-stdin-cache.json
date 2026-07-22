@@ -1,1 +1,38 @@
-{"session_id":"86f15e0b-591f-4c0b-8231-7a2aca817b10","transcript_path":"/Users/yp1017/.claude/projects/-Users-yp1017-projects-Sisyphus/86f15e0b-591f-4c0b-8231-7a2aca817b10.jsonl","cwd":"/Users/yp1017/projects/hackbot","effort":{"level":"medium"},"session_name":"Continue frontend IA refactor","model":{"id":"glm-5.2","display_name":"glm-5.2"},"workspace":{"current_dir":"/Users/yp1017/projects/hackbot","project_dir":"/Users/yp1017/projects/Sisyphus","added_dirs":[]},"version":"2.1.149","output_style":{"name":"default"},"cost":{"total_cost_usd":98.452619,"total_duration_ms":100783940,"total_api_duration_ms":15249380,"total_lines_added":5430,"total_lines_removed":980},"context_window":{"total_input_tokens":0,"total_output_tokens":0,"context_window_size":200000,"current_usage":{"input_tokens":0,"output_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0},"used_percentage":0,"remaining_percentage":100},"exceeds_200k_tokens":false,"fast_mode":false,"thinking":{"enabled":true}}
+{
+  "session_id": "86f15e0b-591f-4c0b-8231-7a2aca817b10",
+  "transcript_path": "/Users/yp1017/.claude/projects/-Users-yp1017-projects-Sisyphus/86f15e0b-591f-4c0b-8231-7a2aca817b10.jsonl",
+  "cwd": "/Users/yp1017/projects/hackbot",
+  "effort": { "level": "medium" },
+  "session_name": "Continue frontend IA refactor",
+  "model": { "id": "glm-5.2", "display_name": "glm-5.2" },
+  "workspace": {
+    "current_dir": "/Users/yp1017/projects/hackbot",
+    "project_dir": "/Users/yp1017/projects/Sisyphus",
+    "added_dirs": []
+  },
+  "version": "2.1.149",
+  "output_style": { "name": "default" },
+  "cost": {
+    "total_cost_usd": 98.452619,
+    "total_duration_ms": 100783940,
+    "total_api_duration_ms": 15249380,
+    "total_lines_added": 5430,
+    "total_lines_removed": 980
+  },
+  "context_window": {
+    "total_input_tokens": 0,
+    "total_output_tokens": 0,
+    "context_window_size": 200000,
+    "current_usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0
+    },
+    "used_percentage": 0,
+    "remaining_percentage": 100
+  },
+  "exceeds_200k_tokens": false,
+  "fast_mode": false,
+  "thinking": { "enabled": true }
+}

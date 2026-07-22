@@ -382,8 +382,7 @@ export const dict = {
     "La promozione gratuita di {{model}} è terminata. Puoi continuare a usare il modello abbonandoti a hackbot Go - {{link}}",
 
   "black.meta.title": "hackbot Black | Accedi ai migliori modelli di coding al mondo",
-  "black.meta.description":
-    "Ottieni l'accesso a Claude, GPT, Gemini e altri con i piani di abbonamento hackbot Black.",
+  "black.meta.description": "Ottieni l'accesso a Claude, GPT, Gemini e altri con i piani di abbonamento hackbot Black.",
   "black.hero.title": "Accedi ai migliori modelli di coding al mondo",
   "black.hero.subtitle": "Inclusi Claude, GPT, Gemini e altri",
   "black.title": "hackbot Black | Prezzi",

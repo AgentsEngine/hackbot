@@ -34,9 +34,7 @@ export const Flag = {
   HACKBOT_DISABLE_FFF: fff === undefined ? process.platform === "win32" : truthy("HACKBOT_DISABLE_FFF"),
 
   // Experimental
-  HACKBOT_EXPERIMENTAL_FILEWATCHER: Config.boolean("HACKBOT_EXPERIMENTAL_FILEWATCHER").pipe(
-    Config.withDefault(false),
-  ),
+  HACKBOT_EXPERIMENTAL_FILEWATCHER: Config.boolean("HACKBOT_EXPERIMENTAL_FILEWATCHER").pipe(Config.withDefault(false)),
   HACKBOT_EXPERIMENTAL_DISABLE_FILEWATCHER: Config.boolean("HACKBOT_EXPERIMENTAL_DISABLE_FILEWATCHER").pipe(
     Config.withDefault(false),
   ),

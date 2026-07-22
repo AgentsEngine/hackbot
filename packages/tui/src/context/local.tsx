@@ -271,7 +271,7 @@ export const { use: useLocal, provider: LocalProvider } = createSimpleContext({
               ? "hackbot"
               : provider?.id === "opencode-go"
                 ? "hackbot Go"
-                : provider?.name ?? value.providerID
+                : (provider?.name ?? value.providerID)
           return {
             provider: providerDisplayName,
             model: info?.name ?? value.modelID,

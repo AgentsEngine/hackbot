@@ -370,8 +370,7 @@ function ApiMethod(props: ApiMethodProps) {
           opencode: (
             <box gap={1}>
               <text fg={theme.textMuted}>
-                hackbot Zen gives you access to all the best coding models at the cheapest prices with a single API
-                key.
+                hackbot Zen gives you access to all the best coding models at the cheapest prices with a single API key.
               </text>
               <text fg={theme.text}>
                 Go to <span style={{ fg: theme.primary }}>https://example.com/zen</span> to get a key

@@ -40,8 +40,7 @@ describe("resource", () => {
 
   test("keeps built-in attributes when env values conflict", () => {
     process.env.HACKBOT_CLIENT = "cli"
-    process.env.OTEL_RESOURCE_ATTRIBUTES =
-      "opencode.client=web,service.instance.id=override,service.namespace=hackbot"
+    process.env.OTEL_RESOURCE_ATTRIBUTES = "opencode.client=web,service.instance.id=override,service.namespace=hackbot"
 
     expect(resource().attributes).toMatchObject({
       "opencode.client": "cli",

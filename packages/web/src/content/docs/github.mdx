@@ -105,14 +105,14 @@ Or you can set it up manually.
 
 Hackbot can be triggered by the following GitHub events:
 
-| Event Type                    | Triggered By                           | Details                                                                                                           |
-| ----------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Event Type                    | Triggered By                           | Details                                                                                                         |
+| ----------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | `issue_comment`               | Comment on an issue or PR              | Mention `/hackbot` or `/oc` in your comment. Hackbot reads context and can create branches, open PRs, or reply. |
 | `pull_request_review_comment` | Comment on specific code lines in a PR | Mention `/hackbot` or `/oc` while reviewing code. Hackbot receives file path, line numbers, and diff context.   |
-| `issues`                      | Issue opened or edited                 | Automatically trigger Hackbot when issues are created or modified. Requires `prompt` input.                      |
-| `pull_request`                | PR opened or updated                   | Automatically trigger Hackbot when PRs are opened, synchronized, or reopened. Useful for automated reviews.      |
-| `schedule`                    | Cron-based schedule                    | Run Hackbot on a schedule. Requires `prompt` input. Output goes to logs and PRs (no issue to comment on).        |
-| `workflow_dispatch`           | Manual trigger from GitHub UI          | Trigger Hackbot on demand via Actions tab. Requires `prompt` input. Output goes to logs and PRs.                 |
+| `issues`                      | Issue opened or edited                 | Automatically trigger Hackbot when issues are created or modified. Requires `prompt` input.                     |
+| `pull_request`                | PR opened or updated                   | Automatically trigger Hackbot when PRs are opened, synchronized, or reopened. Useful for automated reviews.     |
+| `schedule`                    | Cron-based schedule                    | Run Hackbot on a schedule. Requires `prompt` input. Output goes to logs and PRs (no issue to comment on).       |
+| `workflow_dispatch`           | Manual trigger from GitHub UI          | Trigger Hackbot on demand via Actions tab. Requires `prompt` input. Output goes to logs and PRs.                |
 
 ### Schedule Example
 

@@ -7,11 +7,38 @@ const ROOT = path.resolve(import.meta.dir, "..")
 const TARGETS = ["packages", "script", ".github"]
 
 const EXTS = new Set([
-  ".ts", ".tsx", ".js", ".jsx", ".json", ".mjs", ".cjs",
-  ".yml", ".yaml", ".md", ".mdx", ".toml", ".mts", ".cts",
-  ".css", ".scss", ".html", ".svelte", ".vue", ".astro",
+  ".ts",
+  ".tsx",
+  ".js",
+  ".jsx",
+  ".json",
+  ".mjs",
+  ".cjs",
+  ".yml",
+  ".yaml",
+  ".md",
+  ".mdx",
+  ".toml",
+  ".mts",
+  ".cts",
+  ".css",
+  ".scss",
+  ".html",
+  ".svelte",
+  ".vue",
+  ".astro",
 ])
-const SKIP_DIRS = new Set(["node_modules", "dist", ".turbo", ".git", "build", ".next", "coverage", ".cache", ".ts-dist"])
+const SKIP_DIRS = new Set([
+  "node_modules",
+  "dist",
+  ".turbo",
+  ".git",
+  "build",
+  ".next",
+  "coverage",
+  ".cache",
+  ".ts-dist",
+])
 
 let filesChanged = 0
 let refsChanged = 0
