@@ -122,7 +122,7 @@ jobs:
       - build-cli
       - version
     runs-on: windows-latest
-    if: github.repository == 'akushonkamen/hackbot'
+    if: github.repository == 'akushonkamen/hackbot' && vars.WINDOWS_SIGNING_ENABLED == 'true'
     env:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
@@ -221,8 +221,8 @@ jobs:
     needs:
       - build-cli
       - version
-    if: github.repository == 'akushonkamen/hackbot'
-    continue-on-error: false
+    if: github.repository == 'akushonkamen/hackbot' && vars.DESKTOP_SIGNING_ENABLED == 'true'
+    continue-on-error: true
     env:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
@@ -447,6 +447,7 @@ jobs:
           path: packages/hackbot/dist
 
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        if: needs.sign-cli-windows.result == 'success'
         with:
           name: hackbot-cli-signed-windows
           path: packages/hackbot/dist
@@ -485,6 +486,8 @@ jobs:
             ${{ runner.os }}-apt-aur-
 
       - name: Setup SSH for AUR
+        if: secrets.AUR_KEY != ''
+        continue-on-error: true
         run: |
           sudo apt-get update
           sudo apt-get install -y pacman-package-manager
@@ -496,7 +499,7 @@ jobs:
           ssh-keyscan -H aur.archlinux.org >> ~/.ssh/known_hosts || true
 
       - name: Upload desktop release assets
-        if: needs.version.outputs.release
+        if: needs.version.outputs.release && needs.build-electron.result == 'success'
         env:
           GH_TOKEN: ${{ steps.committer.outputs.token }}
         run: |
@@ -516,6 +519,7 @@ jobs:
           GITHUB_TOKEN: ${{ steps.committer.outputs.token }}
           GH_REPO: ${{ needs.version.outputs.repo }}
           NPM_CONFIG_PROVENANCE: false
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           LATEST_YML_DIR: /tmp/latest-yml
           TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}

@@ -206,15 +206,19 @@ if (!Script.preview) {
   const token = process.env.GITHUB_TOKEN
   if (!token) {
     console.error("GITHUB_TOKEN is required to update homebrew tap")
-    process.exit(1)
-  }
-  const tap = `https://x-access-token:${token}@github.com/akushonkamen/homebrew-tap.git`
-  await $`rm -rf ./dist/homebrew-tap`
-  await $`git clone ${tap} ./dist/homebrew-tap`
-  await Bun.file("./dist/homebrew-tap/hackbot.rb").write(homebrewFormula)
-  await $`cd ./dist/homebrew-tap && git add hackbot.rb`
-  if ((await $`cd ./dist/homebrew-tap && git diff --cached --quiet`.nothrow()).exitCode !== 0) {
-    await $`cd ./dist/homebrew-tap && git commit -m "Update to v${Script.version}"`
-    await $`cd ./dist/homebrew-tap && git push`
+  } else {
+    const tap = `https://x-access-token:${token}@github.com/akushonkamen/homebrew-tap.git`
+    try {
+      await $`rm -rf ./dist/homebrew-tap`
+      await $`git clone ${tap} ./dist/homebrew-tap`
+      await Bun.file("./dist/homebrew-tap/hackbot.rb").write(homebrewFormula)
+      await $`cd ./dist/homebrew-tap && git add hackbot.rb`
+      if ((await $`cd ./dist/homebrew-tap && git diff --cached --quiet`.nothrow()).exitCode !== 0) {
+        await $`cd ./dist/homebrew-tap && git commit -m "Update to v${Script.version}"`
+        await $`cd ./dist/homebrew-tap && git push`
+      }
+    } catch (e) {
+      console.warn("homebrew-tap push failed (repo may not exist yet):", e)
+    }
   }
 }
