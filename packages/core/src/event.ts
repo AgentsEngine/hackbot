@@ -12,7 +12,7 @@ import { isDeepStrictEqual } from "node:util"
 import { Durable } from "@hackbot/schema/durable-event-manifest"
 
 export const ID = Event.ID
-export type ID = import("hackbot-schema/event").ID
+export type ID = import("@hackbot/schema/event").ID
 export type { Data, Definition, Payload } from "@hackbot/schema/event"
 
 export type Subscriber<D extends Definition = Definition> = (event: Payload<D>) => Effect.Effect<void>

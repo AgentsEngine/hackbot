@@ -1,6 +1,6 @@
-import "hackbot-ui/styles/tailwind"
-import "hackbot-session-ui/styles"
-import "hackbot-ui/v2/styles/tailwind.css"
+import "@hackbot/ui/styles/tailwind"
+import "@hackbot/session-ui/styles"
+import "@hackbot/ui/v2/styles/tailwind.css"
 
 import { createEffect, onCleanup, onMount } from "solid-js"
 import addonA11y from "@storybook/addon-a11y"
