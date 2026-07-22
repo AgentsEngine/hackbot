@@ -28,7 +28,7 @@ npm install hackbot-sdk
 Создайте экземпляр hackbot:
 
 ```javascript
-import { createOpencode } from "hackbot-sdk"
+import { createOpencode } from "@hackbot/sdk"
 
 const { client } = await createOpencode()
 ```
@@ -52,7 +52,7 @@ const { client } = await createOpencode()
 Вы можете передать объект конфигурации для настройки поведения. Экземпляр по-прежнему получает ваш `hackbot.json`, но вы можете переопределить или добавить встроенную конфигурацию:
 
 ```javascript
-import { createOpencode } from "hackbot-sdk"
+import { createOpencode } from "@hackbot/sdk"
 
 const hackbot = await createOpencode({
   hostname: "127.0.0.1",
@@ -72,7 +72,7 @@ hackbot.server.close()
 Если у вас уже есть работающий экземпляр hackbot, вы можете создать экземпляр клиента для подключения к нему:
 
 ```javascript
-import { createOpencodeClient } from "hackbot-sdk"
+import { createOpencodeClient } from "@hackbot/sdk"
 
 const client = createOpencodeClient({
   baseUrl: "http://localhost:4096",
@@ -96,7 +96,7 @@ const client = createOpencodeClient({
 SDK включает определения TypeScript для всех типов API. Импортируйте их напрямую:
 
 ```typescript
-import type { Session, Message, Part } from "hackbot-sdk"
+import type { Session, Message, Part } from "@hackbot/sdk"
 ```
 
 Все типы генерируются на основе спецификации OpenAPI сервера и доступны в файле <a href={typesUrl}>types</a>.

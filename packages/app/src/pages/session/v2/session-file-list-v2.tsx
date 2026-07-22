@@ -1,5 +1,5 @@
 import { FileIcon } from "@hackbot/ui/file-icon"
-import "hackbot-ui/v2/file-tree-v2.css"
+import "@hackbot/ui/v2/file-tree-v2.css"
 import { getDirectory, getFilename } from "@hackbot/core/util/path"
 import { createEffect, createMemo, createSignal, For, Show } from "solid-js"
 import { kindChange, kindLabel, type Kind } from "@/components/file-tree-v2"

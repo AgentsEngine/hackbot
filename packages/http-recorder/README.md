@@ -31,7 +31,7 @@ Effect `4.0.0-beta.74` has a known declaration error (`SchemaErrorTypeId` is mis
 import { assert, describe, it } from "@effect/vitest"
 import { Effect, Schema } from "effect"
 import { HttpClient, HttpClientRequest } from "effect/unstable/http"
-import { HttpRecorder } from "hackbot-http-recorder"
+import { HttpRecorder } from "@hackbot/http-recorder"
 
 const User = Schema.Struct({
   id: Schema.Number,
@@ -96,7 +96,7 @@ import { assert, it } from "@effect/vitest"
 import { NodeSocket } from "@effect/platform-node"
 import { Effect, Layer } from "effect"
 import { Socket } from "effect/unstable/socket"
-import { HttpRecorder } from "hackbot-http-recorder"
+import { HttpRecorder } from "@hackbot/http-recorder"
 
 const echo = Effect.gen(function* () {
   const socket = yield* Socket.Socket

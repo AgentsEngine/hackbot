@@ -3,11 +3,11 @@ import { InvalidRequestError, SessionNotFoundError } from "@hackbot/protocol/err
 import { HttpApiMiddleware } from "effect/unstable/httpapi"
 
 class LocationMiddleware extends HttpApiMiddleware.Service<LocationMiddleware>()(
-  "hackbot-client/LocationMiddleware",
+  "@hackbot/client/LocationMiddleware",
 ) {}
 
 class SessionLocationMiddleware extends HttpApiMiddleware.Service<SessionLocationMiddleware>()(
-  "hackbot-client/SessionLocationMiddleware",
+  "@hackbot/client/SessionLocationMiddleware",
   { error: [InvalidRequestError, SessionNotFoundError] },
 ) {}
 

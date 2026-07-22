@@ -28,7 +28,7 @@ npm install hackbot-sdk
 Utwórz instancję Hackbot:
 
 ```javascript
-import { createOpencode } from "hackbot-sdk"
+import { createOpencode } from "@hackbot/sdk"
 
 const { client } = await createOpencode()
 ```
@@ -52,7 +52,7 @@ Spowoduje to uruchomienie zarówno serwera, jak i klienta.
 Można przekazać obiekt konfiguracyjny, aby dostosować zachowanie. Instancja nadal pobiera `hackbot.json`, ale możesz zastąpić lub dodać konfigurację bezpośrednio:
 
 ```javascript
-import { createOpencode } from "hackbot-sdk"
+import { createOpencode } from "@hackbot/sdk"
 
 const hackbot = await createOpencode({
   hostname: "127.0.0.1",
@@ -72,7 +72,7 @@ hackbot.server.close()
 Jeśli masz już działającą instancję Hackbot, możesz utworzyć instancję klienta, aby się z nią połączyć:
 
 ```javascript
-import { createOpencodeClient } from "hackbot-sdk"
+import { createOpencodeClient } from "@hackbot/sdk"
 
 const client = createOpencodeClient({
   baseUrl: "http://localhost:4096",
@@ -96,7 +96,7 @@ const client = createOpencodeClient({
 Zestaw SDK zawiera definicje TypeScript dla wszystkich typów API. Zaimportuj je bezpośrednio:
 
 ```typescript
-import type { Session, Message, Part } from "hackbot-sdk"
+import type { Session, Message, Part } from "@hackbot/sdk"
 ```
 
 Wszystkie typy są generowane na podstawie specyfikacji OpenAPI serwera i dostępne w <a href={typesUrl}>pliku typów</a>.

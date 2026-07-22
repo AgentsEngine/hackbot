@@ -28,7 +28,7 @@ npm install hackbot-sdk
 创建一个 hackbot 实例：
 
 ```javascript
-import { createOpencode } from "hackbot-sdk"
+import { createOpencode } from "@hackbot/sdk"
 
 const { client } = await createOpencode()
 ```
@@ -52,7 +52,7 @@ const { client } = await createOpencode()
 你可以传入一个配置对象来自定义行为。实例仍然会读取你的 `hackbot.json`，但你可以通过内联方式覆盖或添加配置：
 
 ```javascript
-import { createOpencode } from "hackbot-sdk"
+import { createOpencode } from "@hackbot/sdk"
 
 const hackbot = await createOpencode({
   hostname: "127.0.0.1",
@@ -72,7 +72,7 @@ hackbot.server.close()
 如果你已经有一个正在运行的 hackbot 实例，可以创建一个客户端实例来连接它：
 
 ```javascript
-import { createOpencodeClient } from "hackbot-sdk"
+import { createOpencodeClient } from "@hackbot/sdk"
 
 const client = createOpencodeClient({
   baseUrl: "http://localhost:4096",
@@ -96,7 +96,7 @@ const client = createOpencodeClient({
 SDK 包含所有 API 类型的 TypeScript 定义。你可以直接导入它们：
 
 ```typescript
-import type { Session, Message, Part } from "hackbot-sdk"
+import type { Session, Message, Part } from "@hackbot/sdk"
 ```
 
 所有类型均根据服务器的 OpenAPI 规范生成，可在<a href={typesUrl}>类型文件</a>中查看。

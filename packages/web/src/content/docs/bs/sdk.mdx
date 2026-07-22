@@ -28,7 +28,7 @@ npm install hackbot-sdk
 Kreirajte instancu hackbot:
 
 ```javascript
-import { createOpencode } from "hackbot-sdk"
+import { createOpencode } from "@hackbot/sdk"
 
 const { client } = await createOpencode()
 ```
@@ -52,7 +52,7 @@ Ovo pokrece i server i klijent
 Mozete proslijediti konfiguracijski objekat za prilagodavanje ponasanja. Instanca i dalje ucitava `hackbot.json`, ali konfiguraciju mozete nadjacati ili dodati inline:
 
 ```javascript
-import { createOpencode } from "hackbot-sdk"
+import { createOpencode } from "@hackbot/sdk"
 
 const hackbot = await createOpencode({
   hostname: "127.0.0.1",
@@ -72,7 +72,7 @@ hackbot.server.close()
 Ako vec imate pokrenutu hackbot instancu, mozete napraviti klijentsku instancu i povezati se na nju:
 
 ```javascript
-import { createOpencodeClient } from "hackbot-sdk"
+import { createOpencodeClient } from "@hackbot/sdk"
 
 const client = createOpencodeClient({
   baseUrl: "http://localhost:4096",
@@ -96,7 +96,7 @@ const client = createOpencodeClient({
 SDK ukljucuje TypeScript definicije za sve API tipove. Uvezite ih direktno:
 
 ```typescript
-import type { Session, Message, Part } from "hackbot-sdk"
+import type { Session, Message, Part } from "@hackbot/sdk"
 ```
 
 Svi tipovi su generisani iz OpenAPI specifikacije servera i dostupni u <a href={typesUrl}>types datoteci</a>.

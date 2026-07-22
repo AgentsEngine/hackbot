@@ -439,7 +439,7 @@ const layer = Layer.effect(
             .install(dir, {
               add: [
                 {
-                  name: "hackbot-plugin",
+                  name: "@hackbot/plugin",
                   version: InstallationLocal ? undefined : InstallationVersion,
                 },
               ],

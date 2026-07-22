@@ -22,15 +22,15 @@ beforeAll(async () => {
       },
     }),
   }))
-  mock.module("hackbot-ui/collapsible", () => ({
+  mock.module("@hackbot/ui/collapsible", () => ({
     Collapsible: {
       Trigger: (props: { children?: unknown }) => props.children,
       Content: (props: { children?: unknown }) => props.children,
     },
   }))
-  mock.module("hackbot-ui/file-icon", () => ({ FileIcon: () => null }))
-  mock.module("hackbot-ui/icon", () => ({ Icon: () => null }))
-  mock.module("hackbot-ui/tooltip", () => ({ Tooltip: (props: { children?: unknown }) => props.children }))
+  mock.module("@hackbot/ui/file-icon", () => ({ FileIcon: () => null }))
+  mock.module("@hackbot/ui/icon", () => ({ Icon: () => null }))
+  mock.module("@hackbot/ui/tooltip", () => ({ Tooltip: (props: { children?: unknown }) => props.children }))
   const mod = await import("./file-tree")
   shouldListRoot = mod.shouldListRoot
   shouldListExpanded = mod.shouldListExpanded

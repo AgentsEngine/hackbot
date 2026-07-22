@@ -1,6 +1,6 @@
 import { useFile } from "@/context/file"
 import { FileIcon } from "@hackbot/ui/file-icon"
-import "hackbot-ui/v2/file-tree-v2.css"
+import "@hackbot/ui/v2/file-tree-v2.css"
 import {
   createEffect,
   createMemo,

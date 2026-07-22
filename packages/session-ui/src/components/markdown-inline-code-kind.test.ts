@@ -33,7 +33,7 @@ describe("inlineCodeKind", () => {
     expect(inlineCodeKind(`pnpm-lock.yaml`)).toBe("path")
     expect(inlineCodeKind(`packages/desktop-electron`)).toBe("path")
     expect(inlineCodeKind(`~/.config/opencode`)).toBe("path")
-    expect(inlineCodeKind(`hackbot-app`)).toBe("path")
+    expect(inlineCodeKind(`@hackbot/app`)).toBe("path")
     expect(inlineCodeKind(`session/status`)).toBe("path")
   })
 

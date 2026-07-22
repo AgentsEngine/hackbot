@@ -6,9 +6,9 @@ export type { IntegrationDraft, IntegrationMethodRegistration }
 
 export interface IntegrationHooks extends Hooks<{ transform: IntegrationDraft }> {
   readonly connection: {
-    readonly active: (integrationID: string) => Promise<import("hackbot-sdk/v2/types").ConnectionInfo | undefined>
+    readonly active: (integrationID: string) => Promise<import("@hackbot/sdk/v2/types").ConnectionInfo | undefined>
     readonly resolve: (
-      connection: import("hackbot-sdk/v2/types").ConnectionInfo,
+      connection: import("@hackbot/sdk/v2/types").ConnectionInfo,
     ) => Promise<CredentialValue | undefined>
   }
 }

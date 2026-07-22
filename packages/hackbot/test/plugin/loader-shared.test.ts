@@ -13,7 +13,7 @@ import { testEffect } from "../lib/effect"
 const { Plugin } = await import("../../src/plugin/index")
 const { PluginLoader } = await import("../../src/plugin/loader")
 const { readPackageThemes } = await import("../../src/plugin/shared")
-const { Npm } = await import("hackbot-core/npm")
+const { Npm } = await import("@hackbot/core/npm")
 const { TestConfig } = await import("../fixture/config")
 const { RuntimeFlags } = await import("../../src/effect/runtime-flags")
 

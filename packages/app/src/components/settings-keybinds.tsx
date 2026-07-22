@@ -16,7 +16,7 @@ import { useSettings } from "@/context/settings"
 import { SettingsList } from "./settings-list"
 import { SettingsListV2 } from "./settings-v2/parts/list"
 
-const IconV2 = lazy(() => import("hackbot-ui/v2/icon").then((module) => ({ default: module.Icon })))
+const IconV2 = lazy(() => import("@hackbot/ui/v2/icon").then((module) => ({ default: module.Icon })))
 
 const IS_MAC = typeof navigator === "object" && /(Mac|iPod|iPhone|iPad)/.test(navigator.platform)
 const PALETTE_ID = "command.palette"
