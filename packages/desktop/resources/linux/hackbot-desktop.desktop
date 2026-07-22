@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=OpenCode
+Exec=/opt/hackbot/ai.hackbot.desktop %U
+Terminal=false
+Type=Application
+Icon=ai.hackbot.desktop
+StartupWMClass=ai.hackbot.desktop
+NoDisplay=true
+Comment=Open source AI coding agent
+Categories=Development;

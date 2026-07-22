@@ -1,0 +1,17 @@
+{"t":0,"agent":"adb6dc1","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a9ea919","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a92c6d4","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"aa1509e","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a06c07f","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a7fab4e","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"aa4ff80","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"deep-dive"}
+{"t":0,"agent":"a372789","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a5ed534","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"aa01391","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"ae10e8e","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a170023","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"system","event":"keyword_detected","keyword":"ralph"}
+{"t":0,"agent":"system","event":"mode_change","mode_from":"none","mode_to":"ralph"}
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"oh-my-claudecode:ralph"}
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"oh-my-claudecode:cancel"}

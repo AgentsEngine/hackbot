@@ -1,7 +1,7 @@
-import { Location } from "@opencode-ai/core/location"
-import { LocationServiceMap } from "@opencode-ai/core/location-services"
-import { AbsolutePath } from "@opencode-ai/core/schema"
-import { WorkspaceV2 } from "@opencode-ai/core/workspace"
+import { Location } from "hackbot-core/location"
+import { LocationServiceMap } from "hackbot-core/location-services"
+import { AbsolutePath } from "hackbot-core/schema"
+import { WorkspaceV2 } from "hackbot-core/workspace"
 import { Effect, Layer } from "effect"
 import { HttpServerRequest } from "effect/unstable/http"
 import { HttpApiMiddleware } from "effect/unstable/httpapi"
@@ -9,7 +9,7 @@ import { HttpApiMiddleware } from "effect/unstable/httpapi"
 export type LocationServices = Layer.Success<ReturnType<(typeof LocationServiceMap.Service)["get"]>>
 
 export class LocationMiddleware extends HttpApiMiddleware.Service<LocationMiddleware, { provides: LocationServices }>()(
-  "@opencode/HttpApiLocation",
+  "@hackbot/HttpApiLocation",
 ) {}
 
 export function response<A, E, R>(data: Effect.Effect<A, E, R>) {

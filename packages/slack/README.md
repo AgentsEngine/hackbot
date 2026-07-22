@@ -1,4 +1,4 @@
-# @opencode-ai/slack
+# hackbot-slack
 
 Slack bot integration for opencode that creates threaded conversations.
 

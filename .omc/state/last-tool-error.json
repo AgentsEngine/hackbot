@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"which node npm pnpm yarn 2>&1; node --version 2>&1; npm --version 2>&1; ls ~/.bun/bin/bun 2>&1\",\"description\":\"Check available runtimes\"}",
+  "error": "Exit code 1\n/Users/yp1017/.nvm/versions/node/v24.14.0/bin/node\n/Users/yp1017/.nvm/versions/node/v24.14.0/bin/npm\n/Users/yp1017/.nvm/versions/node/v24.14.0/bin/pnpm\n/Users/yp1017/.nvm/versions/node/v24.14.0/bin/yarn\nv24.14.0\n11.9.0\nls: /Users/yp1017/.bun/bin/bun: No such file or directory",
+  "timestamp": "2026-07-21T11:35:54.006Z",
+  "retry_count": 2
+}

@@ -1,6 +1,6 @@
 import { createServer } from "node:http"
-import type { IntegrationOAuthMethodRegistration } from "@opencode-ai/plugin/v2/effect/integration"
-import { define } from "@opencode-ai/plugin/v2/effect/plugin"
+import type { IntegrationOAuthMethodRegistration } from "hackbot-plugin/v2/effect/integration"
+import { define } from "hackbot-plugin/v2/effect/plugin"
 import { Deferred, Effect } from "effect"
 import type { Scope } from "effect"
 import { Credential } from "../../credential"
@@ -189,7 +189,7 @@ export const OpenAIPlugin = define({
 } satisfies PluginInternal.Plugin<PluginInternal.Requirements | Scope.Scope>)
 
 function headers(contentType: string) {
-  return { "Content-Type": contentType, "User-Agent": `opencode/${InstallationVersion}` }
+  return { "Content-Type": contentType, "User-Agent": `hackbot/${InstallationVersion}` }
 }
 
 function exchange(code: string, redirect: string, pkce: Pkce) {

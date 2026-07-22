@@ -1,0 +1,454 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1784633430426,
+  "projectRoot": "/Users/yp1017/projects/hackbot",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": "npm test",
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "bun run --cwd packages/hackbot --conditions=browser src/index.ts",
+      "dev:desktop": "bun --cwd packages/desktop dev",
+      "dev:web": "bun --cwd packages/app dev",
+      "dev:console": "ulimit -n 10240 2>/dev/null; bun run --cwd packages/console/app dev",
+      "dev:stats": "bun sst shell --stage=production -- bun run --cwd packages/stats/app dev",
+      "dev:storybook": "bun --cwd packages/storybook storybook",
+      "lint": "oxlint",
+      "typecheck": "bun turbo typecheck",
+      "upgrade-opentui": "bun run script/upgrade-opentui.ts",
+      "postinstall": "bun run --cwd packages/core fix-node-pty",
+      "prepare": "husky",
+      "random": "echo 'Random script'",
+      "sso": "aws sso login --sso-session=opencode --no-browser",
+      "translate:app": "bun run script/translate-app.ts",
+      "test": "echo 'do not run tests from root' && exit 1"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": true,
+    "workspaces": [
+      "packages/*",
+      "packages/console/*",
+      "packages/stats/*",
+      "packages/sdk/js",
+      "packages/slack"
+    ],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "dev",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "artifacts": {
+      "path": "artifacts",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1784633430409,
+      "keyFiles": []
+    },
+    "github": {
+      "path": "github",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1784633430409,
+      "keyFiles": [
+        "README.md",
+        "action.yml",
+        "bun.lock",
+        "index.ts",
+        "package.json"
+      ]
+    },
+    "infra": {
+      "path": "infra",
+      "purpose": null,
+      "fileCount": 8,
+      "lastAccessed": 1784633430412,
+      "keyFiles": [
+        "app.ts",
+        "console.ts",
+        "enterprise.ts",
+        "lake.ts",
+        "monitoring.ts"
+      ]
+    },
+    "nix": {
+      "path": "nix",
+      "purpose": null,
+      "fileCount": 4,
+      "lastAccessed": 1784633430412,
+      "keyFiles": [
+        "desktop.nix",
+        "hashes.json",
+        "node_modules.nix",
+        "opencode.nix"
+      ]
+    },
+    "packages": {
+      "path": "packages",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1784633430412,
+      "keyFiles": []
+    },
+    "patches": {
+      "path": "patches",
+      "purpose": null,
+      "fileCount": 14,
+      "lastAccessed": 1784633430412,
+      "keyFiles": [
+        "@ai-sdk%2Fgoogle@3.0.73.patch",
+        "@ai-sdk%2Fxai@3.0.102.patch",
+        "@ff-labs%2Ffff-bun@0.9.3.patch",
+        "@modelcontextprotocol%2Fsdk@1.29.0.patch",
+        "@npmcli%2Fagent@4.0.2.patch"
+      ]
+    },
+    "perf": {
+      "path": "perf",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1784633430412,
+      "keyFiles": [
+        "test-suite.md"
+      ]
+    },
+    "script": {
+      "path": "script",
+      "purpose": null,
+      "fileCount": 16,
+      "lastAccessed": 1784633430412,
+      "keyFiles": [
+        "beta.ts",
+        "changelog.ts",
+        "duplicate-pr.ts",
+        "format.ts",
+        "generate.ts"
+      ]
+    },
+    "sdks": {
+      "path": "sdks",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1784633430412,
+      "keyFiles": []
+    },
+    "specs": {
+      "path": "specs",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1784633430413,
+      "keyFiles": [
+        "project.md",
+        "tui-package.md"
+      ]
+    },
+    "nix/scripts": {
+      "path": "nix/scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 2,
+      "lastAccessed": 1784633430413,
+      "keyFiles": [
+        "canonicalize-node-modules.ts",
+        "normalize-bun-binaries.ts"
+      ]
+    },
+    "packages/app": {
+      "path": "packages/app",
+      "purpose": "Application code",
+      "fileCount": 13,
+      "lastAccessed": 1784633430414,
+      "keyFiles": [
+        "AGENTS.md",
+        "README.md",
+        "bunfig.toml"
+      ]
+    },
+    "packages/docs": {
+      "path": "packages/docs",
+      "purpose": "Documentation",
+      "fileCount": 8,
+      "lastAccessed": 1784633430414,
+      "keyFiles": [
+        "LICENSE",
+        "README.md",
+        "development.mdx"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "packages/tui/src/component/dialog-model.tsx",
+      "accessCount": 10,
+      "lastAccessed": 1784638974905,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/component/dialog-provider.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1784638949278,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 6,
+      "lastAccessed": 1784640241056,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/context/theme.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1784640993012,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/logo.ts",
+      "accessCount": 4,
+      "lastAccessed": 1784637884228,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/theme/index.ts",
+      "accessCount": 4,
+      "lastAccessed": 1784640984297,
+      "type": "file"
+    },
+    {
+      "path": "packages/hackbot/package.json",
+      "accessCount": 3,
+      "lastAccessed": 1784633497019,
+      "type": "file"
+    },
+    {
+      "path": "script/beta.ts",
+      "accessCount": 3,
+      "lastAccessed": 1784640265059,
+      "type": "file"
+    },
+    {
+      "path": "script/raw-changelog.ts",
+      "accessCount": 3,
+      "lastAccessed": 1784640265433,
+      "type": "file"
+    },
+    {
+      "path": "packages/hackbot/src/index.ts",
+      "accessCount": 3,
+      "lastAccessed": 1784640831243,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/util/error.ts",
+      "accessCount": 3,
+      "lastAccessed": 1784641007338,
+      "type": "file"
+    },
+    {
+      "path": "packages/desktop/scripts/copy-metainfo.ts",
+      "accessCount": 3,
+      "lastAccessed": 1784644012417,
+      "type": "file"
+    },
+    {
+      "path": "LICENSE",
+      "accessCount": 2,
+      "lastAccessed": 1784633474202,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 2,
+      "lastAccessed": 1784633497214,
+      "type": "file"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "accessCount": 2,
+      "lastAccessed": 1784633523644,
+      "type": "file"
+    },
+    {
+      "path": "SECURITY.md",
+      "accessCount": 2,
+      "lastAccessed": 1784633523888,
+      "type": "file"
+    },
+    {
+      "path": "packages/web/package.json",
+      "accessCount": 2,
+      "lastAccessed": 1784633866221,
+      "type": "file"
+    },
+    {
+      "path": "packages/hackbot/src/session/retry.ts",
+      "accessCount": 2,
+      "lastAccessed": 1784638413405,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/feature-plugins/home/tips-view.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1784638413615,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/component/prompt/index.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1784639125419,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/context/local.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1784639144443,
+      "type": "file"
+    },
+    {
+      "path": "script/publish.ts",
+      "accessCount": 2,
+      "lastAccessed": 1784640264654,
+      "type": "file"
+    },
+    {
+      "path": "script/generate.ts",
+      "accessCount": 2,
+      "lastAccessed": 1784640265618,
+      "type": "file"
+    },
+    {
+      "path": "packages/hackbot/src/temporary.ts",
+      "accessCount": 2,
+      "lastAccessed": 1784640831430,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/context/editor.ts",
+      "accessCount": 2,
+      "lastAccessed": 1784640915936,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/component/dialog-status.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1784641007548,
+      "type": "file"
+    },
+    {
+      "path": "packages/hackbot/src/cli/cmd/pr.ts",
+      "accessCount": 2,
+      "lastAccessed": 1784641216887,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/plugin/agent.ts",
+      "accessCount": 2,
+      "lastAccessed": 1784641866986,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/global.ts",
+      "accessCount": 2,
+      "lastAccessed": 1784644434516,
+      "type": "file"
+    },
+    {
+      "path": "install",
+      "accessCount": 1,
+      "lastAccessed": 1784633457926,
+      "type": "file"
+    },
+    {
+      "path": ".husky/pre-push",
+      "accessCount": 1,
+      "lastAccessed": 1784633457987,
+      "type": "file"
+    },
+    {
+      "path": "packages/hackbot/src/cli/cmd/run/splash.ts",
+      "accessCount": 1,
+      "lastAccessed": 1784636737027,
+      "type": "file"
+    },
+    {
+      "path": "packages/hackbot/src/cli/logo.ts",
+      "accessCount": 1,
+      "lastAccessed": 1784636745975,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/component/logo.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1784636787382,
+      "type": "file"
+    },
+    {
+      "path": "packages/tui/src/feature-plugins/sidebar/footer.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1784639110675,
+      "type": "file"
+    },
+    {
+      "path": "packages/hackbot/src/skill/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1784640808709,
+      "type": "file"
+    },
+    {
+      "path": "packages/console/app/src/i18n/en.ts",
+      "accessCount": 1,
+      "lastAccessed": 1784641897044,
+      "type": "file"
+    },
+    {
+      "path": "packages/ui/src/theme/default-themes.ts",
+      "accessCount": 1,
+      "lastAccessed": 1784643858229,
+      "type": "file"
+    },
+    {
+      "path": "packages/ui/src/context/marked.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1784643964543,
+      "type": "file"
+    },
+    {
+      "path": "packages/core/src/config.ts",
+      "accessCount": 1,
+      "lastAccessed": 1784644195044,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

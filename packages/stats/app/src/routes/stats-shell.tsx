@@ -8,8 +8,8 @@ import { route, type Locale } from "../lib/language"
 export type HeaderLink = { href: string; label: string }
 
 export const githubLink = {
-  href: "https://github.com/anomalyco/opencode",
-  apiHref: "https://api.github.com/repos/anomalyco/opencode",
+  href: "https://github.com/hackbot/hackbot",
+  apiHref: "https://api.github.com/repos/hackbot/hackbot",
   fallbackStars: "150K",
 }
 export const themePreferences = ["dark", "light", "system"] as const
@@ -133,7 +133,7 @@ export function Header(props: { githubStars: string; links?: readonly HeaderLink
             <span>[{props.githubStars}]</span>
           </a>
           <a data-slot="header-button" data-variant="contrast" href="https://opencode.ai/">
-            <strong>{i18n.t("header.tryOpenCode")}</strong>
+            <strong>{i18n.t("header.tryhackbot")}</strong>
           </a>
           <button
             data-slot="menu-button"

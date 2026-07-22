@@ -1,35 +1,35 @@
 import { expect, test } from "bun:test"
 import { Schema } from "effect"
-import { AgentV2 } from "@opencode-ai/core/agent"
-import { ModelV2 } from "@opencode-ai/core/model"
-import { SessionV2 } from "@opencode-ai/core/session"
-import { Agent } from "@opencode-ai/schema/agent"
-import { Location } from "@opencode-ai/schema/location"
-import { Model } from "@opencode-ai/schema/model"
-import { AgentAttachment, FileAttachment, Prompt, Source } from "@opencode-ai/schema/prompt"
-import { Provider } from "@opencode-ai/schema/provider"
-import { Project } from "@opencode-ai/schema/project"
-import { ProjectDirectories } from "@opencode-ai/schema/project-directories"
-import { PermissionV1 } from "@opencode-ai/schema/permission-v1"
-import { Session } from "@opencode-ai/schema/session"
-import { SessionInput } from "@opencode-ai/schema/session-input"
-import { SessionMessage } from "@opencode-ai/schema/session-message"
-import { Workspace } from "@opencode-ai/schema/workspace"
-import { Command } from "@opencode-ai/schema/command"
-import { Connection } from "@opencode-ai/schema/connection"
-import { Credential } from "@opencode-ai/schema/credential"
-import { FileSystem } from "@opencode-ai/schema/filesystem"
-import { Integration } from "@opencode-ai/schema/integration"
-import { LLM } from "@opencode-ai/schema/llm"
-import { Permission } from "@opencode-ai/schema/permission"
-import { Plugin } from "@opencode-ai/schema/plugin"
-import { Pty } from "@opencode-ai/schema/pty"
-import { Reference } from "@opencode-ai/schema/reference"
-import { SessionTodo } from "@opencode-ai/schema/session-todo"
-import { Skill } from "@opencode-ai/schema/skill"
-import { AbsolutePath, DateTimeUtcFromMillis, optional, statics } from "@opencode-ai/schema/schema"
-import { ProviderV2 } from "@opencode-ai/core/provider"
-import { PluginV2 } from "@opencode-ai/core/plugin"
+import { AgentV2 } from "hackbot-core/agent"
+import { ModelV2 } from "hackbot-core/model"
+import { SessionV2 } from "hackbot-core/session"
+import { Agent } from "hackbot-schema/agent"
+import { Location } from "hackbot-schema/location"
+import { Model } from "hackbot-schema/model"
+import { AgentAttachment, FileAttachment, Prompt, Source } from "hackbot-schema/prompt"
+import { Provider } from "hackbot-schema/provider"
+import { Project } from "hackbot-schema/project"
+import { ProjectDirectories } from "hackbot-schema/project-directories"
+import { PermissionV1 } from "hackbot-schema/permission-v1"
+import { Session } from "hackbot-schema/session"
+import { SessionInput } from "hackbot-schema/session-input"
+import { SessionMessage } from "hackbot-schema/session-message"
+import { Workspace } from "hackbot-schema/workspace"
+import { Command } from "hackbot-schema/command"
+import { Connection } from "hackbot-schema/connection"
+import { Credential } from "hackbot-schema/credential"
+import { FileSystem } from "hackbot-schema/filesystem"
+import { Integration } from "hackbot-schema/integration"
+import { LLM } from "hackbot-schema/llm"
+import { Permission } from "hackbot-schema/permission"
+import { Plugin } from "hackbot-schema/plugin"
+import { Pty } from "hackbot-schema/pty"
+import { Reference } from "hackbot-schema/reference"
+import { SessionTodo } from "hackbot-schema/session-todo"
+import { Skill } from "hackbot-schema/skill"
+import { AbsolutePath, DateTimeUtcFromMillis, optional, statics } from "hackbot-schema/schema"
+import { ProviderV2 } from "hackbot-core/provider"
+import { PluginV2 } from "hackbot-core/plugin"
 
 test("Core reuses the canonical shared schemas", async () => {
   const [
@@ -55,27 +55,27 @@ test("Core reuses the canonical shared schemas", async () => {
     coreSchema,
     coreWorkspace,
   ] = await Promise.all([
-    import("@opencode-ai/core/command"),
-    import("@opencode-ai/core/integration/connection"),
-    import("@opencode-ai/core/credential"),
-    import("@opencode-ai/core/filesystem"),
-    import("@opencode-ai/core/integration"),
-    import("@opencode-ai/core/location"),
-    import("@opencode-ai/llm"),
-    import("@opencode-ai/core/permission"),
-    import("@opencode-ai/core/v1/permission"),
-    import("@opencode-ai/core/project/copy"),
-    import("@opencode-ai/core/pty"),
-    import("@opencode-ai/core/project/schema"),
-    import("@opencode-ai/core/reference"),
-    import("@opencode-ai/core/session/input"),
-    import("@opencode-ai/core/session/message"),
-    import("@opencode-ai/core/session/todo"),
-    import("@opencode-ai/core/session/prompt"),
-    import("@opencode-ai/core/skill"),
-    import("@opencode-ai/core/v2-schema"),
-    import("@opencode-ai/core/schema"),
-    import("@opencode-ai/core/workspace"),
+    import("hackbot-core/command"),
+    import("hackbot-core/integration/connection"),
+    import("hackbot-core/credential"),
+    import("hackbot-core/filesystem"),
+    import("hackbot-core/integration"),
+    import("hackbot-core/location"),
+    import("hackbot-llm"),
+    import("hackbot-core/permission"),
+    import("hackbot-core/v1/permission"),
+    import("hackbot-core/project/copy"),
+    import("hackbot-core/pty"),
+    import("hackbot-core/project/schema"),
+    import("hackbot-core/reference"),
+    import("hackbot-core/session/input"),
+    import("hackbot-core/session/message"),
+    import("hackbot-core/session/todo"),
+    import("hackbot-core/session/prompt"),
+    import("hackbot-core/skill"),
+    import("hackbot-core/v2-schema"),
+    import("hackbot-core/schema"),
+    import("hackbot-core/workspace"),
   ])
 
   const schemas = [

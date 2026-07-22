@@ -9,6 +9,15 @@ import * as fuzzysort from "fuzzysort"
 import { useConnected } from "./use-connected"
 import { useSync } from "../context/sync"
 
+const PROVIDER_DISPLAY_NAME: Record<string, string> = {
+  opencode: "hackbot Zen",
+  "opencode-go": "hackbot Go",
+}
+
+function providerDisplayName(id: string, fallback: string): string {
+  return PROVIDER_DISPLAY_NAME[id] ?? fallback
+}
+
 export function DialogModel(props: { providerID?: string }) {
   const local = useLocal()
   const sync = useSync()

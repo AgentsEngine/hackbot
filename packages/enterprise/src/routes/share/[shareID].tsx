@@ -1,31 +1,31 @@
-import { Message, Model, Part, Session, SessionStatus, SnapshotFileDiff, UserMessage } from "@opencode-ai/sdk/v2"
-import { SessionTurn } from "@opencode-ai/session-ui/session-turn"
-import { SessionReview } from "@opencode-ai/session-ui/session-review"
-import { DataProvider } from "@opencode-ai/session-ui/context"
-import { FileComponentProvider } from "@opencode-ai/ui/context/file"
-import { WorkerPoolProvider } from "@opencode-ai/ui/context/worker-pool"
+import { Message, Model, Part, Session, SessionStatus, SnapshotFileDiff, UserMessage } from "hackbot-sdk/v2"
+import { SessionTurn } from "hackbot-session-ui/session-turn"
+import { SessionReview } from "hackbot-session-ui/session-review"
+import { DataProvider } from "hackbot-session-ui/context"
+import { FileComponentProvider } from "hackbot-ui/context/file"
+import { WorkerPoolProvider } from "hackbot-ui/context/worker-pool"
 import { createAsync, query, useParams } from "@solidjs/router"
 import { createMemo, createSignal, ErrorBoundary, For, Match, Show, Switch } from "solid-js"
 import { Share } from "~/core/share"
-import { Logo, Mark } from "@opencode-ai/ui/logo"
-import { IconButton } from "@opencode-ai/ui/icon-button"
-import { ProviderIcon } from "@opencode-ai/ui/provider-icon"
-import { iife } from "@opencode-ai/core/util/iife"
-import { Binary } from "@opencode-ai/core/util/binary"
-import { NamedError } from "@opencode-ai/core/util/error"
+import { Logo, Mark } from "hackbot-ui/logo"
+import { IconButton } from "hackbot-ui/icon-button"
+import { ProviderIcon } from "hackbot-ui/provider-icon"
+import { iife } from "hackbot-core/util/iife"
+import { Binary } from "hackbot-core/util/binary"
+import { NamedError } from "hackbot-core/util/error"
 import { DateTime } from "luxon"
 import { createStore } from "solid-js/store"
 import NotFound from "../[...404]"
-import { Tabs } from "@opencode-ai/ui/tabs"
-import { MessageNav } from "@opencode-ai/session-ui/message-nav"
-import { FileSSR } from "@opencode-ai/session-ui/file-ssr"
+import { Tabs } from "hackbot-ui/tabs"
+import { MessageNav } from "hackbot-session-ui/message-nav"
+import { FileSSR } from "hackbot-session-ui/file-ssr"
 import { clientOnly } from "@solidjs/start"
 import { Meta, Title } from "@solidjs/meta"
 import { Base64 } from "js-base64"
 import { getRequestEvent } from "solid-js/web"
 
 const ClientOnlyWorkerPoolProvider = clientOnly(() =>
-  import("@opencode-ai/session-ui/pierre/worker").then((m) => ({
+  import("hackbot-session-ui/pierre/worker").then((m) => ({
     default: (props: { children: any }) => (
       <WorkerPoolProvider pools={m.getWorkerPools()}>{props.children}</WorkerPoolProvider>
     ),
@@ -281,7 +281,7 @@ export default function () {
                             <div class="flex gap-3 items-center">
                               <IconButton
                                 as={"a"}
-                                href="https://github.com/anomalyco/opencode"
+                                href="https://github.com/hackbot/hackbot"
                                 target="_blank"
                                 icon="github"
                                 variant="ghost"

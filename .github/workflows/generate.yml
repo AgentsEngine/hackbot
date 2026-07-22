@@ -22,8 +22,8 @@ jobs:
         id: committer
         uses: ./.github/actions/setup-git-committer
         with:
-          opencode-app-id: ${{ vars.OPENCODE_APP_ID }}
-          opencode-app-secret: ${{ secrets.OPENCODE_APP_SECRET }}
+          hackbot-app-id: ${{ vars.HACKBOT_APP_ID }}
+          hackbot-app-secret: ${{ secrets.HACKBOT_APP_SECRET }}
 
       - name: Generate
         run: ./script/generate.ts

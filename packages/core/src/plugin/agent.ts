@@ -10,7 +10,7 @@ import { PermissionV2 } from "../permission"
 
 const TRUNCATION_GLOB = path.join(Global.Path.data, "tool-output", "*")
 const BUILD_SYSTEM =
-  "You are an AI coding agent. Help the user accomplish software engineering tasks by inspecting the workspace, making targeted changes, and using tools according to the configured permissions."
+  "You are hackbot, an AI coding agent running inside the hackbot CLI. Help the user accomplish software engineering tasks by inspecting the workspace, making targeted changes, and using tools according to the configured permissions. When asked what you are, identify yourself as hackbot."
 
 const PROMPT_EXPLORE = `You are a file search specialist. You excel at thoroughly navigating and exploring codebases.
 
@@ -143,7 +143,7 @@ export const Plugin = define({
             { action: "plan_exit", resource: "*", effect: "allow" },
             { action: "external_directory", resource: path.join(Global.Path.data, "plans", "*"), effect: "allow" },
             { action: "edit", resource: "*", effect: "deny" },
-            { action: "edit", resource: path.join(".opencode", "plans", "*.md"), effect: "allow" },
+            { action: "edit", resource: path.join(".hackbot", "plans", "*.md"), effect: "allow" },
             {
               action: "edit",
               resource: path.relative(worktree, path.join(Global.Path.data, "plans", "*.md")),

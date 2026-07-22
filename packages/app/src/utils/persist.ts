@@ -1,6 +1,6 @@
 import { Platform, usePlatform } from "@/context/platform"
 import { makePersisted, type AsyncStorage, type SyncStorage } from "@solid-primitives/storage"
-import { checksum } from "@opencode-ai/core/util/encode"
+import { checksum } from "hackbot-core/util/encode"
 import { createResource, type Accessor } from "solid-js"
 import type { SetStoreFunction, Store } from "solid-js/store"
 import { pathKey } from "@/utils/path-key"
@@ -24,9 +24,9 @@ type PersistTarget = {
 }
 
 const LEGACY_STORAGE = "default.dat"
-const GLOBAL_STORAGE = "opencode.global.dat"
-const WINDOW_STORAGE = "opencode.window"
-const LOCAL_PREFIX = "opencode."
+const GLOBAL_STORAGE = "hackbot.global.dat"
+const WINDOW_STORAGE = "hackbot.window"
+const LOCAL_PREFIX = "hackbot."
 const fallback = new Map<string, boolean>()
 
 const CACHE_MAX_ENTRIES = 500

@@ -1,21 +1,21 @@
-import { Database } from "@opencode-ai/core/database/database"
-import { LocationServiceMap } from "@opencode-ai/core/location-services"
-import { Location } from "@opencode-ai/core/location"
-import { AbsolutePath } from "@opencode-ai/core/schema"
-import { SessionV2 } from "@opencode-ai/core/session"
-import { SessionTable } from "@opencode-ai/core/session/sql"
-import { WorkspaceV2 } from "@opencode-ai/core/workspace"
+import { Database } from "hackbot-core/database/database"
+import { LocationServiceMap } from "hackbot-core/location-services"
+import { Location } from "hackbot-core/location"
+import { AbsolutePath } from "hackbot-core/schema"
+import { SessionV2 } from "hackbot-core/session"
+import { SessionTable } from "hackbot-core/session/sql"
+import { WorkspaceV2 } from "hackbot-core/workspace"
 import { eq } from "drizzle-orm"
 import { Effect, Layer, Schema } from "effect"
 import { HttpRouter } from "effect/unstable/http"
 import { HttpApiMiddleware } from "effect/unstable/httpapi"
-import { InvalidRequestError, SessionNotFoundError } from "@opencode-ai/protocol/errors"
+import { InvalidRequestError, SessionNotFoundError } from "hackbot-protocol/errors"
 import type { LocationServices } from "../location"
 
 export class SessionLocationMiddleware extends HttpApiMiddleware.Service<
   SessionLocationMiddleware,
   { provides: LocationServices }
->()("@opencode/HttpApiSessionLocation", {
+>()("@hackbot/HttpApiSessionLocation", {
   error: [InvalidRequestError, SessionNotFoundError],
 }) {}
 

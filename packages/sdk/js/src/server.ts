@@ -35,7 +35,7 @@ export async function createOpencodeServer(options?: ServerOptions) {
   const proc = launch(`opencode`, args, {
     env: {
       ...process.env,
-      OPENCODE_CONFIG_CONTENT: JSON.stringify(options.config ?? {}),
+      HACKBOT_CONFIG_CONTENT: JSON.stringify(options.config ?? {}),
     },
   })
   let clear = () => {}
@@ -53,7 +53,7 @@ export async function createOpencodeServer(options?: ServerOptions) {
       output += chunk.toString()
       const lines = output.split("\n")
       for (const line of lines) {
-        if (line.startsWith("opencode server listening")) {
+        if (line.startsWith("hackbot server listening")) {
           const match = line.match(/on\s+(https?:\/\/[^\s]+)/)
           if (!match) {
             clear()
@@ -119,7 +119,7 @@ export function createOpencodeTui(options?: TuiOptions) {
     stdio: "inherit",
     env: {
       ...process.env,
-      OPENCODE_CONFIG_CONTENT: JSON.stringify(options?.config ?? {}),
+      HACKBOT_CONFIG_CONTENT: JSON.stringify(options?.config ?? {}),
     },
   })
 

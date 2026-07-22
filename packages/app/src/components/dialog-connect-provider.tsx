@@ -1,17 +1,17 @@
-import type { ProviderAuthAuthorization, ProviderAuthMethod } from "@opencode-ai/sdk/v2/client"
-import { Button } from "@opencode-ai/ui/button"
-import { useDialog } from "@opencode-ai/ui/context/dialog"
-import { Dialog } from "@opencode-ai/ui/dialog"
-import { Icon } from "@opencode-ai/ui/icon"
-import { IconButton } from "@opencode-ai/ui/icon-button"
-import { List, type ListRef } from "@opencode-ai/ui/list"
-import { ProviderIcon } from "@opencode-ai/ui/provider-icon"
-import { Spinner } from "@opencode-ai/ui/spinner"
-import { Tag } from "@opencode-ai/ui/tag"
-import { TextField } from "@opencode-ai/ui/text-field"
-import { ButtonV2 } from "@opencode-ai/ui/v2/button-v2"
-import { DialogBody, DialogHeader, DialogTitle, DialogV2 } from "@opencode-ai/ui/v2/dialog-v2"
-import { TextInputV2 } from "@opencode-ai/ui/v2/text-input-v2"
+import type { ProviderAuthAuthorization, ProviderAuthMethod } from "hackbot-sdk/v2/client"
+import { Button } from "hackbot-ui/button"
+import { useDialog } from "hackbot-ui/context/dialog"
+import { Dialog } from "hackbot-ui/dialog"
+import { Icon } from "hackbot-ui/icon"
+import { IconButton } from "hackbot-ui/icon-button"
+import { List, type ListRef } from "hackbot-ui/list"
+import { ProviderIcon } from "hackbot-ui/provider-icon"
+import { Spinner } from "hackbot-ui/spinner"
+import { Tag } from "hackbot-ui/tag"
+import { TextField } from "hackbot-ui/text-field"
+import { ButtonV2 } from "hackbot-ui/v2/button-v2"
+import { DialogBody, DialogHeader, DialogTitle, DialogV2 } from "hackbot-ui/v2/dialog-v2"
+import { TextInputV2 } from "hackbot-ui/v2/text-input-v2"
 import { showToast } from "@/utils/toast"
 import {
   type Accessor,
@@ -875,7 +875,7 @@ function ProviderConnection(props: {
               <div>
                 {language.t("provider.connect.opencodeZen.visit.prefix")}
                 <Link
-                  href="https://opencode.ai/zen"
+                  href="https://example.com/zen"
                   class="text-v2-text-text-base focus-visible:rounded-xs focus-visible:outline-2 focus-visible:outline-v2-border-border-focus"
                 >
                   {language.t("provider.connect.opencodeZen.visit.link")}
@@ -923,7 +923,7 @@ function ProviderConnection(props: {
               <div class="text-14-regular text-text-base">{language.t("provider.connect.opencodeZen.line2")}</div>
               <div class="text-14-regular text-text-base">
                 {language.t("provider.connect.opencodeZen.visit.prefix")}
-                <Link href="https://opencode.ai/zen" tabIndex={-1}>
+                <Link href="https://example.com/zen" tabIndex={-1}>
                   {language.t("provider.connect.opencodeZen.visit.link")}
                 </Link>
                 {language.t("provider.connect.opencodeZen.visit.suffix")}
