@@ -1,5 +1,5 @@
 {
-  "name": "hackbot-function",
+  "name": "@hackbot/function",
   "version": "1.18.4",
   "$schema": "https://json.schemastore.org/package.json",
   "private": true,

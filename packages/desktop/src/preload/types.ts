@@ -1,6 +1,6 @@
-import type { DesktopMenuAction } from "hackbot-app/desktop-menu"
-import type { WslServersPlatform } from "hackbot-app/wsl/types"
-import type { UpdaterState } from "hackbot-app/updater"
+import type { DesktopMenuAction } from "@hackbot/app/desktop-menu"
+import type { WslServersPlatform } from "@hackbot/app/wsl/types"
+import type { UpdaterState } from "@hackbot/app/updater"
 export type {
   WslDistroProbe,
   WslInstalledDistro,
@@ -13,7 +13,7 @@ export type {
   WslServerRuntime,
   WslServersEvent,
   WslServersState,
-} from "hackbot-app/wsl/types"
+} from "@hackbot/app/wsl/types"
 
 export type ServerReadyData = {
   url: string

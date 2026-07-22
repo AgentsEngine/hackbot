@@ -6,7 +6,7 @@ import {
   type ContentPart,
   type Model,
   type ProviderMetadata,
-} from "hackbot-llm"
+} from "@hackbot/llm"
 import { SessionMessage } from "../message"
 import type { FileAttachment } from "../prompt"
 

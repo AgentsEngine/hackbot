@@ -19,7 +19,7 @@ export const verifyPackage = async (archive: string) => {
     )
     await writeFile(
       path.join(directory, "consumer.ts"),
-      `import { HttpRecorder } from "hackbot-http-recorder"
+      `import { HttpRecorder } from "@hackbot/http-recorder"
 import { NodeSocket } from "@effect/platform-node"
 import { Layer } from "effect"
 import { HttpClient } from "effect/unstable/http"

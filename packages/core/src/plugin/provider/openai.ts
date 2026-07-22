@@ -1,6 +1,6 @@
 import { createServer } from "node:http"
-import type { IntegrationOAuthMethodRegistration } from "hackbot-plugin/v2/effect/integration"
-import { define } from "hackbot-plugin/v2/effect/plugin"
+import type { IntegrationOAuthMethodRegistration } from "@hackbot/plugin/v2/effect/integration"
+import { define } from "@hackbot/plugin/v2/effect/plugin"
 import { Deferred, Effect } from "effect"
 import type { Scope } from "effect"
 import { Credential } from "../../credential"

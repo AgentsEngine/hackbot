@@ -1,5 +1,5 @@
-import { NamedError } from "hackbot-core/util/error"
-import { ConfigErrorV1 } from "hackbot-core/v1/config/error"
+import { NamedError } from "@hackbot/core/util/error"
+import { ConfigErrorV1 } from "@hackbot/core/v1/config/error"
 import { Cause, Effect } from "effect"
 import { HttpRouter, HttpServerError, HttpServerRespondable, HttpServerResponse } from "effect/unstable/http"
 

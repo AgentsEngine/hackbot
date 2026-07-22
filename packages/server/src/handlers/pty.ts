@@ -1,19 +1,19 @@
-import { Pty } from "hackbot-core/pty"
-import { PtyProtocol } from "hackbot-core/pty/protocol"
-import { PtyTicket } from "hackbot-core/pty/ticket"
-import { Location } from "hackbot-core/location"
+import { Pty } from "@hackbot/core/pty"
+import { PtyProtocol } from "@hackbot/core/pty/protocol"
+import { PtyTicket } from "@hackbot/core/pty/ticket"
+import { Location } from "@hackbot/core/location"
 import { Effect, Queue } from "effect"
 import { HttpServerRequest, HttpServerResponse } from "effect/unstable/http"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import * as Socket from "effect/unstable/socket/Socket"
 import { Api } from "../api"
 import { CorsConfig, isAllowedRequestOrigin } from "../cors"
-import { ForbiddenError, PtyNotFoundError } from "hackbot-protocol/errors"
+import { ForbiddenError, PtyNotFoundError } from "@hackbot/protocol/errors"
 import {
   PTY_CONNECT_TICKET_QUERY,
   PTY_CONNECT_TOKEN_HEADER,
   PTY_CONNECT_TOKEN_HEADER_VALUE,
-} from "hackbot-protocol/groups/pty"
+} from "@hackbot/protocol/groups/pty"
 import { response } from "../location"
 import { PtyEnvironment } from "../pty-environment"
 

@@ -1,13 +1,13 @@
 import { describe, expect } from "bun:test"
-import { makeGlobalNode } from "hackbot-core/effect/app-node"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { httpClient } from "hackbot-core/effect/app-node-platform"
+import { makeGlobalNode } from "@hackbot/core/effect/app-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { httpClient } from "@hackbot/core/effect/app-node-platform"
 import { Effect, Layer, Stream } from "effect"
 import { HttpClient, HttpClientRequest, HttpClientResponse } from "effect/unstable/http"
 import { ChildProcess, ChildProcessSpawner } from "effect/unstable/process"
 import { Installation } from "../../src/installation"
-import { InstallationChannel } from "hackbot-core/installation/version"
-import { CrossSpawnSpawner } from "hackbot-core/cross-spawn-spawner"
+import { InstallationChannel } from "@hackbot/core/installation/version"
+import { CrossSpawnSpawner } from "@hackbot/core/cross-spawn-spawner"
 import { testEffect } from "../lib/effect"
 
 const encoder = new TextEncoder()

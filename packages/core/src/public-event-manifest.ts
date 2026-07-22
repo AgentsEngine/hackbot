@@ -1,7 +1,7 @@
 export * as PublicEventManifest from "./public-event-manifest"
 
-import { Event } from "hackbot-schema/event"
-import { EventManifest } from "hackbot-schema/event-manifest"
+import { Event } from "@hackbot/schema/event"
+import { EventManifest } from "@hackbot/schema/event-manifest"
 
 export const Definitions = EventManifest.ServerDefinitions
 export const Latest = Event.latest(Definitions)

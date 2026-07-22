@@ -1,6 +1,6 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { Context, Effect, Layer } from "effect"
-import { serviceUse } from "hackbot-core/effect/service-use"
+import { serviceUse } from "@hackbot/core/effect/service-use"
 import { InstanceState } from "@/effect/instance-state"
 
 type State = Record<string, string | undefined>

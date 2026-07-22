@@ -1,4 +1,4 @@
-import { PermissionV1 } from "hackbot-core/v1/permission"
+import { PermissionV1 } from "@hackbot/core/v1/permission"
 import type { Agent } from "./agent"
 
 /**

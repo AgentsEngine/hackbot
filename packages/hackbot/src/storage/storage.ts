@@ -1,9 +1,9 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import path from "path"
-import { Global } from "hackbot-core/global"
-import { FSUtil } from "hackbot-core/fs-util"
+import { Global } from "@hackbot/core/global"
+import { FSUtil } from "@hackbot/core/fs-util"
 import { Effect, Exit, Layer, Option, RcMap, Schema, Context, TxReentrantLock } from "effect"
-import { NonNegativeInt } from "hackbot-core/schema"
+import { NonNegativeInt } from "@hackbot/core/schema"
 import { Git } from "@/git"
 
 type Migration = (dir: string, fs: FSUtil.Interface, git: Git.Interface) => Effect.Effect<void, FSUtil.Error>

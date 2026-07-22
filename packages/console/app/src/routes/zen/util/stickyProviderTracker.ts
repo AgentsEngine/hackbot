@@ -1,5 +1,5 @@
-import { Database, eq } from "hackbot-console-core/drizzle/index.js"
-import { ModelStickyProviderTable } from "hackbot-console-core/schema/ip.sql.js"
+import { Database, eq } from "@hackbot/console-core/drizzle/index.js"
+import { ModelStickyProviderTable } from "@hackbot/console-core/schema/ip.sql.js"
 
 export function createStickyTracker(
   modelId: string,

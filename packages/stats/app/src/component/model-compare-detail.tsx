@@ -1,12 +1,12 @@
 import { Link, Meta, Title } from "@solidjs/meta"
-import { ProviderIcon } from "hackbot-ui/provider-icon"
+import { ProviderIcon } from "@hackbot/ui/provider-icon"
 import {
   getStatsModelsComparisonData,
   type ModelUsagePoint,
   type StatsModelComparisonInput,
   type StatsModelComparisonEntry,
-} from "hackbot-stats-core/domain/home"
-import { runtime } from "hackbot-stats-core/runtime"
+} from "@hackbot/stats-core/domain/home"
+import { runtime } from "@hackbot/stats-core/runtime"
 import { createAsync, query, useParams, useSearchParams } from "@solidjs/router"
 import { createEffect, createMemo, createSignal, For, onMount, Show } from "solid-js"
 import { getRequestEvent } from "solid-js/web"

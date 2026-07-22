@@ -1,4 +1,4 @@
-import { createOpencodeClient, createOpencodeServer } from "hackbot-sdk"
+import { createOpencodeClient, createOpencodeServer } from "@hackbot/sdk"
 import { pathToFileURL } from "bun"
 
 const server = await createOpencodeServer()

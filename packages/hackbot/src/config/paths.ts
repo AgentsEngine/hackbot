@@ -1,11 +1,11 @@
 export * as ConfigPaths from "./paths"
 
 import path from "path"
-import { Flag } from "hackbot-core/flag/flag"
-import { Global } from "hackbot-core/global"
+import { Flag } from "@hackbot/core/flag/flag"
+import { Global } from "@hackbot/core/global"
 import { unique } from "remeda"
 import * as Effect from "effect/Effect"
-import { FSUtil } from "hackbot-core/fs-util"
+import { FSUtil } from "@hackbot/core/fs-util"
 
 export const files = Effect.fn("ConfigPaths.projectFiles")(function* (
   name: string,

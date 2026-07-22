@@ -1,1 +1,1 @@
-export * from "hackbot-tui/logo"
+export * from "@hackbot/tui/logo"

@@ -1,7 +1,7 @@
-import { base64Encode } from "hackbot-core/util/encode"
-import { Event } from "hackbot-schema/event"
-import { SessionStatusEvent } from "hackbot-schema/session-status-event"
-import { SessionV1 } from "hackbot-schema/session-v1"
+import { base64Encode } from "@hackbot/core/util/encode"
+import { Event } from "@hackbot/schema/event"
+import { SessionStatusEvent } from "@hackbot/schema/session-status-event"
+import { SessionV1 } from "@hackbot/schema/session-v1"
 import type {
   AssistantMessage,
   GlobalEvent,
@@ -12,7 +12,7 @@ import type {
   ToolPart,
   ToolState,
   UserMessage,
-} from "hackbot-sdk/v2/client"
+} from "@hackbot/sdk/v2/client"
 import { expect, type Page } from "@playwright/test"
 import { Schema } from "effect"
 import { mockOpenCodeServer } from "../../utils/mock-server"

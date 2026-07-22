@@ -2,7 +2,7 @@ export * as OpenCode from "./opencode"
 export * as hackbot from "./opencode"
 export * as Tool from "./tool"
 
-export { ClientError } from "hackbot-client/effect"
+export { ClientError } from "@hackbot/client/effect"
 export {
   AbsolutePath,
   Agent,
@@ -14,6 +14,6 @@ export {
   Session,
   SessionInput,
   SessionMessage,
-} from "hackbot-client/effect"
-export type { OpenCodeEvent } from "hackbot-client/effect"
-export type { OpenCodeEvent as hackbotEvent } from "hackbot-client/effect"
+} from "@hackbot/client/effect"
+export type { OpenCodeEvent } from "@hackbot/client/effect"
+export type { OpenCodeEvent as hackbotEvent } from "@hackbot/client/effect"

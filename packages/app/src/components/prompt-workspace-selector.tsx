@@ -1,9 +1,9 @@
 import { For, Show } from "solid-js"
-import { MenuV2 } from "hackbot-ui/v2/menu-v2"
-import { TooltipV2 } from "hackbot-ui/v2/tooltip-v2"
-import { Icon } from "hackbot-ui/icon"
-import { Icon as IconV2 } from "hackbot-ui/v2/icon"
-import { getFilename } from "hackbot-core/util/path"
+import { MenuV2 } from "@hackbot/ui/v2/menu-v2"
+import { TooltipV2 } from "@hackbot/ui/v2/tooltip-v2"
+import { Icon } from "@hackbot/ui/icon"
+import { Icon as IconV2 } from "@hackbot/ui/v2/icon"
+import { getFilename } from "@hackbot/core/util/path"
 import { useLanguage } from "@/context/language"
 
 export function PromptWorkspaceSelector(props: {

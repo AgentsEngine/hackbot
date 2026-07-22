@@ -1,5 +1,5 @@
-import { Session } from "hackbot-schema/session"
-import { SessionMessage } from "hackbot-schema/session-message"
+import { Session } from "@hackbot/schema/session"
+import { SessionMessage } from "@hackbot/schema/session-message"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 import { InvalidCursorError, SessionNotFoundError, UnknownError } from "../errors"

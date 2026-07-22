@@ -12,8 +12,8 @@
 //   3. starts the stream transport (SDK event subscription), lazily for fresh
 //      local sessions,
 //   4. runs the prompt queue until the footer closes.
-import { createOpencodeClient } from "hackbot-sdk/v2"
-import { Flag } from "hackbot-core/flag/flag"
+import { createOpencodeClient } from "@hackbot/sdk/v2"
+import { Flag } from "@hackbot/core/flag/flag"
 import { MessageID } from "@/session/schema"
 import { createRunDemo } from "./demo"
 import { resolveModelInfo, resolveRunTuiConfig, resolveSessionInfo } from "./runtime.boot"

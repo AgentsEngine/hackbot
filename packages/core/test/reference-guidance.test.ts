@@ -1,10 +1,10 @@
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { AbsolutePath } from "hackbot-core/schema"
-import { Reference } from "hackbot-core/reference"
-import { ReferenceGuidance } from "hackbot-core/reference/guidance"
-import { SystemContext } from "hackbot-core/system-context/index"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { AbsolutePath } from "@hackbot/core/schema"
+import { Reference } from "@hackbot/core/reference"
+import { ReferenceGuidance } from "@hackbot/core/reference/guidance"
+import { SystemContext } from "@hackbot/core/system-context/index"
 import { it } from "./lib/effect"
 
 const guidanceLayer = (referenceLayer: Layer.Layer<Reference.Service>) =>

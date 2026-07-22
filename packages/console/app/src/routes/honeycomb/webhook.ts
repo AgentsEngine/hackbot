@@ -1,7 +1,7 @@
 import type { APIEvent } from "@solidjs/start/server"
 import { z } from "zod"
-import { Resource } from "hackbot-console-resource"
-import { safeEqual } from "hackbot-console-core/util/crypto.js"
+import { Resource } from "@hackbot/console-resource"
+import { safeEqual } from "@hackbot/console-core/util/crypto.js"
 
 const DISCORD_ALERT_ROLE_ID = "1520924666359713863"
 

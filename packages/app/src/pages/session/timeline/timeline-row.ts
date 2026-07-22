@@ -1,5 +1,5 @@
-import type { SnapshotFileDiff } from "hackbot-sdk/v2"
-import type { PartGroup } from "hackbot-session-ui/message-part"
+import type { SnapshotFileDiff } from "@hackbot/sdk/v2"
+import type { PartGroup } from "@hackbot/session-ui/message-part"
 import { Data, Equal } from "effect"
 
 export type SummaryDiff = SnapshotFileDiff & { file: string }

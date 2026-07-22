@@ -1,11 +1,11 @@
-import { useFilteredList } from "hackbot-ui/hooks"
-import { getDirectory, getFilename } from "hackbot-core/util/path"
+import { useFilteredList } from "@hackbot/ui/hooks"
+import { getDirectory, getFilename } from "@hackbot/core/util/path"
 import { createSignal, For, onMount, Show, splitProps, type JSX } from "solid-js"
-import { Button } from "hackbot-ui/button"
-import { FileIcon } from "hackbot-ui/file-icon"
-import { Icon } from "hackbot-ui/icon"
+import { Button } from "@hackbot/ui/button"
+import { FileIcon } from "@hackbot/ui/file-icon"
+import { Icon } from "@hackbot/ui/icon"
 import { installLineCommentStyles } from "./line-comment-styles"
-import { useI18n } from "hackbot-ui/context/i18n"
+import { useI18n } from "@hackbot/ui/context/i18n"
 
 installLineCommentStyles()
 

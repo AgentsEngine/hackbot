@@ -1,1 +1,1 @@
-export { ID as PtyID } from "hackbot-schema/pty"
+export { ID as PtyID } from "@hackbot/schema/pty"

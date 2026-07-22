@@ -1,5 +1,5 @@
-import { Integration } from "hackbot-schema/integration"
-import { Location } from "hackbot-schema/location"
+import { Integration } from "@hackbot/schema/integration"
+import { Location } from "@hackbot/schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiSchema, OpenApi } from "effect/unstable/httpapi"
 import { InvalidRequestError } from "../errors"

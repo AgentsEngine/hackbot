@@ -1,8 +1,8 @@
 import { describe, expect, test } from "bun:test"
 import path from "path"
-import { Shell } from "hackbot-core/shell"
-import { FSUtil } from "hackbot-core/fs-util"
-import { which } from "hackbot-core/util/which"
+import { Shell } from "@hackbot/core/shell"
+import { FSUtil } from "@hackbot/core/fs-util"
+import { which } from "@hackbot/core/util/which"
 
 const withShell = async (shell: string | undefined, fn: () => void | Promise<void>) => {
   const prev = process.env.SHELL

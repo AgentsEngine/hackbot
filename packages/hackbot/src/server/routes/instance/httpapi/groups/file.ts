@@ -1,5 +1,5 @@
-import { FileSystem } from "hackbot-core/filesystem"
-import { NonNegativeInt } from "hackbot-core/schema"
+import { FileSystem } from "@hackbot/core/filesystem"
+import { NonNegativeInt } from "@hackbot/core/schema"
 import { LSP } from "@/lsp/lsp"
 import { Schema } from "effect"
 import { HttpApi, HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"

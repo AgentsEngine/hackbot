@@ -1,10 +1,10 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import path from "path"
-import { serviceUse } from "hackbot-core/effect/service-use"
-import { Global } from "hackbot-core/global"
+import { serviceUse } from "@hackbot/core/effect/service-use"
+import { Global } from "@hackbot/core/global"
 import { Effect, Layer, Context, Option, Schema } from "effect"
-import { FSUtil } from "hackbot-core/fs-util"
-import { EffectFlock } from "hackbot-core/util/effect-flock"
+import { FSUtil } from "@hackbot/core/fs-util"
+import { EffectFlock } from "@hackbot/core/util/effect-flock"
 
 export const Tokens = Schema.Struct({
   accessToken: Schema.mutableKey(Schema.String),

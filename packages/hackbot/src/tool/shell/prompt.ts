@@ -1,7 +1,7 @@
 import { Schema } from "effect"
 import DESCRIPTION from "./shell.txt"
-import { PositiveInt } from "hackbot-core/schema"
-import { Global } from "hackbot-core/global"
+import { PositiveInt } from "@hackbot/core/schema"
+import { Global } from "@hackbot/core/global"
 import { ShellID } from "./id"
 
 const PS = new Set(["powershell", "pwsh"])

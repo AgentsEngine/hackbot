@@ -13,7 +13,7 @@ process.chdir(dir)
 
 const generated = await import("./generate.ts")
 
-import { Script } from "hackbot-script"
+import { Script } from "@hackbot/script"
 import pkg from "../package.json"
 
 const singleFlag = process.argv.includes("--single")
@@ -153,8 +153,17 @@ for (const item of targets) {
   ]
     .filter(Boolean)
     .join("-")
-  console.log(`building ${name}`)
-  await $`mkdir -p dist/${name}/bin`
+  const dirName = [
+    "hackbot",
+    item.os === "win32" ? "windows" : item.os,
+    item.arch,
+    item.avx2 === false ? "baseline" : undefined,
+    item.abi === undefined ? undefined : item.abi,
+  ]
+    .filter(Boolean)
+    .join("-")
+  console.log(`building ${name} (dir: ${dirName})`)
+  await $`mkdir -p dist/${dirName}/bin`
 
   const workerPath = "./src/cli/tui/worker.ts"
   const treeSitterWorkerPath = "opentui-tree-sitter-worker.js"
@@ -174,8 +183,8 @@ for (const item of targets) {
       autoloadDotenv: false,
       autoloadTsconfig: true,
       autoloadPackageJson: true,
-      target: name.replace(pkg.name, "bun") as any,
-      outfile: `dist/${name}/bin/hackbot`,
+      target: dirName.replace(/^[^-]+-/, "bun-") as any,
+      outfile: `dist/${dirName}/bin/hackbot`,
       execArgv: [`--user-agent=hackbot/${Script.version}`, "--use-system-ca", "--"],
       windows: {},
     },
@@ -203,7 +212,7 @@ for (const item of targets) {
 
   // Smoke test: only run if binary is for current platform
   if (item.os === process.platform && item.arch === process.arch && !item.abi) {
-    const binaryPath = `dist/${name}/bin/hackbot`
+    const binaryPath = `dist/${dirName}/bin/hackbot`
     console.log(`Running smoke test: ${binaryPath} --version`)
     try {
       const versionOutput = await $`${binaryPath} --version`.text()
@@ -214,8 +223,8 @@ for (const item of targets) {
     }
   }
 
-  await $`rm -rf ./dist/${name}/bin/tui`
-  await Bun.file(`dist/${name}/package.json`).write(
+  await $`rm -rf ./dist/${dirName}/bin/tui`
+  await Bun.file(`dist/${dirName}/package.json`).write(
     JSON.stringify(
       {
         name,

@@ -1,6 +1,6 @@
 import { afterEach, expect } from "bun:test"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { FSUtil } from "hackbot-core/fs-util"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { FSUtil } from "@hackbot/core/fs-util"
 import { Effect } from "effect"
 import { fileURLToPath } from "url"
 import { InstanceRef } from "../../src/effect/instance-ref"

@@ -1,6 +1,6 @@
 export * as SessionSchema from "./schema"
 
-import { Session } from "hackbot-schema/session"
+import { Session } from "@hackbot/schema/session"
 
 export const ID = Session.ID
 export type ID = typeof ID.Type

@@ -3,7 +3,7 @@
 import { $ } from "bun"
 import { rm } from "fs/promises"
 import path from "path"
-import { Script } from "hackbot-script"
+import { Script } from "@hackbot/script"
 import { createSolidTransformPlugin } from "@opentui/solid/bun-plugin"
 import pkg from "../package.json"
 import { modelsData } from "./generate"
@@ -102,10 +102,10 @@ for (const item of targets) {
     `./dist/${name}/package.json`,
     JSON.stringify(
       {
-        name: `hackbot-${name}`,
+        name: `@hackbot/cli-${name}`,
         version: Script.version,
         license: "MIT",
-        repository: { type: "git", url: "git+https://github.com/hackbot/hackbot.git" },
+        repository: { type: "git", url: "git+https://github.com/akushonkamen/hackbot.git" },
         os: [item.os],
         cpu: [item.arch],
       },

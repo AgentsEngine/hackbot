@@ -1,9 +1,9 @@
-import { SessionMessage } from "hackbot-core/session/message"
-import { SessionV2 } from "hackbot-core/session"
+import { SessionMessage } from "@hackbot/core/session/message"
+import { SessionV2 } from "@hackbot/core/session"
 import { Effect, Schema } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { InvalidCursorError, SessionNotFoundError, UnknownError } from "hackbot-protocol/errors"
+import { InvalidCursorError, SessionNotFoundError, UnknownError } from "@hackbot/protocol/errors"
 
 const DefaultMessagesLimit = 50
 

@@ -1,4 +1,4 @@
-import { Resource } from "hackbot-console-resource"
+import { Resource } from "@hackbot/console-resource"
 import { getRedis } from "./redis"
 
 // Workspaces whose balance/usage updates should be batched in Redis to avoid

@@ -1,10 +1,10 @@
 import { expect } from "bun:test"
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { Provider } from "../../src/provider/provider"
 
 import { Effect } from "effect"
 import { testEffect } from "../lib/effect"
-import { ProviderV2 } from "hackbot-core/provider"
+import { ProviderV2 } from "@hackbot/core/provider"
 
 const DIGITALOCEAN = ProviderV2.ID.make("digitalocean")
 const it = testEffect(LayerNode.compile(Provider.node))

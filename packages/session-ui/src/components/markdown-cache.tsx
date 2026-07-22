@@ -1,4 +1,4 @@
-import { checksum } from "hackbot-core/util/encode"
+import { checksum } from "@hackbot/core/util/encode"
 import DOMPurify from "dompurify"
 import { project } from "./markdown-stream"
 

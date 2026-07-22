@@ -1,5 +1,5 @@
-import type { Event } from "hackbot-sdk/v2/client"
-import { createSimpleContext } from "hackbot-ui/context"
+import type { Event } from "@hackbot/sdk/v2/client"
+import { createSimpleContext } from "@hackbot/ui/context"
 import { createGlobalEmitter } from "@solid-primitives/event-bus"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { type Accessor, batch, createMemo, onCleanup, onMount } from "solid-js"

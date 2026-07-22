@@ -1,6 +1,6 @@
 import { describe, expect } from "bun:test"
-import { BackgroundJob } from "hackbot-core/background-job"
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { BackgroundJob } from "@hackbot/core/background-job"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { Deferred, Effect, Exit, Scope } from "effect"
 import { it } from "./lib/effect"
 

@@ -1,8 +1,8 @@
-import { Database } from "hackbot-core/database/database"
+import { Database } from "@hackbot/core/database/database"
 import { inArray } from "drizzle-orm"
-import { EventSequenceTable } from "hackbot-core/event/sql"
+import { EventSequenceTable } from "@hackbot/core/event/sql"
 import { Workspace } from "@/control-plane/workspace"
-import type { WorkspaceV2 } from "hackbot-core/workspace"
+import type { WorkspaceV2 } from "@hackbot/core/workspace"
 import { Effect } from "effect"
 
 export const HEADER = "x-opencode-sync"

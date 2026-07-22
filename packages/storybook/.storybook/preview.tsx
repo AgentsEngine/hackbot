@@ -9,10 +9,10 @@ import { MetaProvider } from "@solidjs/meta"
 import { addons } from "storybook/preview-api"
 import { GLOBALS_UPDATED } from "storybook/internal/core-events"
 import { createJSXDecorator, definePreview } from "storybook-solidjs-vite"
-import { DialogProvider } from "hackbot-ui/context/dialog"
-import { MarkedProvider } from "hackbot-ui/context/marked"
-import { ThemeProvider, useTheme, type ColorScheme } from "hackbot-ui/theme"
-import { Font } from "hackbot-ui/font"
+import { DialogProvider } from "@hackbot/ui/context/dialog"
+import { MarkedProvider } from "@hackbot/ui/context/marked"
+import { ThemeProvider, useTheme, type ColorScheme } from "@hackbot/ui/theme"
+import { Font } from "@hackbot/ui/font"
 
 function resolveScheme(value: unknown): ColorScheme {
   if (value === "light" || value === "dark" || value === "system") return value

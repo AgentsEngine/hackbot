@@ -1,6 +1,6 @@
 import windowState from "electron-window-state"
-import { resolveThemeVariant } from "hackbot-ui/theme/resolve"
-import type { DesktopTheme } from "hackbot-ui/theme/types"
+import { resolveThemeVariant } from "@hackbot/ui/theme/resolve"
+import type { DesktopTheme } from "@hackbot/ui/theme/types"
 import oc2ThemeJson from "../../../ui/src/theme/themes/oc-2.json"
 import { randomUUID } from "node:crypto"
 import { rmSync } from "node:fs"

@@ -1,8 +1,8 @@
 import { describe, expect } from "bun:test"
 import { Effect, Exit, Fiber } from "effect"
-import { define } from "hackbot-plugin/v2/effect"
-import { AgentV2 } from "hackbot-core/agent"
-import { PluginV2 } from "hackbot-core/plugin"
+import { define } from "@hackbot/plugin/v2/effect"
+import { AgentV2 } from "@hackbot/core/agent"
+import { PluginV2 } from "@hackbot/core/plugin"
 import { testEffect } from "./lib/effect"
 import { PluginTestLayer } from "./plugin/fixture"
 

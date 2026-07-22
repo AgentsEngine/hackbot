@@ -1,6 +1,6 @@
 import { Filesystem } from "@/util/filesystem"
-import { FrontmatterError } from "hackbot-core/v1/config/error"
-import { ConfigMarkdown as ConfigMarkdownCore } from "hackbot-core/config/markdown"
+import { FrontmatterError } from "@hackbot/core/v1/config/error"
+import { ConfigMarkdown as ConfigMarkdownCore } from "@hackbot/core/config/markdown"
 
 export const FILE_REGEX = /(?<![\w`])@(\.?[^\s`,.]*(?:\.[^\s`,.]+)*)/g
 export const SHELL_REGEX = /!`([^`]+)`/g

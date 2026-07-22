@@ -1,8 +1,8 @@
 import { describe, expect, test } from "bun:test"
 import { Schema } from "effect"
-import { ConfigProviderV1 } from "hackbot-core/v1/config/provider"
+import { ConfigProviderV1 } from "@hackbot/core/v1/config/provider"
 import { CatalogModelStatus, ModelStatus } from "@/provider/model-status"
-import { ModelsDev } from "hackbot-core/models-dev"
+import { ModelsDev } from "@hackbot/core/models-dev"
 import { Provider } from "@/provider/provider"
 
 describe("provider model status schemas", () => {

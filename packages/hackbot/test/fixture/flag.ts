@@ -1,5 +1,5 @@
-import type { WorkspaceV2 } from "hackbot-core/workspace"
-import { Flag } from "hackbot-core/flag/flag"
+import type { WorkspaceV2 } from "@hackbot/core/workspace"
+import { Flag } from "@hackbot/core/flag/flag"
 import { Effect, Scope } from "effect"
 
 /**

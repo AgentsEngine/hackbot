@@ -8,9 +8,9 @@ import {
 } from "jsonc-parser"
 
 import * as ConfigPaths from "@/config/paths"
-import { Global } from "hackbot-core/global"
+import { Global } from "@hackbot/core/global"
 import { Filesystem } from "@/util/filesystem"
-import { Flock } from "hackbot-core/util/flock"
+import { Flock } from "@hackbot/core/util/flock"
 import { isRecord } from "@/util/record"
 
 import { parsePluginSpecifier, readPackageThemes, readPluginPackage, resolvePluginTarget } from "./shared"

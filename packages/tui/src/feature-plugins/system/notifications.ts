@@ -1,5 +1,5 @@
-import type { Event } from "hackbot-sdk/v2"
-import type { TuiAttentionSoundName, TuiPlugin, TuiPluginApi } from "hackbot-plugin/tui"
+import type { Event } from "@hackbot/sdk/v2"
+import type { TuiAttentionSoundName, TuiPlugin, TuiPluginApi } from "@hackbot/plugin/tui"
 import type { BuiltinTuiPlugin } from "../builtins"
 
 const id = "internal:notifications"

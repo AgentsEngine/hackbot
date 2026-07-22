@@ -1,7 +1,7 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { httpClient } from "hackbot-core/effect/app-node-platform"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { httpClient } from "@hackbot/core/effect/app-node-platform"
 import { Cache, Clock, Duration, Effect, Layer, Option, Schema, SchemaGetter, Context } from "effect"
-import { serviceUse } from "hackbot-core/effect/service-use"
+import { serviceUse } from "@hackbot/core/effect/service-use"
 import {
   FetchHttpClient,
   HttpClient,

@@ -1,5 +1,5 @@
 /// <reference path="../env.d.ts" />
-import { tool } from "hackbot-plugin"
+import { tool } from "@hackbot/plugin"
 
 const TEAM = {
   tui: ["kommander", "simonklee"],

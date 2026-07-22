@@ -1,4 +1,4 @@
-import { makeDefaultApi } from "hackbot-protocol/api"
+import { makeDefaultApi } from "@hackbot/protocol/api"
 import { LocationMiddleware } from "./location"
 import { SessionLocationMiddleware } from "./middleware/session-location"
 

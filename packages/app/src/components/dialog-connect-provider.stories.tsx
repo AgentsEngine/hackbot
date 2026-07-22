@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { Button } from "hackbot-ui/button"
-import { useDialog } from "hackbot-ui/context/dialog"
+import { Button } from "@hackbot/ui/button"
+import { useDialog } from "@hackbot/ui/context/dialog"
 import { QueryClient, QueryClientProvider } from "@tanstack/solid-query"
 import { mockProviderAuth } from "@/context/server-sync"
 import { onCleanup, onMount } from "solid-js"

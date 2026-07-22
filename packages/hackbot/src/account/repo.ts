@@ -1,10 +1,10 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { eq } from "drizzle-orm"
-import { serviceUse } from "hackbot-core/effect/service-use"
+import { serviceUse } from "@hackbot/core/effect/service-use"
 import { Effect, Layer, Option, Schema, Context } from "effect"
 
-import { Database } from "hackbot-core/database/database"
-import { AccountStateTable, AccountTable } from "hackbot-core/account/sql"
+import { Database } from "@hackbot/core/database/database"
+import { AccountStateTable, AccountTable } from "@hackbot/core/account/sql"
 import { AccessToken, AccountID, AccountRepoError, Info, OrgID, RefreshToken } from "./schema"
 import { normalizeServerUrl } from "./url"
 

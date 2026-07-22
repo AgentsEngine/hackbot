@@ -1,1 +1,1 @@
-export { AgentAttachment, FileAttachment, Prompt, Source } from "hackbot-schema/prompt"
+export { AgentAttachment, FileAttachment, Prompt, Source } from "@hackbot/schema/prompt"

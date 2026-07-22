@@ -4,7 +4,7 @@ import {
   TuiStartupProvider,
   TuiTerminalEnvironmentProvider,
   type TuiPaths,
-} from "hackbot-tui/context/runtime"
+} from "@hackbot/tui/context/runtime"
 import type { ParentProps } from "solid-js"
 
 export function TestTuiContexts(

@@ -1,4 +1,4 @@
-import { Resource } from "hackbot-console-resource"
+import { Resource } from "@hackbot/console-resource"
 import type { TraceItem } from "@cloudflare/workers-types"
 
 export default {

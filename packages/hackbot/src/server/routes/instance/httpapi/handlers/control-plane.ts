@@ -1,5 +1,5 @@
-import { MoveSession } from "hackbot-core/control-plane/move-session"
-import { SessionV2 } from "hackbot-core/session"
+import { MoveSession } from "@hackbot/core/control-plane/move-session"
+import { SessionV2 } from "@hackbot/core/session"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { RootHttpApi } from "../api"

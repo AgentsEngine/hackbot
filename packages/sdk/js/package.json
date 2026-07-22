@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "hackbot-sdk",
+  "name": "@hackbot/sdk",
   "version": "1.18.4",
   "type": "module",
   "license": "MIT",

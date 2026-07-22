@@ -1,4 +1,4 @@
-import { create as createIdentifier } from "hackbot-schema/identifier"
+import { create as createIdentifier } from "@hackbot/schema/identifier"
 
 const prefixes = {
   job: "job",

@@ -7,7 +7,7 @@ import { Authorization } from "../middleware/authorization"
 import { InstanceContextMiddleware } from "../middleware/instance-context"
 import { WorkspaceRoutingMiddleware, WorkspaceRoutingQuery } from "../middleware/workspace-routing"
 import { described } from "./metadata"
-import { ProviderV2 } from "hackbot-core/provider"
+import { ProviderV2 } from "@hackbot/core/provider"
 
 const root = "/provider"
 

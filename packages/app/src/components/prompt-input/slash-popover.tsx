@@ -1,9 +1,9 @@
 import { Component, For, Match, Show, Switch } from "solid-js"
-import { FileIcon } from "hackbot-ui/file-icon"
-import { Icon } from "hackbot-ui/icon"
-import { Tag } from "hackbot-ui/v2/badge-v2"
-import { KeybindV2 } from "hackbot-ui/v2/keybind-v2"
-import { getDirectory, getFilename } from "hackbot-core/util/path"
+import { FileIcon } from "@hackbot/ui/file-icon"
+import { Icon } from "@hackbot/ui/icon"
+import { Tag } from "@hackbot/ui/v2/badge-v2"
+import { KeybindV2 } from "@hackbot/ui/v2/keybind-v2"
+import { getDirectory, getFilename } from "@hackbot/core/util/path"
 
 export type AtOption =
   | { type: "agent"; name: string; display: string }

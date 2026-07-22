@@ -1,5 +1,5 @@
-import { Actor } from "hackbot-console-core/actor.js"
-import { Referral } from "hackbot-console-core/referral.js"
+import { Actor } from "@hackbot/console-core/actor.js"
+import { Referral } from "@hackbot/console-core/referral.js"
 import { getRequestEvent } from "solid-js/web"
 
 const REFERRAL_COOKIE = "oc_referral"

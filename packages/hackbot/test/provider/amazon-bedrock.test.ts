@@ -1,17 +1,17 @@
 import { afterEach, describe, expect, test } from "bun:test"
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { Effect } from "effect"
 import path from "path"
 import { unlink } from "fs/promises"
-import { Global } from "hackbot-core/global"
+import { Global } from "@hackbot/core/global"
 import { Filesystem } from "@/util/filesystem"
 import { Env } from "../../src/env"
 import { Provider } from "@/provider/provider"
 
 import { disposeAllInstances } from "../fixture/fixture"
 import { testEffect } from "../lib/effect"
-import { ProviderV2 } from "hackbot-core/provider"
-import { ModelV2 } from "hackbot-core/model"
+import { ProviderV2 } from "@hackbot/core/provider"
+import { ModelV2 } from "@hackbot/core/model"
 
 const it = testEffect(LayerNode.compile(LayerNode.group([Provider.node, Env.node])))
 

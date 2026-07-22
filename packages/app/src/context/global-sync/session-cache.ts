@@ -6,7 +6,7 @@ import type {
   SessionStatus,
   SnapshotFileDiff,
   Todo,
-} from "hackbot-sdk/v2/client"
+} from "@hackbot/sdk/v2/client"
 
 export const SESSION_CACHE_LIMIT = 40
 

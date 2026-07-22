@@ -2,7 +2,7 @@
 
 import path from "path"
 import { pathToFileURL } from "bun"
-import { createOpencode } from "hackbot-sdk"
+import { createOpencode } from "@hackbot/sdk"
 import { parseArgs } from "util"
 
 async function main() {

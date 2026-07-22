@@ -1,7 +1,7 @@
-import { Event } from "hackbot-schema/event"
-import { EventManifest } from "hackbot-schema/event-manifest"
-import { Location } from "hackbot-schema/location"
-import type { Definition } from "hackbot-schema/event"
+import { Event } from "@hackbot/schema/event"
+import { EventManifest } from "@hackbot/schema/event-manifest"
+import { Location } from "@hackbot/schema/location"
+import type { Definition } from "@hackbot/schema/event"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiSchema, OpenApi } from "effect/unstable/httpapi"
 

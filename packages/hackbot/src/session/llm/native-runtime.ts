@@ -15,8 +15,8 @@ import {
   toDefinitions,
   type JsonSchema,
   type LLMEvent,
-} from "hackbot-llm"
-import type { LLMClientShape } from "hackbot-llm/route"
+} from "@hackbot/llm"
+import type { LLMClientShape } from "@hackbot/llm/route"
 import { LLMNative } from "./native-request"
 
 export type RuntimeStatus =

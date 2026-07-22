@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test"
 import type { AudioPlayOptions, AudioSound } from "@opentui/core"
-import { createTuiAttention } from "hackbot-tui/attention"
-import type { TuiConfig } from "hackbot-tui/config"
+import { createTuiAttention } from "@hackbot/tui/attention"
+import type { TuiConfig } from "@hackbot/tui/config"
 
 type FocusEvent = "focus" | "blur"
 

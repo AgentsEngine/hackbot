@@ -1,5 +1,5 @@
-import { TuiConfig } from "hackbot-tui/config"
-import { isRecord } from "hackbot-tui/util/record"
+import { TuiConfig } from "@hackbot/tui/config"
+import { isRecord } from "@hackbot/tui/util/record"
 import { Filesystem } from "@/util/filesystem"
 import { Schema } from "effect"
 

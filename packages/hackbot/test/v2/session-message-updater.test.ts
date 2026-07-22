@@ -2,12 +2,12 @@ import { expect, test } from "bun:test"
 import { Effect } from "effect"
 import * as DateTime from "effect/DateTime"
 import { SessionID } from "../../src/session/schema"
-import { EventV2 } from "hackbot-core/event"
-import { ModelV2 } from "hackbot-core/model"
-import { ProviderV2 } from "hackbot-core/provider"
-import { SessionEvent } from "hackbot-core/session/event"
-import { SessionMessageUpdater } from "hackbot-core/session/message-updater"
-import { SessionMessage } from "hackbot-core/session/message"
+import { EventV2 } from "@hackbot/core/event"
+import { ModelV2 } from "@hackbot/core/model"
+import { ProviderV2 } from "@hackbot/core/provider"
+import { SessionEvent } from "@hackbot/core/session/event"
+import { SessionMessageUpdater } from "@hackbot/core/session/message-updater"
+import { SessionMessage } from "@hackbot/core/session/message"
 
 test.skip("step snapshots carry over to assistant messages", () => {
   const state: SessionMessageUpdater.MemoryState = { messages: [] }

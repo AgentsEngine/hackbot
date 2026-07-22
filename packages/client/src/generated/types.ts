@@ -1,4 +1,4 @@
-import type { OpenCodeEventEncoded } from "hackbot-protocol/groups/event"
+import type { OpenCodeEventEncoded } from "@hackbot/protocol/groups/event"
 
 export type JsonValue =
   | null

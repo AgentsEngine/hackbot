@@ -1,5 +1,5 @@
-import type { SnapshotFileDiff, VcsFileDiff } from "hackbot-sdk/v2"
-import type { Message } from "hackbot-sdk/v2/client"
+import type { SnapshotFileDiff, VcsFileDiff } from "@hackbot/sdk/v2"
+import type { Message } from "@hackbot/sdk/v2/client"
 
 type Diff = SnapshotFileDiff | VcsFileDiff
 

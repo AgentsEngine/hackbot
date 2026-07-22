@@ -1,5 +1,5 @@
 {
-  "name": "hackbot-console-support",
+  "name": "@hackbot/console-support",
   "version": "1.18.4",
   "type": "module",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "1.15.2",
-    "hackbot-console-core": "workspace:*",
+    "@hackbot/console-core": "workspace:*",
     "@solidjs/meta": "catalog:",
     "@solidjs/router": "catalog:",
     "@solidjs/start": "catalog:",

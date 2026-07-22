@@ -1,12 +1,12 @@
-import { TextField } from "hackbot-ui/text-field"
+import { TextField } from "@hackbot/ui/text-field"
 import * as Sentry from "@sentry/solid"
-import { Logo } from "hackbot-ui/logo"
-import { Button } from "hackbot-ui/button"
+import { Logo } from "@hackbot/ui/logo"
+import { Button } from "@hackbot/ui/button"
 import { Component, createSignal, onMount, Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { usePlatform } from "@/context/platform"
 import { useLanguage } from "@/context/language"
-import { Icon } from "hackbot-ui/icon"
+import { Icon } from "@hackbot/ui/icon"
 import { errorDescriptionKey } from "./error-description"
 
 export type InitError = {

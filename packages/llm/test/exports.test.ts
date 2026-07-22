@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test"
-import { LLM, LLMClient, Provider } from "hackbot-llm"
-import { Route, Protocol } from "hackbot-llm/route"
-import { Provider as ProviderSubpath } from "hackbot-llm/provider"
+import { LLM, LLMClient, Provider } from "@hackbot/llm"
+import { Route, Protocol } from "@hackbot/llm/route"
+import { Provider as ProviderSubpath } from "@hackbot/llm/provider"
 import {
   CloudflareAIGateway,
   CloudflareWorkersAI,
@@ -9,10 +9,10 @@ import {
   OpenAICompatible,
   OpenRouter,
   XAI,
-} from "hackbot-llm/providers"
-import * as GitHubCopilot from "hackbot-llm/providers/github-copilot"
-import { OpenAIChat, OpenAICompatibleChat, OpenAIResponses } from "hackbot-llm/protocols"
-import * as AnthropicMessages from "hackbot-llm/protocols/anthropic-messages"
+} from "@hackbot/llm/providers"
+import * as GitHubCopilot from "@hackbot/llm/providers/github-copilot"
+import { OpenAIChat, OpenAICompatibleChat, OpenAIResponses } from "@hackbot/llm/protocols"
+import * as AnthropicMessages from "@hackbot/llm/protocols/anthropic-messages"
 
 describe("public exports", () => {
   test("root exposes app-facing runtime APIs", () => {

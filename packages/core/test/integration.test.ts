@@ -1,11 +1,11 @@
 import { describe, expect } from "bun:test"
 import { Duration, Effect, Exit, Fiber, Scope, Stream } from "effect"
 import * as TestClock from "effect/testing/TestClock"
-import { Credential } from "hackbot-core/credential"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { EventV2 } from "hackbot-core/event"
-import { Integration } from "hackbot-core/integration"
+import { Credential } from "@hackbot/core/credential"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { EventV2 } from "@hackbot/core/event"
+import { Integration } from "@hackbot/core/integration"
 import { testEffect } from "./lib/effect"
 
 const it = testEffect(AppNodeBuilder.build(LayerNode.group([Integration.node, Credential.node, EventV2.node])))

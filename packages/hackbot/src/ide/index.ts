@@ -1,7 +1,7 @@
 import { Schema } from "effect"
-import { NamedError } from "hackbot-core/util/error"
+import { NamedError } from "@hackbot/core/util/error"
 import { Process } from "@/util/process"
-import { IdeEvent } from "hackbot-schema/ide-event"
+import { IdeEvent } from "@hackbot/schema/ide-event"
 
 const SUPPORTED_IDES = [
   { name: "Windsurf" as const, cmd: "windsurf" },

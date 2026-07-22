@@ -11,9 +11,9 @@ import type {
   ToolPart,
   FilePart,
   AgentPart,
-} from "hackbot-sdk/v2"
+} from "@hackbot/sdk/v2"
 import { DataProvider } from "../context/data"
-import { FileComponentProvider } from "hackbot-ui/context/file"
+import { FileComponentProvider } from "@hackbot/ui/context/file"
 import { SessionTurn } from "./session-turn"
 
 // ---------------------------------------------------------------------------

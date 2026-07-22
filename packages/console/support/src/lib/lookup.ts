@@ -1,8 +1,8 @@
 "use server"
 
-import { Database, and, eq, isNull, sql } from "hackbot-console-core/drizzle/index.js"
-import { AuthTable } from "hackbot-console-core/schema/auth.sql.js"
-import { UserTable } from "hackbot-console-core/schema/user.sql.js"
+import { Database, and, eq, isNull, sql } from "@hackbot/console-core/drizzle/index.js"
+import { AuthTable } from "@hackbot/console-core/schema/auth.sql.js"
+import { UserTable } from "@hackbot/console-core/schema/user.sql.js"
 import {
   BillingTable,
   PaymentTable,
@@ -10,15 +10,15 @@ import {
   BlackPlans,
   UsageTable,
   LiteTable,
-} from "hackbot-console-core/schema/billing.sql.js"
-import { WorkspaceTable } from "hackbot-console-core/schema/workspace.sql.js"
-import { KeyTable } from "hackbot-console-core/schema/key.sql.js"
-import { ModelTable } from "hackbot-console-core/schema/model.sql.js"
-import { BlackData } from "hackbot-console-core/black.js"
-import { LiteData } from "hackbot-console-core/lite.js"
-import { Subscription } from "hackbot-console-core/subscription.js"
-import { centsToMicroCents } from "hackbot-console-core/util/price.js"
-import { getWeekBounds } from "hackbot-console-core/util/date.js"
+} from "@hackbot/console-core/schema/billing.sql.js"
+import { WorkspaceTable } from "@hackbot/console-core/schema/workspace.sql.js"
+import { KeyTable } from "@hackbot/console-core/schema/key.sql.js"
+import { ModelTable } from "@hackbot/console-core/schema/model.sql.js"
+import { BlackData } from "@hackbot/console-core/black.js"
+import { LiteData } from "@hackbot/console-core/lite.js"
+import { Subscription } from "@hackbot/console-core/subscription.js"
+import { centsToMicroCents } from "@hackbot/console-core/util/price.js"
+import { getWeekBounds } from "@hackbot/console-core/util/date.js"
 
 export type LookupResult = {
   identifier: string

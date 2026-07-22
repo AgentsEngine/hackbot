@@ -1,4 +1,4 @@
-import type { SnapshotFileDiff } from "hackbot-sdk/v2"
+import type { SnapshotFileDiff } from "@hackbot/sdk/v2"
 import type { SummaryDiff } from "./timeline-row"
 
 export function uniqueSummaryDiffs(diffs: SnapshotFileDiff[] | undefined) {

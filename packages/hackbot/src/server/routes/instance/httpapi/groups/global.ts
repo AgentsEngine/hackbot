@@ -1,5 +1,5 @@
-import { ConfigV1 } from "hackbot-core/v1/config/config"
-import { EventV2 } from "hackbot-core/event"
+import { ConfigV1 } from "@hackbot/core/v1/config/config"
+import { EventV2 } from "@hackbot/core/event"
 import { EventManifest } from "@/event-manifest"
 import { InstanceDisposed } from "@/server/event"
 import "hackbot-core/account"

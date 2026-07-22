@@ -1,5 +1,5 @@
 import { createMemo } from "solid-js"
-import { AnimatedNumber } from "hackbot-ui/animated-number"
+import { AnimatedNumber } from "@hackbot/ui/animated-number"
 
 function split(text: string) {
   const match = /{{\s*count\s*}}/.exec(text)

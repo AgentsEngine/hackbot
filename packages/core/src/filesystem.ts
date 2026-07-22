@@ -7,8 +7,8 @@ import { FSUtil } from "./fs-util"
 import { Location } from "./location"
 import { PositiveInt, RelativePath } from "./schema"
 import { FileSystemSearch } from "./filesystem/search"
-import { Entry, FileSystem, FindInput, Match } from "hackbot-schema/filesystem"
-export { Entry, Match, Submatch } from "hackbot-schema/filesystem"
+import { Entry, FileSystem, FindInput, Match } from "@hackbot/schema/filesystem"
+export { Entry, Match, Submatch } from "@hackbot/schema/filesystem"
 
 export const ReadInput = Schema.Struct({
   path: RelativePath,

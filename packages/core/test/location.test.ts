@@ -1,10 +1,10 @@
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { Location } from "hackbot-core/location"
-import { Project } from "hackbot-core/project"
-import { AbsolutePath } from "hackbot-core/schema"
-import { WorkspaceV2 } from "hackbot-core/workspace"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { Location } from "@hackbot/core/location"
+import { Project } from "@hackbot/core/project"
+import { AbsolutePath } from "@hackbot/core/schema"
+import { WorkspaceV2 } from "@hackbot/core/workspace"
 import { testEffect } from "./lib/effect"
 
 const workspaceID = WorkspaceV2.ID.make("wrk_test")

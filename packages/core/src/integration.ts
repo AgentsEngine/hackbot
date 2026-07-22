@@ -15,7 +15,7 @@ import {
   SynchronizedRef,
   Types,
 } from "effect"
-import { Integration } from "hackbot-schema/integration"
+import { Integration } from "@hackbot/schema/integration"
 import { Credential } from "./credential"
 import { State } from "./state"
 import { EventV2 } from "./event"

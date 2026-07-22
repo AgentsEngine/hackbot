@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "hackbot-tui",
+  "name": "@hackbot/tui",
   "version": "1.18.4",
   "private": true,
   "type": "module",
@@ -48,10 +48,10 @@
     "./component/register-spinner": "./src/component/register-spinner.ts"
   },
   "dependencies": {
-    "hackbot-core": "workspace:*",
-    "hackbot-plugin": "workspace:*",
-    "hackbot-sdk": "workspace:*",
-    "hackbot-ui": "workspace:*",
+    "@hackbot/core": "workspace:*",
+    "@hackbot/plugin": "workspace:*",
+    "@hackbot/sdk": "workspace:*",
+    "@hackbot/ui": "workspace:*",
     "@opentui/core": "catalog:",
     "@opentui/keymap": "catalog:",
     "@opentui/solid": "catalog:",

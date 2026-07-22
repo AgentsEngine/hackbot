@@ -1,6 +1,6 @@
 import { describe, expect } from "bun:test"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { CrossSpawnSpawner } from "hackbot-core/cross-spawn-spawner"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { CrossSpawnSpawner } from "@hackbot/core/cross-spawn-spawner"
 import { Deferred, Effect, Fiber, Layer } from "effect"
 import { InstanceRef } from "../../src/effect/instance-ref"
 import { registerDisposer } from "../../src/effect/instance-registry"

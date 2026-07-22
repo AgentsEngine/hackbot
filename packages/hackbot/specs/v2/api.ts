@@ -1,7 +1,7 @@
 // @ts-nocheck
 
-import { OpenCode } from "hackbot-core"
-import { ReadTool } from "hackbot-core/tools"
+import { OpenCode } from "@hackbot/core"
+import { ReadTool } from "@hackbot/core/tools"
 
 const opencode = OpenCode.make({})
 

@@ -1,9 +1,9 @@
 import { EOL } from "os"
 import { Effect } from "effect"
-import { FileSystem } from "hackbot-core/filesystem"
-import { LocationServiceMap, locationServiceMapLayer } from "hackbot-core/location-services"
-import { Location } from "hackbot-core/location"
-import { AbsolutePath, RelativePath } from "hackbot-core/schema"
+import { FileSystem } from "@hackbot/core/filesystem"
+import { LocationServiceMap, locationServiceMapLayer } from "@hackbot/core/location-services"
+import { Location } from "@hackbot/core/location"
+import { AbsolutePath, RelativePath } from "@hackbot/core/schema"
 import { effectCmd } from "../../effect-cmd"
 import { cmd } from "../cmd"
 

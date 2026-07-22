@@ -1,10 +1,10 @@
 import * as i18n from "@solid-primitives/i18n"
 import { createEffect, createMemo, createResource } from "solid-js"
 import { createStore } from "solid-js/store"
-import { createSimpleContext } from "hackbot-ui/context"
+import { createSimpleContext } from "@hackbot/ui/context"
 import { Persist, persisted } from "@/utils/persist"
 import { dict as en } from "@/i18n/en"
-import { dict as uiEn } from "hackbot-ui/i18n/en"
+import { dict as uiEn } from "@hackbot/ui/i18n/en"
 
 export type Locale =
   | "en"

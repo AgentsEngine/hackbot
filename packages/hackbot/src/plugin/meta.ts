@@ -1,10 +1,10 @@
 import path from "path"
 import { fileURLToPath } from "url"
 
-import { Flag } from "hackbot-core/flag/flag"
-import { Global } from "hackbot-core/global"
+import { Flag } from "@hackbot/core/flag/flag"
+import { Global } from "@hackbot/core/global"
 import { Filesystem } from "@/util/filesystem"
-import { Flock } from "hackbot-core/util/flock"
+import { Flock } from "@hackbot/core/util/flock"
 
 import { parsePluginSpecifier, pluginSource } from "./shared"
 

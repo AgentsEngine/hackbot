@@ -1,4 +1,4 @@
-import { makeGlobalNode } from "hackbot-core/effect/app-node"
+import { makeGlobalNode } from "@hackbot/core/effect/app-node"
 import { Plugin } from "../plugin"
 import { Format } from "../format"
 import { LSP } from "@/lsp/lsp"

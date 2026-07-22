@@ -1,4 +1,4 @@
-import type { WslServersState } from "hackbot-app/wsl/types"
+import type { WslServersState } from "@hackbot/app/wsl/types"
 
 export function readyWslConnections(state?: WslServersState) {
   return (state?.servers ?? []).flatMap((item) => {

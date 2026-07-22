@@ -1,5 +1,5 @@
-import { getStatsHomeData } from "hackbot-stats-core/domain/home"
-import { runtime } from "hackbot-stats-core/runtime"
+import { getStatsHomeData } from "@hackbot/stats-core/domain/home"
+import { runtime } from "@hackbot/stats-core/runtime"
 import {
   canonicalFamilyComparisonPath,
   canonicalModelComparisonPath,

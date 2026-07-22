@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "hackbot-protocol",
+  "name": "@hackbot/protocol",
   "private": true,
   "type": "module",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "hackbot-schema": "workspace:*",
+    "@hackbot/schema": "workspace:*",
     "effect": "catalog:"
   },
   "devDependencies": {

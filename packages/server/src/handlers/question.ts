@@ -1,8 +1,8 @@
-import { QuestionV2 } from "hackbot-core/question"
+import { QuestionV2 } from "@hackbot/core/question"
 import { Effect } from "effect"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { QuestionNotFoundError } from "hackbot-protocol/errors"
+import { QuestionNotFoundError } from "@hackbot/protocol/errors"
 import { response } from "../location"
 
 function missingRequest(id: QuestionV2.ID) {

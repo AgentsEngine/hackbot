@@ -1,5 +1,5 @@
-import { Flag } from "hackbot-core/flag/flag"
-import { Database } from "hackbot-core/database/database"
+import { Flag } from "@hackbot/core/flag/flag"
+import { Database } from "@hackbot/core/database/database"
 import { Effect } from "effect"
 import { HttpRouter, HttpServerRequest, HttpServerResponse } from "effect/unstable/http"
 import * as Fence from "@/server/shared/fence"

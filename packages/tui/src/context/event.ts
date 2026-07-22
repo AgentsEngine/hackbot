@@ -1,4 +1,4 @@
-import type { Event } from "hackbot-sdk/v2"
+import type { Event } from "@hackbot/sdk/v2"
 import { useSDK } from "./sdk"
 
 type EventMetadata = {

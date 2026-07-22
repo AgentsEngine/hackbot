@@ -1,7 +1,7 @@
-import type { Hooks, PluginInput } from "hackbot-plugin"
+import type { Hooks, PluginInput } from "@hackbot/plugin"
 import { OAUTH_DUMMY_KEY } from "../auth"
-import { InstallationVersion } from "hackbot-core/installation/version"
-import { OauthCallbackPage } from "hackbot-core/oauth/page"
+import { InstallationVersion } from "@hackbot/core/installation/version"
+import { OauthCallbackPage } from "@hackbot/core/oauth/page"
 import { createServer } from "http"
 import open from "open"
 

@@ -1,5 +1,5 @@
-import { Glob } from "hackbot-core/util/glob"
-import { ConfigPluginV1 } from "hackbot-core/v1/config/plugin"
+import { Glob } from "@hackbot/core/util/glob"
+import { ConfigPluginV1 } from "@hackbot/core/v1/config/plugin"
 import { pathToFileURL } from "url"
 import { isPathPluginSpec, parsePluginSpecifier, resolvePathPluginTarget } from "@/plugin/shared"
 import path from "path"

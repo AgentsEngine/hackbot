@@ -1,8 +1,8 @@
 import { Schema, Struct } from "effect"
-import { ProjectV2 } from "hackbot-core/project"
+import { ProjectV2 } from "@hackbot/core/project"
 import type { InstanceContext } from "@/project/instance-context"
-import { WorkspaceV2 } from "hackbot-core/workspace"
-import type { DeepMutable } from "hackbot-core/schema"
+import { WorkspaceV2 } from "@hackbot/core/workspace"
+import type { DeepMutable } from "@hackbot/core/schema"
 
 export const WorkspaceInfo = Schema.Struct({
   id: WorkspaceV2.ID,

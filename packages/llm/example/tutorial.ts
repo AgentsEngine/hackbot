@@ -1,7 +1,7 @@
 import { Config, Effect, Formatter, Layer, Schema, Stream } from "effect"
-import { LLM, LLMClient, Message, ProviderID, Tool, ToolRuntime } from "hackbot-llm"
-import { Route, Auth, Endpoint, Framing, Protocol, RequestExecutor, WebSocketExecutor } from "hackbot-llm/route"
-import { OpenAI } from "hackbot-llm/providers"
+import { LLM, LLMClient, Message, ProviderID, Tool, ToolRuntime } from "@hackbot/llm"
+import { Route, Auth, Endpoint, Framing, Protocol, RequestExecutor, WebSocketExecutor } from "@hackbot/llm/route"
+import { OpenAI } from "@hackbot/llm/providers"
 
 /**
  * A runnable walkthrough of the LLM package use-site API.

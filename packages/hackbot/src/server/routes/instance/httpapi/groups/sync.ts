@@ -1,5 +1,5 @@
-import { NonNegativeInt } from "hackbot-core/schema"
-import { EventV2 } from "hackbot-core/event"
+import { NonNegativeInt } from "@hackbot/core/schema"
+import { EventV2 } from "@hackbot/core/event"
 import { SessionID } from "@/session/schema"
 import { Schema } from "effect"
 import { HttpApi, HttpApiEndpoint, HttpApiError, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"

@@ -1,8 +1,8 @@
 import { Effect } from "effect"
-import { Fff } from "hackbot-core/filesystem/fff.bun"
+import { Fff } from "@hackbot/core/filesystem/fff.bun"
 import { AppRuntime } from "@/effect/app-runtime"
-import { FileSystem } from "hackbot-core/filesystem"
-import { AbsolutePath } from "hackbot-core/schema"
+import { FileSystem } from "@hackbot/core/filesystem"
+import { AbsolutePath } from "@hackbot/core/schema"
 import { InstanceStore } from "@/project/instance-store"
 
 const dir = AbsolutePath.make(process.cwd())

@@ -1,8 +1,8 @@
 import { ServerAuth } from "../auth"
-import { UnauthorizedError } from "hackbot-protocol/errors"
-import { Authorization } from "hackbot-protocol/middleware/authorization"
-export { Authorization } from "hackbot-protocol/middleware/authorization"
-import { hasPtyConnectTicketURL } from "hackbot-protocol/groups/pty"
+import { UnauthorizedError } from "@hackbot/protocol/errors"
+import { Authorization } from "@hackbot/protocol/middleware/authorization"
+export { Authorization } from "@hackbot/protocol/middleware/authorization"
+import { hasPtyConnectTicketURL } from "@hackbot/protocol/groups/pty"
 import { Effect, Encoding, Layer, Redacted } from "effect"
 import { HttpEffect, HttpServerRequest, HttpServerResponse } from "effect/unstable/http"
 

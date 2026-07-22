@@ -1,4 +1,4 @@
-import { Billing } from "hackbot-console-core/billing.js"
+import { Billing } from "@hackbot/console-core/billing.js"
 import { createAsync, query, useParams } from "@solidjs/router"
 import { createMemo, For, Show, Switch, Match, createEffect, createSignal } from "solid-js"
 import { formatDateUTC, formatDateForTable } from "../../common"

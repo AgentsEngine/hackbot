@@ -1,5 +1,5 @@
 import { Schema } from "effect"
-import { NamedError } from "hackbot-core/util/error"
+import { NamedError } from "@hackbot/core/util/error"
 
 export const OutputLengthError = NamedError.create("MessageOutputLengthError", {})
 

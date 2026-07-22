@@ -1,4 +1,4 @@
-import { ZenData } from "hackbot-console-core/model.js"
+import { ZenData } from "@hackbot/console-core/model.js"
 import {
   fromAnthropicChunk,
   fromAnthropicRequest,

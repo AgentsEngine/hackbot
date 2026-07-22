@@ -1,7 +1,7 @@
 import { Effect, Layer } from "effect"
 import { Provider } from "@/provider/provider"
-import { ProviderV2 } from "hackbot-core/provider"
-import { ModelV2 } from "hackbot-core/model"
+import { ProviderV2 } from "@hackbot/core/provider"
+import { ModelV2 } from "@hackbot/core/model"
 
 export namespace ProviderTest {
   export function model(override: Partial<Provider.Model> = {}): Provider.Model {

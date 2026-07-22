@@ -1,9 +1,9 @@
 import { expect, mock, test } from "bun:test"
-import type { TuiPluginApi } from "hackbot-plugin/tui"
+import type { TuiPluginApi } from "@hackbot/plugin/tui"
 import { createTestRenderer } from "@opentui/core/testing"
 import { Effect } from "effect"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { Global } from "hackbot-core/global"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { Global } from "@hackbot/core/global"
 import { createTuiResolvedConfig } from "./fixture/tui-runtime"
 import { createEventSource, createFetch, directory, json } from "./fixture/tui-sdk"
 

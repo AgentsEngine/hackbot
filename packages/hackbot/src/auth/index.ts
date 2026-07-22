@@ -1,9 +1,9 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import path from "path"
 import { Effect, Layer, Record, Result, Schema, Context } from "effect"
-import { NonNegativeInt } from "hackbot-core/schema"
-import { Global } from "hackbot-core/global"
-import { FSUtil } from "hackbot-core/fs-util"
+import { NonNegativeInt } from "@hackbot/core/schema"
+import { Global } from "@hackbot/core/global"
+import { FSUtil } from "@hackbot/core/fs-util"
 
 export const OAUTH_DUMMY_KEY = "hackbot-oauth-dummy-key"
 

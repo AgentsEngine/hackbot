@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "hackbot-cli",
+  "name": "@hackbot/cli",
   "version": "1.18.4",
   "type": "module",
   "license": "MIT",
@@ -17,10 +17,10 @@
   },
   "dependencies": {
     "@effect/platform-node": "catalog:",
-    "hackbot-core": "workspace:*",
-    "hackbot-sdk": "workspace:*",
-    "hackbot-server": "workspace:*",
-    "hackbot-tui": "workspace:*",
+    "@hackbot/core": "workspace:*",
+    "@hackbot/sdk": "workspace:*",
+    "@hackbot/server": "workspace:*",
+    "@hackbot/tui": "workspace:*",
     "@opentui/core": "catalog:",
     "@opentui/solid": "catalog:",
     "@parcel/watcher": "2.5.1",
@@ -28,7 +28,7 @@
     "solid-js": "catalog:"
   },
   "devDependencies": {
-    "hackbot-script": "workspace:*",
+    "@hackbot/script": "workspace:*",
     "@tsconfig/bun": "catalog:",
     "@types/bun": "catalog:",
     "@typescript/native-preview": "catalog:"

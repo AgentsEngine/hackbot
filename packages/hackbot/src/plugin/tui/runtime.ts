@@ -10,13 +10,13 @@ import {
   type TuiPluginStatus,
   type TuiSlotPlugin,
   type TuiTheme,
-} from "hackbot-plugin/tui"
+} from "@hackbot/plugin/tui"
 import path from "path"
 import { fileURLToPath } from "url"
 import { TuiConfig } from "@/config/tui"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { errorData, errorMessage } from "hackbot-tui/util/error"
-import { isRecord } from "hackbot-tui/util/record"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { errorData, errorMessage } from "@hackbot/tui/util/error"
+import { isRecord } from "@hackbot/tui/util/record"
 import { resolveHostAttentionSoundPaths } from "@/config/tui-host-attention"
 import {
   readPackageThemes,
@@ -29,20 +29,20 @@ import {
 import { PluginLoader } from "@/plugin/loader"
 import { PluginMeta } from "@/plugin/meta"
 import { installPlugin as installModulePlugin, patchPluginConfig, readPluginManifest } from "@/plugin/install"
-import { hasTheme, upsertTheme } from "hackbot-tui/context/theme"
-import { Global } from "hackbot-core/global"
+import { hasTheme, upsertTheme } from "@hackbot/tui/context/theme"
+import { Global } from "@hackbot/core/global"
 import { Filesystem } from "@/util/filesystem"
 import { Process } from "@/util/process"
-import { Flock } from "hackbot-core/util/flock"
-import { Flag } from "hackbot-core/flag/flag"
+import { Flock } from "@hackbot/core/util/flock"
+import { Flag } from "@hackbot/core/flag/flag"
 import { internalTuiPlugins, type InternalTuiPlugin } from "./internal"
-import type { HostPluginApi, HostSlots } from "hackbot-tui/plugin/slots"
+import type { HostPluginApi, HostSlots } from "@hackbot/tui/plugin/slots"
 import { ConfigPlugin } from "@/config/plugin"
-import { ConfigPluginV1 } from "hackbot-core/v1/config/plugin"
-import { createCommandShim } from "hackbot-tui/plugin/command-shim"
+import { ConfigPluginV1 } from "@hackbot/core/v1/config/plugin"
+import { createCommandShim } from "@hackbot/tui/plugin/command-shim"
 import { RuntimeFlags } from "@/effect/runtime-flags"
 import { Effect } from "effect"
-import { createPluginRuntime, type PluginRuntime, type TuiPluginHost } from "hackbot-tui/plugin/runtime"
+import { createPluginRuntime, type PluginRuntime, type TuiPluginHost } from "@hackbot/tui/plugin/runtime"
 
 ensureRuntimePluginSupport({ additional: keymapRuntimeModules })
 

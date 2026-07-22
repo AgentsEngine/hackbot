@@ -1,6 +1,6 @@
-import { Location } from "hackbot-core/location"
-import { Project } from "hackbot-core/project"
-import { AbsolutePath } from "hackbot-core/schema"
+import { Location } from "@hackbot/core/location"
+import { Project } from "@hackbot/core/project"
+import { AbsolutePath } from "@hackbot/core/schema"
 import { Effect, Layer } from "effect"
 import { tmpdir } from "./tmpdir"
 

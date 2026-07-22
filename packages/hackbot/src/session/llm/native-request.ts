@@ -1,5 +1,5 @@
-import type { JsonSchema, LLMRequest, ProviderMetadata } from "hackbot-llm"
-import { LLM, Message, SystemPart, ToolCallPart, ToolDefinition, ToolResultPart } from "hackbot-llm"
+import type { JsonSchema, LLMRequest, ProviderMetadata } from "@hackbot/llm"
+import { LLM, Message, SystemPart, ToolCallPart, ToolDefinition, ToolResultPart } from "@hackbot/llm"
 import {
   AmazonBedrock,
   Anthropic,
@@ -8,7 +8,7 @@ import {
   OpenAI,
   OpenAICompatible,
   OpenRouter,
-} from "hackbot-llm/providers"
+} from "@hackbot/llm/providers"
 import type { ModelMessage } from "ai"
 import type { Provider } from "@/provider/provider"
 import { isRecord } from "@/util/record"

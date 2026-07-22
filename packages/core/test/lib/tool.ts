@@ -1,6 +1,6 @@
-import { AgentV2 } from "hackbot-core/agent"
-import { SessionMessage } from "hackbot-core/session/message"
-import { ToolRegistry } from "hackbot-core/tool/registry"
+import { AgentV2 } from "@hackbot/core/agent"
+import { SessionMessage } from "@hackbot/core/session/message"
+import { ToolRegistry } from "@hackbot/core/tool/registry"
 import { Effect } from "effect"
 
 export const toolIdentity = {

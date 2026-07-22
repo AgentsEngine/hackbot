@@ -1,8 +1,8 @@
 import { For, Show } from "solid-js"
-import type { PermissionRequest } from "hackbot-sdk/v2"
-import { Button } from "hackbot-ui/button"
-import { DockPrompt } from "hackbot-session-ui/dock-prompt"
-import { Icon } from "hackbot-ui/icon"
+import type { PermissionRequest } from "@hackbot/sdk/v2"
+import { Button } from "@hackbot/ui/button"
+import { DockPrompt } from "@hackbot/session-ui/dock-prompt"
+import { Icon } from "@hackbot/ui/icon"
 import { useLanguage } from "@/context/language"
 
 export function SessionPermissionDock(props: {

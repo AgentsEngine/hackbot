@@ -1,5 +1,5 @@
-import { Binary } from "hackbot-core/util/binary"
-import type { AssistantMessage, Message, Part, SessionStatus, UserMessage } from "hackbot-sdk/v2"
+import { Binary } from "@hackbot/core/util/binary"
+import type { AssistantMessage, Message, Part, SessionStatus, UserMessage } from "@hackbot/sdk/v2"
 import { createMemo, mapArray, type Accessor } from "solid-js"
 import { reuseTimelineRows } from "./row-reconciliation"
 import { Timeline, TimelineRow } from "./rows"

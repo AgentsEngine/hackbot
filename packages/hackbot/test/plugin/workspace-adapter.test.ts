@@ -1,7 +1,7 @@
 import { afterEach, describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { Npm } from "hackbot-core/npm"
-import { Ripgrep } from "hackbot-core/ripgrep"
+import { Npm } from "@hackbot/core/npm"
+import { Ripgrep } from "@hackbot/core/ripgrep"
 import path from "path"
 import { pathToFileURL } from "url"
 import { Auth } from "../../src/auth"
@@ -17,8 +17,8 @@ import { testEffect } from "../lib/effect"
 import { AccountTest } from "../fake/account"
 import { AuthTest } from "../fake/auth"
 import { NpmTest } from "../fake/npm"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 
 const noopBootstrapLayer = Layer.succeed(InstanceBootstrap.Service, InstanceBootstrap.Service.of({ run: Effect.void }))
 const it = testEffect(

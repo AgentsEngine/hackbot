@@ -1,10 +1,10 @@
 import { createEffect, For, Match, on, onCleanup, onMount, Show, Switch, type Accessor, type JSX } from "solid-js"
 import { animate, type AnimationPlaybackControls } from "motion"
-import { useI18n } from "hackbot-ui/context/i18n"
+import { useI18n } from "@hackbot/ui/context/i18n"
 import { createStore } from "solid-js/store"
-import { Collapsible } from "hackbot-ui/collapsible"
-import type { IconProps } from "hackbot-ui/icon"
-import { TextShimmer } from "hackbot-ui/text-shimmer"
+import { Collapsible } from "@hackbot/ui/collapsible"
+import type { IconProps } from "@hackbot/ui/icon"
+import { TextShimmer } from "@hackbot/ui/text-shimmer"
 
 export type TriggerTitle = {
   title: string

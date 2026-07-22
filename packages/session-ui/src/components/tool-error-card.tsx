@@ -1,11 +1,11 @@
 import { type ComponentProps, createMemo, Show, splitProps } from "solid-js"
 import { createStore } from "solid-js/store"
-import { Card, CardDescription } from "hackbot-ui/card"
-import { Collapsible } from "hackbot-ui/collapsible"
-import { Icon } from "hackbot-ui/icon"
-import { IconButton } from "hackbot-ui/icon-button"
-import { Tooltip } from "hackbot-ui/tooltip"
-import { useI18n } from "hackbot-ui/context/i18n"
+import { Card, CardDescription } from "@hackbot/ui/card"
+import { Collapsible } from "@hackbot/ui/collapsible"
+import { Icon } from "@hackbot/ui/icon"
+import { IconButton } from "@hackbot/ui/icon-button"
+import { Tooltip } from "@hackbot/ui/tooltip"
+import { useI18n } from "@hackbot/ui/context/i18n"
 
 export interface ToolErrorCardProps extends Omit<ComponentProps<typeof Card>, "children" | "variant"> {
   tool: string

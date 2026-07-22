@@ -1,4 +1,4 @@
-import { createBuiltinPlugins, type BuiltinTuiPlugin } from "hackbot-tui/builtins"
+import { createBuiltinPlugins, type BuiltinTuiPlugin } from "@hackbot/tui/builtins"
 import type { RuntimeFlags } from "@/effect/runtime-flags"
 
 export type InternalTuiPlugin = BuiltinTuiPlugin

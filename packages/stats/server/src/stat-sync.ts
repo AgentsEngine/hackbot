@@ -1,8 +1,8 @@
 import * as NodeRuntime from "@effect/platform-node/NodeRuntime"
-import { Athena } from "hackbot-stats-core/athena"
-import { ModelStatRepo } from "hackbot-stats-core/domain/model"
-import { layer as statsLayer } from "hackbot-stats-core/runtime"
-import { syncStats } from "hackbot-stats-core/stat-sync"
+import { Athena } from "@hackbot/stats-core/athena"
+import { ModelStatRepo } from "@hackbot/stats-core/domain/model"
+import { layer as statsLayer } from "@hackbot/stats-core/runtime"
+import { syncStats } from "@hackbot/stats-core/stat-sync"
 import { Cause, Duration, Effect, Layer, Schedule } from "effect"
 
 const SYNC_INTERVAL = "1 hour"

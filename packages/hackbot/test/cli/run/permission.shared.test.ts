@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import type { PermissionRequest } from "hackbot-sdk/v2"
+import type { PermissionRequest } from "@hackbot/sdk/v2"
 import {
   createPermissionBodyState,
   permissionAlwaysLines,

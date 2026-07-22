@@ -1,9 +1,9 @@
 import fs from "fs/promises"
 import os from "os"
 import { Effect } from "effect"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { EffectFlock } from "hackbot-core/util/effect-flock"
-import { Global } from "hackbot-core/global"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { EffectFlock } from "@hackbot/core/util/effect-flock"
+import { Global } from "@hackbot/core/global"
 
 type Msg = {
   key: string

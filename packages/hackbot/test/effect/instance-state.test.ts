@@ -1,6 +1,6 @@
 import { expect } from "bun:test"
-import { CrossSpawnSpawner } from "hackbot-core/cross-spawn-spawner"
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { CrossSpawnSpawner } from "@hackbot/core/cross-spawn-spawner"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { $ } from "bun"
 import { Context, Deferred, Duration, Effect, Exit, Fiber, Layer } from "effect"
 import { InstanceState } from "@/effect/instance-state"

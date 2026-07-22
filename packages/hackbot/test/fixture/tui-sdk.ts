@@ -1,5 +1,5 @@
-import type { GlobalEvent } from "hackbot-sdk/v2"
-import type { EventSource } from "hackbot-tui/context/sdk"
+import type { GlobalEvent } from "@hackbot/sdk/v2"
+import type { EventSource } from "@hackbot/tui/context/sdk"
 
 export const worktree = "/tmp/opencode"
 export const directory = `${worktree}/packages/hackbot`

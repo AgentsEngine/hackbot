@@ -1,5 +1,5 @@
-import type { Message, Session, Part, SnapshotFileDiff, SessionStatus, Provider } from "hackbot-sdk/v2"
-import { createSimpleContext } from "hackbot-ui/context"
+import type { Message, Session, Part, SnapshotFileDiff, SessionStatus, Provider } from "@hackbot/sdk/v2"
+import { createSimpleContext } from "@hackbot/ui/context"
 import { PreloadMultiFileDiffResult } from "@pierre/diffs/ssr"
 
 export type NormalizedProviderListResponse = {

@@ -18,10 +18,10 @@
 // without changing the fixture. Long-lived commands like `serve` will need a
 // different return shape — see the TODO at the bottom of OpencodeCli.
 import { test, type TestOptions } from "bun:test"
-import { FSUtil } from "hackbot-core/fs-util"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { AppProcess } from "hackbot-core/process"
+import { FSUtil } from "@hackbot/core/fs-util"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { AppProcess } from "@hackbot/core/process"
 import { Deferred, Duration, Effect, Layer, Queue, Schedule, Scope, Stream } from "effect"
 import { FetchHttpClient, HttpClient } from "effect/unstable/http"
 import { ChildProcess } from "effect/unstable/process"

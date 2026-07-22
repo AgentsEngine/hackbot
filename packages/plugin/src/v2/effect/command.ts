@@ -1,4 +1,4 @@
-import type { CommandV2Info } from "hackbot-sdk/v2/types"
+import type { CommandV2Info } from "@hackbot/sdk/v2/types"
 import type { Hooks } from "./registration.js"
 
 export interface CommandDraft {

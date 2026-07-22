@@ -1,5 +1,5 @@
 import type { IntegrationDraft, IntegrationMethodRegistration } from "../effect/integration.js"
-import type { CredentialValue } from "hackbot-sdk/v2/types"
+import type { CredentialValue } from "@hackbot/sdk/v2/types"
 import type { Hooks } from "./registration.js"
 
 export type { IntegrationDraft, IntegrationMethodRegistration }

@@ -1,5 +1,5 @@
-import { Provider } from "hackbot-schema/provider"
-import { Location } from "hackbot-schema/location"
+import { Provider } from "@hackbot/schema/provider"
+import { Location } from "@hackbot/schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 import { ProviderNotFoundError, ServiceUnavailableError } from "../errors"

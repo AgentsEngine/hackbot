@@ -1,1 +1,1 @@
-export { default } from "hackbot-tui/parsers-config"
+export { default } from "@hackbot/tui/parsers-config"

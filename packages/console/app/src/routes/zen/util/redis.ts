@@ -1,4 +1,4 @@
-import { Resource } from "hackbot-console-resource"
+import { Resource } from "@hackbot/console-resource"
 import { Redis } from "@upstash/redis/cloudflare"
 
 let redis: Redis | undefined

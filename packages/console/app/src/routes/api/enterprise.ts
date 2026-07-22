@@ -1,6 +1,6 @@
 import type { APIEvent } from "@solidjs/start/server"
-import { AWS } from "hackbot-console-core/aws.js"
-import { Resource } from "hackbot-console-resource"
+import { AWS } from "@hackbot/console-core/aws.js"
+import { Resource } from "@hackbot/console-resource"
 import { i18n } from "~/i18n"
 import { localeFromRequest } from "~/lib/language"
 import { createLead } from "~/lib/salesforce"

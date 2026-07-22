@@ -1,5 +1,5 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { AppProcess } from "hackbot-core/process"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { AppProcess } from "@hackbot/core/process"
 import { Effect, Layer, Context, Stream } from "effect"
 import { ChildProcess } from "effect/unstable/process"
 

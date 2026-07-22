@@ -16,8 +16,8 @@ import type {
   SnapshotFileDiff,
   Todo,
   VcsInfo,
-} from "hackbot-sdk/v2/client"
-import { NormalizedProviderListResponse } from "hackbot-session-ui/context"
+} from "@hackbot/sdk/v2/client"
+import { NormalizedProviderListResponse } from "@hackbot/session-ui/context"
 import type { Accessor } from "solid-js"
 import type { SetStoreFunction, Store } from "solid-js/store"
 

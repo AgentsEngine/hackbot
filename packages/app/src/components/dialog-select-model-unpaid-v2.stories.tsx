@@ -1,6 +1,6 @@
 // @ts-nocheck
-import { Button } from "hackbot-ui/button"
-import { useDialog } from "hackbot-ui/context/dialog"
+import { Button } from "@hackbot/ui/button"
+import { useDialog } from "@hackbot/ui/context/dialog"
 import { createSignal, onMount } from "solid-js"
 import { DialogSelectModelUnpaidV2 } from "./dialog-select-model-unpaid-v2"
 

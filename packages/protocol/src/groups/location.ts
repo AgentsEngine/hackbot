@@ -1,4 +1,4 @@
-import { Location } from "hackbot-schema/location"
+import { Location } from "@hackbot/schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 

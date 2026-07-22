@@ -1,7 +1,7 @@
 export * as ProviderV2 from "./provider"
 
 import { Types } from "effect"
-import { Provider } from "hackbot-schema/provider"
+import { Provider } from "@hackbot/schema/provider"
 
 export const ID = Provider.ID
 export type ID = typeof ID.Type

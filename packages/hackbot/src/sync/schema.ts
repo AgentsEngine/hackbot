@@ -1,7 +1,7 @@
 import { Schema } from "effect"
 
 import { Identifier } from "@/id/id"
-import { statics } from "hackbot-core/schema"
+import { statics } from "@hackbot/core/schema"
 
 export const EventID = Schema.String.check(Schema.isStartsWith("evt")).pipe(
   Schema.brand("EventID"),

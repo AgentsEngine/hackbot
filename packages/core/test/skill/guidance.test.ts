@@ -1,12 +1,12 @@
 import path from "path"
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { AgentV2 } from "hackbot-core/agent"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { AbsolutePath } from "hackbot-core/schema"
-import { SkillV2 } from "hackbot-core/skill"
-import { SystemContext } from "hackbot-core/system-context"
-import { SkillGuidance } from "hackbot-core/skill/guidance"
+import { AgentV2 } from "@hackbot/core/agent"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { AbsolutePath } from "@hackbot/core/schema"
+import { SkillV2 } from "@hackbot/core/skill"
+import { SystemContext } from "@hackbot/core/system-context"
+import { SkillGuidance } from "@hackbot/core/skill/guidance"
 import { it } from "../lib/effect"
 
 const build = AgentV2.ID.make("build")

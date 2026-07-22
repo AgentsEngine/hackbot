@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
-import { SessionEvent } from "hackbot-core/session/event"
-import { EventManifest as SchemaEventManifest } from "hackbot-schema/event-manifest"
+import { SessionEvent } from "@hackbot/core/session/event"
+import { EventManifest as SchemaEventManifest } from "@hackbot/schema/event-manifest"
 import { Todo } from "@/session/todo"
 import { EventManifest } from "@/event-manifest"
 

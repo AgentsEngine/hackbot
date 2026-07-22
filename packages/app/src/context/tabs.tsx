@@ -1,5 +1,5 @@
-import type { Session } from "hackbot-sdk/v2/client"
-import { createSimpleContext } from "hackbot-ui/context"
+import type { Session } from "@hackbot/sdk/v2/client"
+import { createSimpleContext } from "@hackbot/ui/context"
 import { createStore, produce } from "solid-js/store"
 import { Persist, persisted, removePersisted, draftPersistedKeys } from "@/utils/persist"
 import { ServerConnection, useServer } from "./server"

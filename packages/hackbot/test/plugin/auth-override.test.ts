@@ -1,17 +1,17 @@
 import { describe, expect, test } from "bun:test"
 import path from "path"
 import { pathToFileURL } from "url"
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { Effect } from "effect"
-import { FSUtil } from "hackbot-core/fs-util"
+import { FSUtil } from "@hackbot/core/fs-util"
 import { provideInstance, TestInstance, tmpdirScoped } from "../fixture/fixture"
 import { ProviderAuth } from "@/provider/auth"
 
 import { RuntimeFlags } from "@/effect/runtime-flags"
 import { TestConfig } from "../fixture/config"
 import { testEffect } from "../lib/effect"
-import { CrossSpawnSpawner } from "hackbot-core/cross-spawn-spawner"
-import { ProviderV2 } from "hackbot-core/provider"
+import { CrossSpawnSpawner } from "@hackbot/core/cross-spawn-spawner"
+import { ProviderV2 } from "@hackbot/core/provider"
 import { Config } from "@/config/config"
 
 const it = testEffect(LayerNode.compile(LayerNode.group([CrossSpawnSpawner.node, FSUtil.node])))

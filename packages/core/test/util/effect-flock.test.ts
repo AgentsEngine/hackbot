@@ -5,11 +5,11 @@ import path from "path"
 import os from "os"
 import { Cause, Effect, Exit } from "effect"
 import { testEffect } from "../lib/effect"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { EffectFlock } from "hackbot-core/util/effect-flock"
-import { Global } from "hackbot-core/global"
-import { Hash } from "hackbot-core/util/hash"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { EffectFlock } from "@hackbot/core/util/effect-flock"
+import { Global } from "@hackbot/core/global"
+import { Hash } from "@hackbot/core/util/hash"
 
 function lock(dir: string, key: string) {
   return path.join(dir, Hash.fast(key) + ".lock")

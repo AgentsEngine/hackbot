@@ -1,8 +1,8 @@
 import { describe, expect } from "bun:test"
 import { Effect } from "effect"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { SkillPlugin } from "hackbot-core/plugin/skill"
-import { SkillV2 } from "hackbot-core/skill"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { SkillPlugin } from "@hackbot/core/plugin/skill"
+import { SkillV2 } from "@hackbot/core/skill"
 import { testEffect } from "../lib/effect"
 import { host } from "./host"
 

@@ -1,8 +1,8 @@
-import { UserMessage } from "hackbot-sdk/v2"
+import { UserMessage } from "@hackbot/sdk/v2"
 import { HoverCard } from "@kobalte/core/hover-card"
 import { ComponentProps, For, Match, Show, createSignal, splitProps, Switch } from "solid-js"
-import { DiffChanges } from "hackbot-ui/diff-changes"
-import { useI18n } from "hackbot-ui/context/i18n"
+import { DiffChanges } from "@hackbot/ui/diff-changes"
+import { useI18n } from "@hackbot/ui/context/i18n"
 
 export function MessageNav(
   props: ComponentProps<"ul"> & {

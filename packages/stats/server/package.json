@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "hackbot-stats-server",
+  "name": "@hackbot/stats-server",
   "version": "1.18.4",
   "private": true,
   "type": "module",
@@ -16,7 +16,7 @@
   "dependencies": {
     "@aws-sdk/client-firehose": "3.933.0",
     "@effect/platform-node": "catalog:",
-    "hackbot-stats-core": "workspace:*",
+    "@hackbot/stats-core": "workspace:*",
     "effect": "catalog:",
     "sst": "catalog:"
   },

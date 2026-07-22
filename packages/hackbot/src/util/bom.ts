@@ -1,5 +1,5 @@
 import { Effect } from "effect"
-import { FSUtil } from "hackbot-core/fs-util"
+import { FSUtil } from "@hackbot/core/fs-util"
 
 const BOM_CODE = 0xfeff
 const BOM = String.fromCharCode(BOM_CODE)

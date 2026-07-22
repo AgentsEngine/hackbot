@@ -1,10 +1,10 @@
-import { SessionMessage } from "hackbot-schema/session-message"
-import { SessionInput } from "hackbot-schema/session-input"
-import { PromptInput } from "hackbot-schema/prompt-input"
-import { Session } from "hackbot-schema/session"
-import { Project } from "hackbot-schema/project"
-import { AbsolutePath, NonNegativeInt, PositiveInt, RelativePath, statics } from "hackbot-schema/schema"
-import { Workspace } from "hackbot-schema/workspace"
+import { SessionMessage } from "@hackbot/schema/session-message"
+import { SessionInput } from "@hackbot/schema/session-input"
+import { PromptInput } from "@hackbot/schema/prompt-input"
+import { Session } from "@hackbot/schema/session"
+import { Project } from "@hackbot/schema/project"
+import { AbsolutePath, NonNegativeInt, PositiveInt, RelativePath, statics } from "@hackbot/schema/schema"
+import { Workspace } from "@hackbot/schema/workspace"
 import { Context, Effect, Encoding, Result, Schema, Struct } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiMiddleware, HttpApiSchema, OpenApi } from "effect/unstable/httpapi"
 import {
@@ -16,11 +16,11 @@ import {
   SessionNotFoundError,
   UnknownError,
 } from "../errors"
-import { Agent } from "hackbot-schema/agent"
-import { Model } from "hackbot-schema/model"
-import { Location } from "hackbot-schema/location"
-import { Revert } from "hackbot-schema/revert"
-import { SessionEvent } from "hackbot-schema/session-event"
+import { Agent } from "@hackbot/schema/agent"
+import { Model } from "@hackbot/schema/model"
+import { Location } from "@hackbot/schema/location"
+import { Revert } from "@hackbot/schema/revert"
+import { SessionEvent } from "@hackbot/schema/session-event"
 
 const SessionsQueryFields = {
   workspace: Workspace.ID.pipe(Schema.optional),

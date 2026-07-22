@@ -1,6 +1,6 @@
-import { Icon, type IconProps } from "hackbot-ui/icon"
-import { Toast, showToast as showLegacyToast, type ToastOptions, type ToastVariant } from "hackbot-ui/toast"
-import { ToastV2, showToastV2 } from "hackbot-ui/v2/toast-v2"
+import { Icon, type IconProps } from "@hackbot/ui/icon"
+import { Toast, showToast as showLegacyToast, type ToastOptions, type ToastVariant } from "@hackbot/ui/toast"
+import { ToastV2, showToastV2 } from "@hackbot/ui/v2/toast-v2"
 
 let v2 = false
 

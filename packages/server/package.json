@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "hackbot-server",
+  "name": "@hackbot/server",
   "version": "1.18.4",
   "private": true,
   "type": "module",
@@ -12,8 +12,8 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "hackbot-core": "workspace:*",
-    "hackbot-protocol": "workspace:*",
+    "@hackbot/core": "workspace:*",
+    "@hackbot/protocol": "workspace:*",
     "drizzle-orm": "catalog:",
     "effect": "catalog:"
   },

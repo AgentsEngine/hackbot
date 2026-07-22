@@ -1,4 +1,4 @@
-import { define } from "hackbot-plugin/v2/effect"
+import { define } from "@hackbot/plugin/v2/effect"
 import { Effect } from "effect"
 
 export default define({

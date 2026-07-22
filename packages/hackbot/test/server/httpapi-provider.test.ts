@@ -1,6 +1,6 @@
 import { describe, expect } from "bun:test"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { FSUtil } from "hackbot-core/fs-util"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { FSUtil } from "@hackbot/core/fs-util"
 import { Effect, Layer } from "effect"
 import path from "path"
 import { resetDatabase } from "../fixture/db"

@@ -1,11 +1,11 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { httpClient, path } from "hackbot-core/effect/app-node-platform"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { httpClient, path } from "@hackbot/core/effect/app-node-platform"
 import { NodePath } from "@effect/platform-node"
 import { Effect, Layer, Path, Schema, Context } from "effect"
 import { FetchHttpClient, HttpClient, HttpClientRequest, HttpClientResponse } from "effect/unstable/http"
 import { withTransientReadRetry } from "@/util/effect-http-client"
-import { FSUtil } from "hackbot-core/fs-util"
-import { Global } from "hackbot-core/global"
+import { FSUtil } from "@hackbot/core/fs-util"
+import { Global } from "@hackbot/core/global"
 
 const skillConcurrency = 4
 const fileConcurrency = 8

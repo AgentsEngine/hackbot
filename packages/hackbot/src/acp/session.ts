@@ -1,8 +1,8 @@
 import type { McpServer } from "@agentclientprotocol/sdk"
-import type { Message, Part } from "hackbot-sdk/v2"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { ProviderV2 } from "hackbot-core/provider"
-import { ModelV2 } from "hackbot-core/model"
+import type { Message, Part } from "@hackbot/sdk/v2"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { ProviderV2 } from "@hackbot/core/provider"
+import { ModelV2 } from "@hackbot/core/model"
 import { Context, Effect, Layer, Ref } from "effect"
 import * as ACPError from "./error"
 

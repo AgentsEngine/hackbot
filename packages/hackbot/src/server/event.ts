@@ -1,5 +1,5 @@
 import { Schema } from "effect"
-import { ServerEvent } from "hackbot-schema/server-event"
+import { ServerEvent } from "@hackbot/schema/server-event"
 
 export const Event = ServerEvent
 

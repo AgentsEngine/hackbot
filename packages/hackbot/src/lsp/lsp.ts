@@ -1,5 +1,5 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { FSUtil } from "hackbot-core/fs-util"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { FSUtil } from "@hackbot/core/fs-util"
 import { EventV2Bridge } from "@/event-v2-bridge"
 import * as LSPClient from "./client"
 import path from "path"
@@ -11,9 +11,9 @@ import { spawn as lspspawn } from "./launch"
 import { Effect, Layer, Context, Schema } from "effect"
 import { InstanceState } from "@/effect/instance-state"
 import { containsPath } from "@/project/instance-context"
-import { NonNegativeInt } from "hackbot-core/schema"
+import { NonNegativeInt } from "@hackbot/core/schema"
 import { RuntimeFlags } from "@/effect/runtime-flags"
-import { LspEvent } from "hackbot-schema/lsp-event"
+import { LspEvent } from "@hackbot/schema/lsp-event"
 
 export const Event = LspEvent
 

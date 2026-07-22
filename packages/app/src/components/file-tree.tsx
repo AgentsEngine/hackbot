@@ -1,8 +1,8 @@
 import { useFile } from "@/context/file"
 import { encodeFilePath } from "@/context/file/path"
-import { Collapsible } from "hackbot-ui/collapsible"
-import { FileIcon } from "hackbot-ui/file-icon"
-import { Icon } from "hackbot-ui/icon"
+import { Collapsible } from "@hackbot/ui/collapsible"
+import { FileIcon } from "@hackbot/ui/file-icon"
+import { Icon } from "@hackbot/ui/icon"
 import {
   createEffect,
   createMemo,
@@ -17,7 +17,7 @@ import {
   type ParentProps,
 } from "solid-js"
 import { Dynamic } from "solid-js/web"
-import type { FileNode } from "hackbot-sdk/v2"
+import type { FileNode } from "@hackbot/sdk/v2"
 
 const MAX_DEPTH = 128
 

@@ -8,10 +8,10 @@ import type {
   QuestionRequest,
   ReferenceInfo,
   Session,
-} from "hackbot-sdk/v2/client"
+} from "@hackbot/sdk/v2/client"
 import { showToast } from "@/utils/toast"
-import { getFilename } from "hackbot-core/util/path"
-import { retry } from "hackbot-core/util/retry"
+import { getFilename } from "@hackbot/core/util/path"
+import { retry } from "@hackbot/core/util/retry"
 import { batch } from "solid-js"
 import { produce, reconcile, type SetStoreFunction, type Store } from "solid-js/store"
 import type { State, VcsCache } from "./types"
@@ -20,7 +20,7 @@ import { cmp, normalizeAgentList, normalizeProviderList } from "./utils"
 import { formatServerError } from "@/utils/server-errors"
 import { QueryClient, queryOptions } from "@tanstack/solid-query"
 import { loadMcpQuery, loadMcpResourcesQuery } from "../server-sync"
-import { NormalizedProviderListResponse } from "hackbot-session-ui/context"
+import { NormalizedProviderListResponse } from "@hackbot/session-ui/context"
 import { ScopedKey, type ServerScope } from "@/utils/server-scope"
 
 type GlobalStore = {

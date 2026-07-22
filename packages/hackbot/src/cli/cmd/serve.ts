@@ -1,7 +1,7 @@
 import { Effect } from "effect"
 import { effectCmd } from "../effect-cmd"
 import { withNetworkOptions, resolveNetworkOptions } from "../network"
-import { Flag } from "hackbot-core/flag/flag"
+import { Flag } from "@hackbot/core/flag/flag"
 
 export const ServeCommand = effectCmd({
   command: "serve",

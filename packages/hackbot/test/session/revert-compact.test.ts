@@ -1,10 +1,10 @@
 import { describe, expect } from "bun:test"
-import { SessionV1 } from "hackbot-core/v1/session"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { SessionProjector } from "hackbot-core/session/projector"
+import { SessionV1 } from "@hackbot/core/v1/session"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { SessionProjector } from "@hackbot/core/session/projector"
 import fs from "fs/promises"
 import path from "path"
-import { CrossSpawnSpawner } from "hackbot-core/cross-spawn-spawner"
+import { CrossSpawnSpawner } from "@hackbot/core/cross-spawn-spawner"
 import { Effect } from "effect"
 import { Session } from "@/session/session"
 
@@ -14,8 +14,8 @@ import { Snapshot } from "../../src/snapshot"
 import { MessageID, PartID, SessionID } from "../../src/session/schema"
 import { provideTmpdirInstance } from "../fixture/fixture"
 import { testEffect } from "../lib/effect"
-import { ProviderV2 } from "hackbot-core/provider"
-import { ModelV2 } from "hackbot-core/model"
+import { ProviderV2 } from "@hackbot/core/provider"
+import { ModelV2 } from "@hackbot/core/model"
 
 const it = testEffect(
   LayerNode.compile(

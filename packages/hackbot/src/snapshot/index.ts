@@ -1,15 +1,15 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { Cause, Duration, Effect, Layer, Schedule, Schema, Semaphore, Context } from "effect"
 import { ChildProcess, ChildProcessSpawner } from "effect/unstable/process"
 import { formatPatch, structuredPatch } from "diff"
 import path from "path"
-import { AppProcess } from "hackbot-core/process"
+import { AppProcess } from "@hackbot/core/process"
 import { InstanceState } from "@/effect/instance-state"
-import { FSUtil } from "hackbot-core/fs-util"
-import { Hash } from "hackbot-core/util/hash"
+import { FSUtil } from "@hackbot/core/fs-util"
+import { Hash } from "@hackbot/core/util/hash"
 import { Config } from "@/config/config"
-import { Global } from "hackbot-core/global"
-import { Info } from "hackbot-schema/file-diff"
+import { Global } from "@hackbot/core/global"
+import { Info } from "@hackbot/schema/file-diff"
 
 export const Patch = Schema.Struct({
   hash: Schema.String,

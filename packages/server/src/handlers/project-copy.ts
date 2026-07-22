@@ -1,10 +1,10 @@
-import { Location } from "hackbot-core/location"
-import { ProjectCopy } from "hackbot-core/project/copy"
-import { Git } from "hackbot-core/git"
+import { Location } from "@hackbot/core/location"
+import { ProjectCopy } from "@hackbot/core/project/copy"
+import { Git } from "@hackbot/core/git"
 import { Effect } from "effect"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { ProjectCopyError } from "hackbot-protocol/groups/project-copy"
+import { ProjectCopyError } from "@hackbot/protocol/groups/project-copy"
 
 export const ProjectCopyHandler = HttpApiBuilder.group(Api, "server.projectCopy", (handlers) =>
   Effect.succeed(

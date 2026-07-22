@@ -1,9 +1,9 @@
 import { EOL } from "os"
 import { Effect } from "effect"
-import { Catalog } from "hackbot-core/catalog"
-import { LocationServiceMap, locationServiceMapLayer } from "hackbot-core/location-services"
-import { Location } from "hackbot-core/location"
-import { AbsolutePath } from "hackbot-core/schema"
+import { Catalog } from "@hackbot/core/catalog"
+import { LocationServiceMap, locationServiceMapLayer } from "@hackbot/core/location-services"
+import { Location } from "@hackbot/core/location"
+import { AbsolutePath } from "@hackbot/core/schema"
 import { effectCmd } from "../../effect-cmd"
 
 export const V2Command = effectCmd({

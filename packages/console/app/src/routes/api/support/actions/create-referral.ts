@@ -1,7 +1,7 @@
 import type { APIEvent } from "@solidjs/start/server"
-import { Referral } from "hackbot-console-core/referral.js"
-import { safeEqual } from "hackbot-console-core/util/crypto.js"
-import { Resource } from "hackbot-console-resource"
+import { Referral } from "@hackbot/console-core/referral.js"
+import { safeEqual } from "@hackbot/console-core/util/crypto.js"
+import { Resource } from "@hackbot/console-resource"
 import z from "zod"
 
 const Body = z.object({

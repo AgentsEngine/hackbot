@@ -1,5 +1,5 @@
-import { PermissionV1 } from "hackbot-core/v1/permission"
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { PermissionV1 } from "@hackbot/core/v1/permission"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { describe, test, expect } from "bun:test"
 import { Effect } from "effect"
 import { Permission } from "../src/permission"

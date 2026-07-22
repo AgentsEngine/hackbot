@@ -1,1 +1,1 @@
-export * from "hackbot-tui/prompt/display"
+export * from "@hackbot/tui/prompt/display"

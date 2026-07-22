@@ -1,6 +1,6 @@
 import { NodeFileSystem } from "@effect/platform-node"
-import { HttpRecorder } from "hackbot-http-recorder"
-import { HttpRecorderInternal } from "hackbot-http-recorder/internal"
+import { HttpRecorder } from "@hackbot/http-recorder"
+import { HttpRecorderInternal } from "@hackbot/http-recorder/internal"
 import { Layer } from "effect"
 import { FetchHttpClient } from "effect/unstable/http"
 import * as path from "node:path"

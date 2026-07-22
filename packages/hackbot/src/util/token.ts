@@ -1,1 +1,1 @@
-export { Token, estimate } from "hackbot-core/util/token"
+export { Token, estimate } from "@hackbot/core/util/token"

@@ -1,5 +1,5 @@
 {
-  "name": "hackbot-enterprise",
+  "name": "@hackbot/enterprise",
   "version": "1.18.4",
   "private": true,
   "type": "module",
@@ -13,9 +13,9 @@
     "shell-prod": "sst shell --target Teams --stage production"
   },
   "dependencies": {
-    "hackbot-core": "workspace:*",
-    "hackbot-session-ui": "workspace:*",
-    "hackbot-ui": "workspace:*",
+    "@hackbot/core": "workspace:*",
+    "@hackbot/session-ui": "workspace:*",
+    "@hackbot/ui": "workspace:*",
     "aws4fetch": "^1.0.20",
     "@pierre/diffs": "catalog:",
     "@solidjs/router": "catalog:",

@@ -1,5 +1,5 @@
-import { Message, Model, Part, Session, SnapshotFileDiff } from "hackbot-sdk/v2"
-import { iife } from "hackbot-core/util/iife"
+import { Message, Model, Part, Session, SnapshotFileDiff } from "@hackbot/sdk/v2"
+import { iife } from "@hackbot/core/util/iife"
 import z from "zod"
 import { Storage } from "./storage"
 

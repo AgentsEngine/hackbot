@@ -1,13 +1,13 @@
 import "@/index.css"
 import * as Sentry from "@sentry/solid"
-import { I18nProvider } from "hackbot-ui/context"
-import { DialogProvider } from "hackbot-ui/context/dialog"
-import { FileComponentProvider } from "hackbot-ui/context/file"
-import { MarkedProvider } from "hackbot-ui/context/marked"
-import { File } from "hackbot-session-ui/file"
-import { Font } from "hackbot-ui/font"
-import { Splash } from "hackbot-ui/logo"
-import { ThemeProvider } from "hackbot-ui/theme/context"
+import { I18nProvider } from "@hackbot/ui/context"
+import { DialogProvider } from "@hackbot/ui/context/dialog"
+import { FileComponentProvider } from "@hackbot/ui/context/file"
+import { MarkedProvider } from "@hackbot/ui/context/marked"
+import { File } from "@hackbot/session-ui/file"
+import { Font } from "@hackbot/ui/font"
+import { Splash } from "@hackbot/ui/logo"
+import { ThemeProvider } from "@hackbot/ui/theme/context"
 import { MetaProvider } from "@solidjs/meta"
 import {
   type BaseRouterProps,
@@ -21,7 +21,7 @@ import {
 } from "@solidjs/router"
 import { QueryClient, QueryClientProvider } from "@tanstack/solid-query"
 import { Effect } from "effect"
-import { base64Encode } from "hackbot-core/util/encode"
+import { base64Encode } from "@hackbot/core/util/encode"
 import {
   type Component,
   createEffect,

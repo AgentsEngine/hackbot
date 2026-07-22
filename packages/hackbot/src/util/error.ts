@@ -1,1 +1,1 @@
-export * from "hackbot-tui/util/error"
+export * from "@hackbot/tui/util/error"

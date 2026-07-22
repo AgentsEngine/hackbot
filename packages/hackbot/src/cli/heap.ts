@@ -1,7 +1,7 @@
 import path from "path"
 import { writeHeapSnapshot } from "node:v8"
-import { Flag } from "hackbot-core/flag/flag"
-import { Global } from "hackbot-core/global"
+import { Flag } from "@hackbot/core/flag/flag"
+import { Global } from "@hackbot/core/global"
 const MINUTE = 60_000
 const LIMIT = 2 * 1024 * 1024 * 1024
 

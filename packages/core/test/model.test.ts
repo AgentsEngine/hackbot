@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test"
 import { Schema } from "effect"
-import { ModelV2 } from "hackbot-core/model"
-import { ProviderV2 } from "hackbot-core/provider"
+import { ModelV2 } from "@hackbot/core/model"
+import { ProviderV2 } from "@hackbot/core/provider"
 
 const decode = Schema.decodeUnknownSync(ModelV2.Ref)
 

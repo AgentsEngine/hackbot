@@ -1,6 +1,6 @@
 export * as File from "./file"
 
-import { Revert } from "hackbot-schema/revert"
+import { Revert } from "@hackbot/schema/revert"
 
 export const Diff = Revert.FileDiff
 export type Diff = typeof Diff.Type

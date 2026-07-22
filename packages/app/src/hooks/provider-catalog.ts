@@ -1,4 +1,4 @@
-import type { NormalizedProviderListResponse } from "hackbot-session-ui/context"
+import type { NormalizedProviderListResponse } from "@hackbot/session-ui/context"
 
 const emptyProviderCatalog: NormalizedProviderListResponse = { all: new Map(), connected: [], default: {} }
 

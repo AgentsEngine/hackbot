@@ -1,9 +1,9 @@
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { PtyID } from "hackbot-core/pty/schema"
-import { PtyTicket } from "hackbot-core/pty/ticket"
-import { WorkspaceV2 } from "hackbot-core/workspace"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { PtyID } from "@hackbot/core/pty/schema"
+import { PtyTicket } from "@hackbot/core/pty/ticket"
+import { WorkspaceV2 } from "@hackbot/core/workspace"
 import { testEffect } from "../lib/effect"
 
 const it = testEffect(LayerNode.compile(PtyTicket.node))

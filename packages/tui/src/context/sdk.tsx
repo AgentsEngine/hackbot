@@ -1,6 +1,6 @@
-import { createOpencodeClient } from "hackbot-sdk/v2"
-import type { GlobalEvent } from "hackbot-sdk/v2"
-import { Flag } from "hackbot-core/flag/flag"
+import { createOpencodeClient } from "@hackbot/sdk/v2"
+import type { GlobalEvent } from "@hackbot/sdk/v2"
+import { Flag } from "@hackbot/core/flag/flag"
 import { createSimpleContext } from "./helper"
 import { batch, onCleanup, onMount } from "solid-js"
 

@@ -1,4 +1,4 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { Context, Effect, Layer } from "effect"
 
 import { InstanceState } from "@/effect/instance-state"
@@ -17,12 +17,12 @@ import type { Provider } from "@/provider/provider"
 import type { Agent } from "@/agent/agent"
 import { Permission } from "@/permission"
 import { Skill } from "@/skill"
-import { AbsolutePath } from "hackbot-core/schema"
-import { Location } from "hackbot-core/location"
-import { LocationServiceMap, locationServiceMapLayer } from "hackbot-core/location-services"
-import { Reference } from "hackbot-core/reference"
+import { AbsolutePath } from "@hackbot/core/schema"
+import { Location } from "@hackbot/core/location"
+import { LocationServiceMap, locationServiceMapLayer } from "@hackbot/core/location-services"
+import { Reference } from "@hackbot/core/reference"
 import { MCP } from "@/mcp"
-import { PermissionV1 } from "hackbot-core/v1/permission"
+import { PermissionV1 } from "@hackbot/core/v1/permission"
 
 export function provider(model: Provider.Model) {
   if (model.api.id.includes("muse-spark")) return [PROMPT_META]

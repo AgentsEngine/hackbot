@@ -1,6 +1,6 @@
-import type { UpdaterState } from "hackbot-app/updater"
+import type { UpdaterState } from "@hackbot/app/updater"
 
-export type { UpdaterState } from "hackbot-app/updater"
+export type { UpdaterState } from "@hackbot/app/updater"
 
 export type UpdaterReadyRecord = { version: string }
 

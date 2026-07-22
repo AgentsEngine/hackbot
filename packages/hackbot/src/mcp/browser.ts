@@ -1,4 +1,4 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { Context, Effect, Layer } from "effect"
 import open from "open"
 

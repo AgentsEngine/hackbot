@@ -6,11 +6,11 @@ export {}
 // import { test, expect, describe } from "bun:test"
 // import path from "path"
 
-// import { ProviderV2 } from "hackbot-core/provider"
+// import { ProviderV2 } from "@hackbot/core/provider"
 // import { tmpdir, withTestInstance } from "../fixture/fixture"
 // import { Provider } from "@/provider/provider"
 // import { Env } from "../../src/env"
-// import { Global } from "hackbot-core/global"
+// import { Global } from "@hackbot/core/global"
 // import { GitLabWorkflowLanguageModel } from "gitlab-ai-provider"
 
 // test("GitLab Duo: loads provider with API key from environment", async () => {

@@ -10,8 +10,8 @@
 /** @jsxImportSource @opentui/solid */
 import { useTerminalDimensions } from "@opentui/solid"
 import { For, Match, Show, Switch, createEffect, createMemo, createSignal, onCleanup } from "solid-js"
-import { registerOpencodeSpinner } from "hackbot-tui/component/register-spinner"
-import { createColors, createFrames } from "hackbot-tui/ui/spinner"
+import { registerOpencodeSpinner } from "@hackbot/tui/component/register-spinner"
+import { createColors, createFrames } from "@hackbot/tui/ui/spinner"
 import {
   RUN_SUBAGENT_PANEL_ROWS,
   RunCommandMenuBody,
@@ -34,7 +34,7 @@ import {
   useBindings,
   useKeymapSelector,
   type OpenTuiKeymap,
-} from "hackbot-tui/keymap"
+} from "@hackbot/tui/keymap"
 import type {
   FooterPromptRoute,
   FooterQueuedPrompt,

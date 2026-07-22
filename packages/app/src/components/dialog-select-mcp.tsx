@@ -1,8 +1,8 @@
 import { Component, createMemo, Show } from "solid-js"
 import { useSync } from "@/context/sync"
-import { Dialog } from "hackbot-ui/dialog"
-import { List } from "hackbot-ui/list"
-import { Switch } from "hackbot-ui/switch"
+import { Dialog } from "@hackbot/ui/dialog"
+import { List } from "@hackbot/ui/list"
+import { Switch } from "@hackbot/ui/switch"
 import { useLanguage } from "@/context/language"
 import { useMcpToggle } from "@/context/mcp"
 

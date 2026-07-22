@@ -1,8 +1,8 @@
-import { Catalog } from "hackbot-core/catalog"
+import { Catalog } from "@hackbot/core/catalog"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { ProviderNotFoundError } from "hackbot-protocol/errors"
+import { ProviderNotFoundError } from "@hackbot/protocol/errors"
 import { response } from "../location"
 
 export const ProviderHandler = HttpApiBuilder.group(Api, "server.provider", (handlers) =>

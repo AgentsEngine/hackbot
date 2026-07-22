@@ -1,8 +1,8 @@
-import { run } from "hackbot-tui"
-import { TuiConfig } from "hackbot-tui/config"
+import { run } from "@hackbot/tui"
+import { TuiConfig } from "@hackbot/tui/config"
 import { Effect } from "effect"
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { Global } from "hackbot-core/global"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { Global } from "@hackbot/core/global"
 
 export function runTui(transport: { url: string; headers: RequestInit["headers"] }) {
   const config = TuiConfig.resolve({}, { terminalSuspend: false })

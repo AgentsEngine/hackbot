@@ -1,8 +1,8 @@
 import { describe, test, expect } from "bun:test"
 import { Effect, FileSystem } from "effect"
-import { LayerNodePlatform } from "hackbot-core/effect/app-node-platform"
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import { FSUtil } from "hackbot-core/fs-util"
+import { LayerNodePlatform } from "@hackbot/core/effect/app-node-platform"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import { FSUtil } from "@hackbot/core/fs-util"
 import { testEffect } from "../lib/effect"
 import path from "path"
 

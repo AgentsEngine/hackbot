@@ -1,5 +1,5 @@
-import { AppNodeBuilder } from "hackbot-core/effect/app-node-builder"
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { AppNodeBuilder } from "@hackbot/core/effect/app-node-builder"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { InstanceBootstrap } from "@/project/bootstrap"
 import { InstanceStore } from "@/project/instance-store"
 

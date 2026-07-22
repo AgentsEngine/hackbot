@@ -1,7 +1,7 @@
-import { Database, eq, sql } from "hackbot-console-core/drizzle/index.js"
-import { IpTable } from "hackbot-console-core/schema/ip.sql.js"
+import { Database, eq, sql } from "@hackbot/console-core/drizzle/index.js"
+import { IpTable } from "@hackbot/console-core/schema/ip.sql.js"
 import { UsageInfo } from "./provider/provider"
-import { Subscription } from "hackbot-console-core/subscription.js"
+import { Subscription } from "@hackbot/console-core/subscription.js"
 
 export function createTrialLimiter(trialProviders: string[] | undefined, ip: string) {
   if (!trialProviders) return

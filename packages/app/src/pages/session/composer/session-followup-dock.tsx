@@ -1,8 +1,8 @@
 import { For, Show, createMemo } from "solid-js"
 import { createStore } from "solid-js/store"
-import { Button } from "hackbot-ui/button"
-import { DockTray } from "hackbot-ui/dock-surface"
-import { IconButton } from "hackbot-ui/icon-button"
+import { Button } from "@hackbot/ui/button"
+import { DockTray } from "@hackbot/ui/dock-surface"
+import { IconButton } from "@hackbot/ui/icon-button"
 import { useLanguage } from "@/context/language"
 
 export function SessionFollowupDock(props: {

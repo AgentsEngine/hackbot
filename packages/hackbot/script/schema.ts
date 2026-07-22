@@ -1,8 +1,8 @@
 #!/usr/bin/env bun
 
 import { Config } from "@/config/config"
-import { ConfigV1 } from "hackbot-core/v1/config/config"
-import { TuiConfig } from "hackbot-tui/config"
+import { ConfigV1 } from "@hackbot/core/v1/config/config"
+import { TuiConfig } from "@hackbot/tui/config"
 import { Schema } from "effect"
 
 type JsonSchema = Record<string, unknown>

@@ -1,11 +1,11 @@
-import { LayerNode } from "hackbot-core/effect/layer-node"
-import type { AuthOAuthResult, Hooks } from "hackbot-plugin"
-import { serviceUse } from "hackbot-core/effect/service-use"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
+import type { AuthOAuthResult, Hooks } from "@hackbot/plugin"
+import { serviceUse } from "@hackbot/core/effect/service-use"
 import { Auth } from "@/auth"
 import { InstanceState } from "@/effect/instance-state"
-import { optional } from "hackbot-core/schema"
+import { optional } from "@hackbot/core/schema"
 import { Plugin } from "../plugin"
-import { ProviderV2 } from "hackbot-core/provider"
+import { ProviderV2 } from "@hackbot/core/provider"
 import { Array as Arr, Effect, Layer, Record, Result, Context, Schema } from "effect"
 
 const When = Schema.Struct({

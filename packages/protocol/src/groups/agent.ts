@@ -1,5 +1,5 @@
-import { Agent } from "hackbot-schema/agent"
-import { Location } from "hackbot-schema/location"
+import { Agent } from "@hackbot/schema/agent"
+import { Location } from "@hackbot/schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 import { LocationQuery, locationQueryOpenApi } from "./location"

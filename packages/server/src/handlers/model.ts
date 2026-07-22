@@ -1,4 +1,4 @@
-import { Catalog } from "hackbot-core/catalog"
+import { Catalog } from "@hackbot/core/catalog"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"

@@ -1,7 +1,7 @@
 export * as ApplyPatchTool from "./apply-patch"
 
-import { ToolFailure } from "hackbot-llm"
-import { FileDiff } from "hackbot-schema/file-diff"
+import { ToolFailure } from "@hackbot/llm"
+import { FileDiff } from "@hackbot/schema/file-diff"
 import { createTwoFilesPatch, diffLines } from "diff"
 import { Effect, Layer, Schema } from "effect"
 import { makeLocationNode } from "../effect/app-node"

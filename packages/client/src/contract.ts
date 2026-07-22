@@ -1,5 +1,5 @@
-import { makeDefaultApi } from "hackbot-protocol/api"
-import { InvalidRequestError, SessionNotFoundError } from "hackbot-protocol/errors"
+import { makeDefaultApi } from "@hackbot/protocol/api"
+import { InvalidRequestError, SessionNotFoundError } from "@hackbot/protocol/errors"
 import { HttpApiMiddleware } from "effect/unstable/httpapi"
 
 class LocationMiddleware extends HttpApiMiddleware.Service<LocationMiddleware>()(

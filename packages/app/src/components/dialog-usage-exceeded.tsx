@@ -1,7 +1,7 @@
 import { usePlatform } from "@/context/platform"
-import { Button } from "hackbot-ui/button"
-import { useDialog } from "hackbot-ui/context/dialog"
-import { Dialog } from "hackbot-ui/dialog"
+import { Button } from "@hackbot/ui/button"
+import { useDialog } from "@hackbot/ui/context/dialog"
+import { Dialog } from "@hackbot/ui/dialog"
 import { JSX } from "solid-js"
 
 export type DialogGoUpsellProps = {

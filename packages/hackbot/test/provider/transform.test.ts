@@ -2,9 +2,9 @@ import { describe, expect, test } from "bun:test"
 import { Effect } from "effect"
 import { ProviderTransform } from "@/provider/transform"
 import { LLMRequestPrep } from "@/session/llm/request"
-import { ProviderV2 } from "hackbot-core/provider"
-import { ModelV2 } from "hackbot-core/model"
-import { ModelsDev } from "hackbot-core/models-dev"
+import { ProviderV2 } from "@hackbot/core/provider"
+import { ModelV2 } from "@hackbot/core/model"
+import { ModelsDev } from "@hackbot/core/models-dev"
 import { jsonSchema } from "ai"
 
 describe("ProviderTransform.options - setCacheKey", () => {

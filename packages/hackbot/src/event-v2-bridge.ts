@@ -1,12 +1,12 @@
 // Opencode publish boundary for core events. Attach routed instance location
 // so direct EventV2 consumers can isolate directory/workspace streams.
-import { LayerNode } from "hackbot-core/effect/layer-node"
+import { LayerNode } from "@hackbot/core/effect/layer-node"
 import { InstanceRef, WorkspaceRef } from "@/effect/instance-ref"
 import { GlobalBus } from "@/bus/global"
-import { EventV2 } from "hackbot-core/event"
-import { Location } from "hackbot-core/location"
-import { Project } from "hackbot-core/project"
-import { AbsolutePath } from "hackbot-core/schema"
+import { EventV2 } from "@hackbot/core/event"
+import { Location } from "@hackbot/core/location"
+import { Project } from "@hackbot/core/project"
+import { AbsolutePath } from "@hackbot/core/schema"
 import { Context, Effect, Layer } from "effect"
 
 export class Service extends Context.Service<Service, EventV2.Interface>()("@hackbot/EventV2Bridge") {}

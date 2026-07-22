@@ -1,8 +1,8 @@
-import { SessionV2 } from "hackbot-core/session"
+import { SessionV2 } from "@hackbot/core/session"
 import { DateTime, Effect, Stream } from "effect"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { SessionsCursor } from "hackbot-protocol/groups/session"
+import { SessionsCursor } from "@hackbot/protocol/groups/session"
 import {
   ConflictError,
   InvalidCursorError,
@@ -10,8 +10,8 @@ import {
   ServiceUnavailableError,
   SessionNotFoundError,
   UnknownError,
-} from "hackbot-protocol/errors"
-import { AbsolutePath } from "hackbot-core/schema"
+} from "@hackbot/protocol/errors"
+import { AbsolutePath } from "@hackbot/core/schema"
 
 const DefaultSessionsLimit = 50
 const DefaultSessionHistoryLimit = 50

@@ -9,17 +9,17 @@ import type {
   TuiAttentionSoundName,
   TuiAttentionSoundPack,
   TuiAttentionSoundPackInfo,
-} from "hackbot-plugin/tui"
+} from "@hackbot/plugin/tui"
 import { AttentionSoundName, type TuiConfig } from "./config"
 import { Schema } from "effect"
 import stripAnsi from "strip-ansi"
 import * as TuiAudio from "./audio"
-import defaultSoundPath from "hackbot-ui/audio/bip-bop-01.mp3" with { type: "file" }
-import questionSoundPath from "hackbot-ui/audio/bip-bop-03.mp3" with { type: "file" }
-import permissionSoundPath from "hackbot-ui/audio/staplebops-06.mp3" with { type: "file" }
-import errorSoundPath from "hackbot-ui/audio/nope-03.mp3" with { type: "file" }
-import doneSoundPath from "hackbot-ui/audio/bip-bop-01.mp3" with { type: "file" }
-import subagentDoneSoundPath from "hackbot-ui/audio/yup-01.mp3" with { type: "file" }
+import defaultSoundPath from "@hackbot/ui/audio/bip-bop-01.mp3" with { type: "file" }
+import questionSoundPath from "@hackbot/ui/audio/bip-bop-03.mp3" with { type: "file" }
+import permissionSoundPath from "@hackbot/ui/audio/staplebops-06.mp3" with { type: "file" }
+import errorSoundPath from "@hackbot/ui/audio/nope-03.mp3" with { type: "file" }
+import doneSoundPath from "@hackbot/ui/audio/bip-bop-01.mp3" with { type: "file" }
+import subagentDoneSoundPath from "@hackbot/ui/audio/yup-01.mp3" with { type: "file" }
 
 type FocusState = "unknown" | "focused" | "blurred"
 

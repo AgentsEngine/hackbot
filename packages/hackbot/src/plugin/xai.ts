@@ -1,8 +1,8 @@
-import type { Hooks, PluginInput } from "hackbot-plugin"
+import type { Hooks, PluginInput } from "@hackbot/plugin"
 import { OAUTH_DUMMY_KEY } from "../auth"
 import { createServer } from "http"
-import { InstallationVersion } from "hackbot-core/installation/version"
-import { OauthCallbackPage } from "hackbot-core/oauth/page"
+import { InstallationVersion } from "@hackbot/core/installation/version"
+import { OauthCallbackPage } from "@hackbot/core/oauth/page"
 
 // Public Grok-CLI OAuth client. xAI's auth server rejects loopback OAuth from
 // non-allowlisted clients, so we reuse the Grok-CLI client_id that xAI ships

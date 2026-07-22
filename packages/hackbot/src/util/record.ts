@@ -1,1 +1,1 @@
-export * from "hackbot-tui/util/record"
+export * from "@hackbot/tui/util/record"
