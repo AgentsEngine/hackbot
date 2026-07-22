@@ -486,9 +486,12 @@ jobs:
             ${{ runner.os }}-apt-aur-
 
       - name: Setup SSH for AUR
-        if: secrets.AUR_KEY != ''
         continue-on-error: true
         run: |
+          if [ -z "${{ secrets.AUR_KEY }}" ]; then
+            echo "AUR_KEY not set, skipping AUR setup"
+            exit 0
+          fi
           sudo apt-get update
           sudo apt-get install -y pacman-package-manager
           mkdir -p ~/.ssh
