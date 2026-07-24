@@ -15,7 +15,7 @@ This extension requires the [opencode CLI](https://opencode.ai) to be installed 
 
 ## Support
 
-This is an early release. If you encounter issues or have feedback, please create an issue at https://github.com/hackbot/hackbot/issues.
+This is an early release. If you encounter issues or have feedback, please create an issue at https://github.com/agentsengine/hackbot/issues.
 
 ## Development
 

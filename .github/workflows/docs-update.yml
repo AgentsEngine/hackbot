@@ -10,7 +10,7 @@ env:
 
 jobs:
   update-docs:
-    if: github.repository == 'akushonkamen/hackbot'
+    if: github.repository == 'agentsengine/hackbot'
     runs-on: ubuntu-24.04
     permissions:
       id-token: write

@@ -362,7 +362,7 @@ jobs:
           persist-credentials: false
 
       - name: Run opencode
-        uses: hackbot/hackbot/github@latest${envStr}
+        uses: agentsengine/hackbot/github@latest${envStr}
         with:
           model: ${provider}/${model}`,
         )

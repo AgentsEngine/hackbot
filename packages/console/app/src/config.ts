@@ -7,7 +7,7 @@ export const config = {
 
   // GitHub
   github: {
-    repoUrl: "https://github.com/hackbot/hackbot",
+    repoUrl: "https://github.com/agentsengine/hackbot",
     starsFormatted: {
       compact: "160K",
       full: "160,000",

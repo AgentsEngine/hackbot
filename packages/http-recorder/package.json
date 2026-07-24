@@ -7,11 +7,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hackbot/hackbot.git",
+    "url": "git+https://github.com/agentsengine/hackbot.git",
     "directory": "packages/http-recorder"
   },
-  "homepage": "https://github.com/hackbot/hackbot/tree/dev/packages/http-recorder",
-  "bugs": "https://github.com/hackbot/hackbot/issues",
+  "homepage": "https://github.com/agentsengine/hackbot/tree/dev/packages/http-recorder",
+  "bugs": "https://github.com/agentsengine/hackbot/issues",
   "keywords": [
     "effect",
     "http",

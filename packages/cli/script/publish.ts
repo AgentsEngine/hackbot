@@ -41,7 +41,7 @@ await Bun.file(`${wrapperDir}/package.json`).write(
       bin: { lildax: "./bin/lildax" },
       version,
       license: pkg.license,
-      repository: { type: "git", url: "git+https://github.com/akushonkamen/hackbot.git" },
+      repository: { type: "git", url: "git+https://github.com/agentsengine/hackbot.git" },
       os: ["darwin", "linux", "win32"],
       cpu: ["arm64", "x64"],
       optionalDependencies: binaries,

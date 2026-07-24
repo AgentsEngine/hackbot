@@ -8,8 +8,8 @@ import { route, type Locale } from "../lib/language"
 export type HeaderLink = { href: string; label: string }
 
 export const githubLink = {
-  href: "https://github.com/hackbot/hackbot",
-  apiHref: "https://api.github.com/repos/hackbot/hackbot",
+  href: "https://github.com/agentsengine/hackbot",
+  apiHref: "https://api.github.com/repos/agentsengine/hackbot",
   fallbackStars: "150K",
 }
 export const themePreferences = ["dark", "light", "system"] as const

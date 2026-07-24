@@ -207,12 +207,12 @@ export const DESKTOP_MENU: DesktopMenu[] = [
       {
         type: "item",
         label: "Share Feedback",
-        href: "https://github.com/hackbot/hackbot/issues/new?template=feature_request.yml",
+        href: "https://github.com/agentsengine/hackbot/issues/new?template=feature_request.yml",
       },
       {
         type: "item",
         label: "Report a Bug",
-        href: "https://github.com/hackbot/hackbot/issues/new?template=bug_report.yml",
+        href: "https://github.com/agentsengine/hackbot/issues/new?template=bug_report.yml",
       },
     ],
   },

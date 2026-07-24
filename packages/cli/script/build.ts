@@ -105,7 +105,7 @@ for (const item of targets) {
         name: `@hackbot/cli-${name}`,
         version: Script.version,
         license: "MIT",
-        repository: { type: "git", url: "git+https://github.com/akushonkamen/hackbot.git" },
+        repository: { type: "git", url: "git+https://github.com/agentsengine/hackbot.git" },
         os: [item.os],
         cpu: [item.arch],
       },

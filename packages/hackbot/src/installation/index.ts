@@ -255,7 +255,7 @@ const layer: Layer.Layer<Service, never, HttpClient.HttpClient | AppProcess.Serv
         }
 
         const response = yield* httpOk.execute(
-          HttpClientRequest.get("https://api.github.com/repos/hackbot/hackbot/releases/latest").pipe(
+          HttpClientRequest.get("https://api.github.com/repos/agentsengine/hackbot/releases/latest").pipe(
             HttpClientRequest.acceptJson,
           ),
         )
