@@ -374,7 +374,7 @@ async function translate(
 
   const proc = Bun.spawn(
     [
-      "opencode",
+      "hackbot",
       "--pure",
       "run",
       "--dir",
@@ -406,7 +406,7 @@ async function translate(
   if (result[2] !== 0) return { locale: plan.locale, stdout: result[0], stderr: result[1], code: result[2] }
 
   const sessionID = sessionIDFromEvents(result[0])
-  const exported = Bun.spawn(["opencode", "--pure", "export", sessionID, "--sanitize"], {
+  const exported = Bun.spawn(["hackbot", "--pure", "export", sessionID, "--sanitize"], {
     cwd: root,
     env,
     stdout: "pipe",
@@ -467,7 +467,7 @@ async function resolveModelVariant(model: string, variant: string) {
   if (!provider || !model.includes("/")) throw new Error(`Model must use provider/model syntax: ${model}`)
   const env = isolatedEnvironment()
   env.HACKBOT_DISABLE_PROJECT_CONFIG = "1"
-  const proc = Bun.spawn(["opencode", "--pure", "models", provider, "--verbose"], {
+  const proc = Bun.spawn(["hackbot", "--pure", "models", provider, "--verbose"], {
     cwd: root,
     env,
     stdin: "ignore",
