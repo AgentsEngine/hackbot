@@ -51,7 +51,7 @@ jobs:
 
       - name: Install Hackbot
         if: inputs.bump || inputs.version
-        run: bun i -g @hackbot/hackbot
+        run: npm i -g @hackbot/hackbot
 
       - id: version
         run: |
